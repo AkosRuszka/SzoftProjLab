@@ -3,7 +3,7 @@ package vasut;
 public class Sin {
 	private Sin aPoint;
 	private Sin bPoint;
-	//private VonatElem actVonatElem;
+	private VonatElem actVonatElem;
 	private boolean dir;
 	
 	public Sin(Sin aPoint_){
@@ -23,13 +23,13 @@ public class Sin {
 	public void setBPoint(Sin bp) {
 		/** Beállítja a bPontot */
 	}
-	//public void setActVonatElem(VonatElem akt) {
+	public void setActVonatElem(VonatElem akt) {
 		/** Beállítjuk a actVonatElem-et */
-	//}
-	//public VonatElem getActVonatElem() {
+	}
+	public VonatElem getActVonatElem() {
 		/** Lekérdezzük az actVonatElem-et */
-	//}
-	//public Sin actMove() {
+	}
+	public Sin actMove() {
 		/** Továbbrakjuk az actVonatElem-et */
-	//}
+	}
 }
