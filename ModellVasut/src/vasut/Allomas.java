@@ -9,5 +9,6 @@ public class Allomas extends Sin{
 	}
 	public String getColor() {
 		/** Visszaadjuk a színt */
+		return color;
 	}
 }
