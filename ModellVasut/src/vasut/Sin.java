@@ -8,6 +8,9 @@ public class Sin {
 	
 	public Sin(Sin aPoint_){
 		/** Megkapja az egyik már létrehozott oldalát */
+		aPoint = aPoint_;
+		bPoint = null;
+		actVonatElem = null;
 	}
 	public Sin getAPoint() {
 		return aPoint;
