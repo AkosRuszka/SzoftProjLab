@@ -1,6 +1,5 @@
 package vasut;
 
-import java.io.BufferedReader;
 import java.util.List;
 
 public class Valto extends Sin{
@@ -10,14 +9,14 @@ public class Valto extends Sin{
 	}
 	
 	public int getActState(){
-		System.out.println("Az aktuális állapot: ");
+		System.out.println("Lekérdeztük az aktuális állapotot.");
 		return 0;
 		/** Lekérdezi az aktuális állapotot*/
 	}
 	
 	public void nextState(){
+		System.out.println("Az állapot megváltozott. (1->2 / 2->3 / 3->1)");
 		/** Megváltoztatja az állapotát*/
-		System.out.println("Az állapot megváltozott.");
 	}
 	
 	public void addConnectPoints(Sin a){
