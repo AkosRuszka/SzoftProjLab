@@ -9,7 +9,7 @@ public class Sin {
 	public Sin getAPoint() {
 		/** Lekérdezi az aPontot */
 		System.out.println("Lekérdezzük az A pontot.");
-		return aPoint;
+		return null;
 	}
 	public Sin getBPoint() {
 		/** Lekérdezi a bPontot */
@@ -31,10 +31,11 @@ public class Sin {
 	public VonatElem getActVonatElem() {
 		/** Lekérdezzük az actVonatElem-et */
 		System.out.println("Lekérdezzük a Sin-en lévõ Mozdonyt.");
-		return actVonatElem;
+		return null;
 	}
 	public Sin actMove() {
 		/** Továbbrakjuk az actVonatElem-et */
 		System.out.println("Meghívódott az actMove() függvény.");
+		return null;
 	}
 }
