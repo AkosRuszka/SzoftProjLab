@@ -7,7 +7,7 @@ public class Sin {
 	private boolean dir;
 	
 	public Sin(Sin aPoint_){
-		/** Megkapja az egyik már létrehozott oldalát */
+		/** Megkapja az egyik már létrehozott oldalát, többit nullázza. */
 		aPoint = aPoint_;
 		bPoint = null;
 		actVonatElem = null;
