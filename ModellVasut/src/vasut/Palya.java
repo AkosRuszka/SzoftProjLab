@@ -27,7 +27,7 @@ public class Palya {
 		System.out.println("Palya: Az utolsó kocsi színe szürke volt? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
-				System.out.println("Palya: Pálya kész.");
+				System.out.println("Palya: Pálya teljesítve.");
 				new Jatek().nextMap();
 			} else {
 				System.out.println("Palya: Megy tovább a játék.");
