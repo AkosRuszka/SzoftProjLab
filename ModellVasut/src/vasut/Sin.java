@@ -42,22 +42,10 @@ public class Sin {
 		new Sin(null).getActVonatElem();
 		new Sin(null).getActVonatElem();
 		
-		System.out.println("Mi legyen az esemény ? ");
-		System.out.println("Vonat kisiklik (1)");
-		System.out.println("Vonat ütközik (2)");
-		System.out.print("Vonat szépen fut tovább (3");
-		
+		System.out.println("Ütközni fog a vonat ? (I/N): ");
 		try {
-			switch(new Bekeres().valaszbekeres()) {
-				case "1":
-					System.out.println("A szomszéd sin null-ra mutat, azzal térünk vissza.");
-					return null;
-				case "2":
-					System.out.print("Mindkét szomszédon van Vonat, ezért exceptiont dobunk.");
-					/** Itt kéne dobni egy exception-t, csakhogy nem itt kéne elkapnunk...*/
-				case "3":
-					
-				default:
+			if(new Bekeres().valaszbekeres().equals("I")) {
+				System.out.println("Kisiklottunk, vége.");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
