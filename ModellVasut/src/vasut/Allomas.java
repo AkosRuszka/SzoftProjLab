@@ -10,4 +10,10 @@ public class Allomas extends Sin{
 		System.out.println("Szín lekérdezése.");
 		return "Valami";
 	}
+	@Override
+	public Sin actMove() {
+		/** nem ugyan az fog történni mint a sima sin actMove()-ban */
+		System.out.println("Állomás actMove() meghívva.");
+		return null;
+	}
 }
