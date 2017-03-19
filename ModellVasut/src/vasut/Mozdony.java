@@ -15,6 +15,8 @@ public class Mozdony extends VonatElem {
 		System.out.println("Van előttem sín? (I/N): ");
 		if(new Bekeres().valaszbekeres().equals("I")) {
 			System.out.println("Továbbhaladunk, húzom a kocsim.");
+			new Sin(null).setActVonatElem(null);
+			new Sin(null).setActVonatElem(this);
 			new Kocsi().pull();
 			new Kocsi().getColor();
 			System.out.println("Szürke az utolsó kocsi? (I/N): ");

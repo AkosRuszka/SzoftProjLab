@@ -1,4 +1,4 @@
-package vasut;
+	package vasut;
 
 import java.util.List;
 
@@ -9,18 +9,18 @@ public class Valto extends Sin{
 	}
 	
 	public int getActState(){
-		System.out.println("LekÈrdezt¸k az aktu·lis ·llapotot.");
+		System.out.println("Lek√©rdezt√ºk az aktu√°lis √°llapotot.");
 		return 0;
-		/** LekÈrdezi az aktu·lis ·llapotot*/
+		/** Lek√©rdezi az aktu√°lis √°llapotot*/
 	}
 	
 	public void nextState(){
-		System.out.println("Az ·llapot megv·ltozott. (1->2 / 2->3 / 3->1)");
-		/** Megv·ltoztatja az ·llapot·t*/
+		System.out.println("Az √°llapot megv√°ltozott. (1->2 / 2->3 / 3->1)");
+		/** Megv√°ltoztatja az √°llapotot*/
 	}
 	
 	public void addConnectPoints(Sin a){
-		System.out.println("KapcsolÛd·si pont hozz·adva.");
-		/** Hozz·adja a kapcsolÛd·si pontot a list·hoz*/
+		System.out.println("Kapcsol√≥d√°si pont hozz√°adva.");
+		/** Hozz√°adja a kapcsolod√≥si pontot a list√°hoz*/
 	}
 }
