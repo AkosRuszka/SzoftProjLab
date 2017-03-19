@@ -25,9 +25,10 @@ public class Mozdony extends VonatElem {
 			else
 				return false;
 		}
-		else
+		else {
 			System.out.println("Mozdony: Kisiklottunk.");
-		return false;
+			throw new Exception("Játék vége kisiklás miatt.");
+		}
 		
  			
 	}
