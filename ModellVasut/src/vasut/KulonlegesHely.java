@@ -22,7 +22,6 @@ public class KulonlegesHely extends Sin{
 			Sin exit = aObserver.build(null);
 			aObserver.setExitA(null);
 			setBPoint(null);
-		}
-		
+		}		
 	}
 }
