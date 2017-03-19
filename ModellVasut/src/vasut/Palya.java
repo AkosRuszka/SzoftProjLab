@@ -19,11 +19,7 @@ public class Palya {
 	public void run() throws Exception{
 		System.out.println("Palya.run()");
 		new Kezdopont().work();
-		try {
-			new Mozdony().run();
-		} catch (IOException e) {
-			throw e;
-		}
+		new Mozdony().run();
 		System.out.println("Palya: Minden kocsi színe szürke volt? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
