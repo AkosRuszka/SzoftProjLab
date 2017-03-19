@@ -10,18 +10,15 @@ public class Palya {
 	}
 	
 	public void quitToMain(){
-		System.out.println("Visszaléptünk a menübe.");
-		
-		/**visszalépünk a menübe*/
+		System.out.println("Palya.quitToMain()");
 	}
 	
 	public void mapSave(InputStream in){
-		System.out.println("Pálya mentve.");
-		/**elmenti az adott pályát a paraméterben kapott file-ba*/
+		System.out.println("Palya.mapSave()");
 	}
 	
 	public void run() throws Exception{
-		System.out.println("A vonatokat elindítottuk.");
+		System.out.println("Palya.run()");
 		new Kezdopont(null).work();
 		new Mozdony().run();
 		System.out.println("Minden vonat tovább tudott haladni? (I/N): ");
@@ -44,12 +41,10 @@ public class Palya {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		/**elindítjuk és mozgatjuk az összes vonatot*/
 	}
 	
 	public void setStartStop(){
-		System.out.println("START-ról STOP-ra, vagy STOP-ról START-ra változott az állapot.");
-		/**kapcsol a start és stop állapot között*/
+		System.out.println("Palya.setStartStop()");
 	}
 
 }
