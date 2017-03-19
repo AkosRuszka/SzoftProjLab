@@ -10,46 +10,46 @@ public class Palya {
 	}
 	
 	public void quitToMain(){
-		System.out.println("Visszaléptünk a menübe.");
+		System.out.println("VisszalÃ©ptÃ¼nk a menÃ¼be.");
 		
-		/**visszalépünk a menübe*/
+		/**visszalÃ©pÃ¼nk a menÃ¼be*/
 	}
 	
 	public void mapSave(InputStream in){
-		System.out.println("Pálya mentve.");
-		/**elmenti az adott pályát a paraméterben kapott file-ba*/
+		System.out.println("PÃ¡lya mentve.");
+		/**elmenti az adott pÃ¡lyÃ¡t a paramÃ©terben kapott file-ba*/
 	}
 	
 	public void run() throws Exception{
-		System.out.println("A vonatokat elindítottuk.");
+		System.out.println("A vonatokat elindÃ­tottuk.");
 		new Kezdopont(null).work();
 		new Mozdony().run();
-		System.out.println("Minden vonat tovább tudott haladni? (I/N): ");
+		System.out.println("Minden vonat tovÃ¡bb tudott haladni? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
-				System.out.println("Mehet tovább a játék.");
+				System.out.println("Mehet tovÃ¡bb a jÃ¡tÃ©k.");
 			} else {
-				System.out.println("Játék vége.");
+				System.out.println("JÃ¡tÃ©k vÃ©ge.");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		System.out.println("Megállítod a játkot? (I/N): ");
+		System.out.println("MegÃ¡llÃ­tod a jÃ¡tkot? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
 				setStartStop();
 			} else {
-				System.out.println("Nem történt semmi.");
+				System.out.println("Nem tÃ¶rtÃ©nt semmi.");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		/**elindítjuk és mozgatjuk az összes vonatot*/
+		/**elindÃ­tjuk Ã©s mozgatjuk az Ã¶sszes vonatot*/
 	}
 	
 	public void setStartStop(){
-		System.out.println("START-ról STOP-ra, vagy STOP-ról START-ra változott az állapot.");
-		/**kapcsol a start és stop állapot között*/
+		System.out.println("START-rÃ³l STOP-ra, vagy STOP-rÃ³l START-ra vÃ¡ltozott az Ã¡llapot.");
+		/**kapcsol a start Ã©s stop Ã¡llapot kÃ¶zÃ¶tt*/
 	}
 
 }

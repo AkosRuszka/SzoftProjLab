@@ -9,20 +9,20 @@ public class Szkeleton {
 	public static void main(String[] args) {
 		String s = "Q";
 		do {
-			/* Itt kéne valami console clear... */
+			/* Itt kÃ©ne valami console clear... */
 			
-			System.out.println("Válassz teszteseteket az alábbiak közül.\n");
-			System.out.println("Mozdony mozgása hibával. (1)");
-			System.out.println("Mozdony áthalad az állomáson. (2)");
-			System.out.println("Különleges helyen való kattintás. (3)");
-			System.out.println("Váltó állítása. (4)");
-			System.out.println("Kezdõ pont. (5)");
-			System.out.println("Játék vége. (6)");
-			System.out.println("Teszt vége. (Q)");
+			System.out.println("VÃ¡lassz teszteseteket az alÃ¡bbiak kÃ¶zÃ¼l.\n");
+			System.out.println("Mozdony mozgÃ¡sa hibÃ¡val. (1)");
+			System.out.println("Mozdony Ã¡thalad az Ã¡llomÃ¡son. (2)");
+			System.out.println("KÃ¼lÃ¶nleges helyen valÃ³ kattintÃ¡s. (3)");
+			System.out.println("VÃ¡ltÃ³ Ã¡llÃ­tÃ¡sa. (4)");
+			System.out.println("KezdÅ‘ pont. (5)");
+			System.out.println("JÃ¡tÃ©k vÃ©ge. (6)");
+			System.out.println("Teszt vÃ©ge. (Q)");
 			
 			try {
 				switch(s = new Bekeres().valaszbekeres()) {
-								/* 1-3-ig mindig Mozdony().run függvénnyel kezdünk */
+								/* 1-3-ig mindig Mozdony().run fÃ¼ggvÃ©nnyel kezdÃ¼nk */
 					case "1":
 					case "2":
 						//new Mozdony().run();
@@ -40,14 +40,14 @@ public class Szkeleton {
 						System.out.println("KezdoPont().work()");
 						break;
 					case "6":
-						System.out.println("Játék vége");
+						System.out.println("JÃ¡tÃ©k vÃ©ge");
 						break;
-						/** Ezt még nem tudom.... */
+						/** Ezt mÃ©g nem tudom.... */
 					case "Q": 
-						/* Nem csinálunk itt semmit, csak a default üzenet kiküszöbölésére kell. */
+						/* Nem csinÃ¡lunk itt semmit, csak a default Ã¼zenet kikÃ¼szÃ¶bÃ¶lÃ©sÃ©re kell. */
 						break;
 					default:
-						System.out.println("Nem megfelelõ választás.");
+						System.out.println("Nem megfelelÅ‘ vÃ¡lasztÃ¡s.");
 						break;
 				}
 			} catch (IOException e) {
@@ -55,7 +55,7 @@ public class Szkeleton {
 			}
 			System.out.println("\n\n"); /* Ha van console clear akkor ez nem kell... */
 		} while(!s.equals("Q"));
-		System.out.println("Kilépünk a szkeletonból.");
+		System.out.println("KilÃ©pÃ¼nk a szkeletonbÃ³l.");
 	}
 }
 
