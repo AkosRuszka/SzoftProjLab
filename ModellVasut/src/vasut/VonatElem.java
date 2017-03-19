@@ -8,7 +8,10 @@ public class VonatElem {
 	
 	public void changeColor() {
 		/** Beállítja a kocsi színét szürkére, az előtte álló kocsi színétől függően. */
-		System.out.println("Meghívódott a színváltás függvényem. Szürke az előttem álló kocsi?");
+		
+		System.out.println("Meghívódott a színváltás függvényem. Megkérdezem az előző kocsim színét");
+		new VonatElem().getColor();
+		System.out.println("Szürke ez a szín?");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) 
 				System.out.println("Megváltozott a színem szürkére.");

@@ -12,35 +12,34 @@ public class Szkeleton {
 			/* Itt kéne valami console clear... */
 			
 			System.out.println("Válassz teszteseteket az alábbiak közül.\n");
-			System.out.println("Vonat áthalad az állomáson. (1)");
-			System.out.println("Két vonat ütközik. (2)");
-			System.out.println("Vonat kisiklása. (3)");
-			System.out.println("Különleges helyen való kattintás. (4)");
-			System.out.println("Váltó állítása. (5)");
-			System.out.println("Kezdõ pont. (6)");
-			System.out.println("Játék vége. (7)");
+			System.out.println("Mozdony mozgása hibával. (1)");
+			System.out.println("Mozdony áthalad az állomáson. (2)");
+			System.out.println("Különleges helyen való kattintás. (3)");
+			System.out.println("Váltó állítása. (4)");
+			System.out.println("Kezdõ pont. (5)");
+			System.out.println("Játék vége. (6)");
 			System.out.println("Teszt vége. (Q)");
 			
 			try {
 				switch(s = new Bekeres().valaszbekeres()) {
-					case "1": /* 1-3-ig mindig Mozdony().run függvénnyel kezdünk */
+								/* 1-3-ig mindig Mozdony().run függvénnyel kezdünk */
+					case "1":
 					case "2":
-					case "3":
 						//new Mozdony().run();
 						System.out.println("Mozdony.run()");
 						break;
-					case "4":
+					case "3":
 						//new KulonlegesHely().checkTunnels();
 						System.out.println("KulonlegesHely().checkTunnels()");
 						break;
-					case "5":
+					case "4":
 						new Valto(null).nextState();
 						break;
-					case "6":
+					case "5":
 						//new KezdoPont().work();
 						System.out.println("KezdoPont().work()");
 						break;
-					case "7":
+					case "6":
 						System.out.println("Játék vége");
 						break;
 						/** Ezt még nem tudom.... */

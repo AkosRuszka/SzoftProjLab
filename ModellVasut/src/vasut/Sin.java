@@ -1,5 +1,7 @@
 package vasut;
 
+import java.io.IOException;
+
 public class Sin {
 
 	public Sin(Sin aPoint_){
@@ -33,9 +35,21 @@ public class Sin {
 		System.out.println("Lekérdezzük a Sin-en lévõ Mozdonyt.");
 		return null;
 	}
-	public Sin actMove() {
-		/** Továbbrakjuk az actVonatElem-et */
+	public Sin actMove() throws Exception {
+		/** Visszaadjuk hogy merre mehet a vonat */
 		System.out.println("Meghívódott az actMove() függvény.");
+		
+		new Sin(null).getActVonatElem();
+		new Sin(null).getActVonatElem();
+		
+		System.out.println("Ütközni fog a vonat ? (I/N): ");
+		try {
+			if(new Bekeres().valaszbekeres().equals("I")) {
+				System.out.println("Kisiklottunk, vége.");
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		return null;
 	}
 }
