@@ -18,7 +18,7 @@ public class Palya {
 	
 	public void run() throws Exception{
 		System.out.println("Palya.run()");
-		new Kezdopont(null).work();
+		new Kezdopont().work();
 		new Mozdony().run();
 		System.out.println("Palya: Minden vonat tovább tudott haladni? (I/N): ");
 		try {
