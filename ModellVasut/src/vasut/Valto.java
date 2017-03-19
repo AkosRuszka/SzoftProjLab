@@ -16,6 +16,6 @@ public class Valto extends Sin{
 	}
 	
 	public void addConnectPoints(Sin a){
-		System.out.println("Valto.addConnectPoints(Sin a)");
+		System.out.println("Valto.addConnectPoints()");
 	}
 }
