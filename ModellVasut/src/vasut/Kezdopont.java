@@ -16,46 +16,32 @@ public class Kezdopont extends Sin{
 	
 	public Kezdopont(Sin aPoint_, int spt, int stt, int tr) {
 		super(aPoint_);
-		time = 0;
-		spawnTime = spt;
-		startTime = stt;
-		trains = tr;
-		Sin seged;
-		seged = new Sin(this); // ha ez az elsõ elem akkor közvetlenül a kezdõponthoz fog csatlakozni
-		for (int i = 0; i < 9; i++) {							
-			seged = new Sin(spawnTunnel.get(spawnTunnel.size()-1)); //az  új elem az elõzõhoz csatlakozik
-			spawnTunnel.get(spawnTunnel.size()-1).setBPoint(seged); //a legutolsó elemet csatoljuk az újhoz
-			spawnTunnel.add(seged);
-		}
+		//beállítodnak az attribútumok
+		//elkészük a "spawnTunnel"
 	}
 	
-	void SpawnTrain(){
+	public void SpawnTrain(){
 		System.out.println("Hány kocsija legyen a vonatnak?");
 		try {
 			int i = System.in.read();
-			train.add(new Mozdony()); //még nem származik le a mozdony a vonatelembõl de majd jó lesz :)
-			for (int j = 0; j < i; j++) {
-				train.add(new Kocsi(train.size()-1)); //még nincs Kocsi osztály de majd jó lesz :)
-			}			
+			//a válasz alapján létrehoz egy vonatot, min 2, vagy 3 kell h legyen majd		
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.print(e.getMessage());
 		}
 	}
 	
-	VonatElem work(){
+	public VonatElem work(){
 		System.out.println("Jöjjön új vonat?	i/n");
 		try {
 			char c = (char)System.in.read();
-			if(c=='i'){
+			if(c=='i'){ // itt még ezer dolgot meg fog vizsgálni h mikor jöjjön vonat de majd csak a kész programban ;)
 				SpawnTrain();
 				return train.get(0);
-			}
-			return null;
-					
+			}					
 		}
 		catch (IOException e) {
 			System.out.print(e.getMessage());
-		}		
-		return train.get(0);
+		}
+		return null;
 	}
 }
