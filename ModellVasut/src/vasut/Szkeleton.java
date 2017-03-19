@@ -6,40 +6,34 @@ import java.io.InputStreamReader;
 
 public class Szkeleton {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws Exception {
 		String s = "Q";
 		do {
 			/* Itt kéne valami console clear... */
 			
 			System.out.println("Válassz teszteseteket az alábbiak közül.\n");
-			System.out.println("Mozdony mozgása hibával. (1)");
-			System.out.println("Mozdony áthalad az állomáson. (2)");
-			System.out.println("Különleges helyen való kattintás. (3)");
-			System.out.println("Váltó állítása. (4)");
-			System.out.println("Kezdő pont. (5)");
-			System.out.println("Játék vége. (6)");
+			System.out.println("Mozdony mozgása. (1)");
+			System.out.println("Különleges helyen való kattintás. (2)");
+			System.out.println("Váltó állítása. (3)");
+			System.out.println("Kezdő pont. (4)");
+			System.out.println("Játék vége. (5)");
 			System.out.println("Teszt vége. (Q)");
 			
 			try {
 				switch(s = new Bekeres().valaszbekeres()) {
-								/* 1-3-ig mindig Mozdony().run függvénnyel kezdünk */
 					case "1":
+						new Mozdony().run();
+						break;
 					case "2":
-						//new Mozdony().run();
-						System.out.println("Mozdony.run()");
+						new KulonlegesHely(null).checkTunnels();
 						break;
 					case "3":
-						//new KulonlegesHely().checkTunnels();
-						System.out.println("KulonlegesHely().checkTunnels()");
-						break;
-					case "4":
 						new Valto(null).nextState();
 						break;
-					case "5":
-						//new KezdoPont().work();
-						System.out.println("KezdoPont().work()");
+					case "4":
+						new Kezdopont(null).work();
 						break;
-					case "6":
+					case "5":
 						System.out.println("Játék vége");
 						break;
 						/** Ezt még nem tudom.... */
