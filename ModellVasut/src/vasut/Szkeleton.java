@@ -25,13 +25,13 @@ public class Szkeleton {
 						new Mozdony().run();
 						break;
 					case "2":
-						new KulonlegesHely(null).checkTunnels();
+						new KulonlegesHely().checkTunnels();
 						break;
 					case "3":
-						new Valto(null).nextState();
+						new Valto().nextState();
 						break;
 					case "4":
-						new Kezdopont(null).work();
+						new Kezdopont().work();
 						break;
 					case "5":
 						System.out.println("Játék vége");
