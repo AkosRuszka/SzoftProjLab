@@ -17,13 +17,12 @@ public class Allomas extends Sin{
 		/** nem ugyan az fog történni mint a sima sin actMove()-ban */
 		System.out.println("Állomás actMove() meghívva.");
 		
-		VonatElem actvonatelem = new VonatElem(); /* Aktuális rajta lévõ vagon (ami meghívta rá a függvényt) */
-		actvonatelem.getColor();
+		new VonatElem().getColor(); /* Aktuális rajta lévõ vagon (ami meghívta rá a függvényt) */
 		
 		System.out.println("Egyezik e a kocsi színe az állomáséval ? (I/N):  ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
-				actvonatelem.changeColor();
+				new VonatElem().changeColor();
 				
 			} else {
 				System.out.println("Nem történik színváltás kérés.");
