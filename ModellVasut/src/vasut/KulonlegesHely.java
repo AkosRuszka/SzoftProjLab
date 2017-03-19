@@ -4,8 +4,7 @@ import java.io.IOException;
 public class KulonlegesHely extends Sin{
 	private Alagut aObserver; //Alagút
 	
-	KulonlegesHely(Sin _aPoint){
-		super(_aPoint);
+	KulonlegesHely(){
 	}
 	
 	public void checkTunnels() throws IOException{ //Megnézi, hogy van-e alagút felépítve már és ez alapján cselekszik

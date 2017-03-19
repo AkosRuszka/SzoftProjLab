@@ -11,14 +11,14 @@ public class Alagut {
 	public Sin build(KulonlegesHely hely){
 		//felépíti a kapcsolatot a különleges hellyel
 		System.out.println("Az alagút build() metódusa lefutott");
-		return new Sin(null);
+		return new Sin();
 		
 	}
 	
 	public Sin destroy(KulonlegesHely hely){
 		//lebontja a kapcsoltatot a különleges hellyel
 		System.out.println("Az alagút destroy() metódusa lefutott");
-		return new Sin (null);
+		return new Sin ();
 	}
 	
 	public void setExitA(KulonlegesHely a){
