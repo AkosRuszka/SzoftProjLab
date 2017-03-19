@@ -16,7 +16,6 @@ public class Allomas extends Sin{
 	public Sin actMove() {
 		/** nem ugyan az fog történni mint a sima sin actMove()-ban */
 		System.out.println("Állomás actMove() meghívva.");
-		/*
 		VonatElem vagon = new VonatElem();
 		//vagon.getColor();
 		System.out.println("Egyezik e a kocsi színe az állomáséval ? (I/N):  ");
@@ -27,7 +26,6 @@ public class Allomas extends Sin{
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		*/
 		return null;
 	}
 }
