@@ -8,15 +8,15 @@ public class Mozdony extends VonatElem {
 		/** Elindul a mozdony és maga után húzza a kocsijait. */
 		System.out.println("Mozdony: Megindul a vonat. Állomáson keresztül megy? (I/N): ");
 		if(new Bekeres().valaszbekeres().equals("I"))
-			new Allomas(null, "0").actMove();
+			new Allomas().actMove();
 		else 
-			new Sin(null).actMove();
+			new Sin().actMove();
 		
 		System.out.println("Van előttem sín? (I/N): ");
 		if(new Bekeres().valaszbekeres().equals("I")) {
 			System.out.println("Mozdony: Továbbhaladunk, húzom a kocsim.");
-			new Sin(null).setActVonatElem(null);
-			new Sin(null).setActVonatElem(this);
+			new Sin().setActVonatElem(null);
+			new Sin().setActVonatElem(this);
 			new Kocsi().pull();
 			new Kocsi().getColor();
 			System.out.println("Mozdony: Szürke az utolsó kocsi? (I/N): ");
