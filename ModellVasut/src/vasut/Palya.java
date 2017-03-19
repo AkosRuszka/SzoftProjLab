@@ -19,7 +19,11 @@ public class Palya {
 	public void run() throws Exception{
 		System.out.println("Palya.run()");
 		new Kezdopont().work();
-		new Mozdony().run();
+		try {
+			new Mozdony().run();
+		} catch (IOException e) {
+			throw e;
+		}
 		System.out.println("Palya: Minden vonat tovább tudott haladni? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
