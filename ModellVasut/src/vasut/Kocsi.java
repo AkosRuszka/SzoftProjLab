@@ -8,11 +8,11 @@ public class Kocsi extends VonatElem {
 		/** A mozdony hívja meg az osztálynak ezt a függvényét ha a kocsinak át kell mennie a következő sínre. A sínek segítségével pedig arrébb tudd mozogni a megfelelő irányba. */
 		System.out.println("Kocsi: Elhúzott egy vonatelem. Állomáson keresztül megyek? (I/N): ");
 		if(new Bekeres().valaszbekeres().equals("I"))
-			new Allomas(null, "0").actMove();
+			new Allomas().actMove();
 		else 
-			new Sin(null).actMove();
-		new Sin(null).setActVonatElem(null);
-		new Sin(null).setActVonatElem(this);
+			new Sin().actMove();
+		new Sin().setActVonatElem(null);
+		new Sin().setActVonatElem(this);
 		
 		System.out.println("Kocsi: Van mögöttem másik kocsi? (I/N): ");
 		if(new Bekeres().valaszbekeres().equals("I")) {
