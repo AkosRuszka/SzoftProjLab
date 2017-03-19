@@ -24,12 +24,13 @@ public class Palya {
 		} catch (IOException e) {
 			throw e;
 		}
-		System.out.println("Palya: Minden vonat tovább tudott haladni? (I/N): ");
+		System.out.println("Palya: Az utolsó kocsi színe szürke volt? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
-				System.out.println("Palya: Mehet tovább a játék.");
+				System.out.println("Palya: Pálya kész.");
+				new Jatek().nextMap();
 			} else {
-				System.out.println("Palya: Játék vége.");
+				System.out.println("Palya: Megy tovább a játék.");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
