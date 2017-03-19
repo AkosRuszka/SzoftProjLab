@@ -26,11 +26,11 @@ public class Kezdopont extends Sin{
 	
 	public VonatElem work(){
 		System.out.println("Kezdopont.work()");
-		System.out.println("Jöjjön új vonat?	i/n");
+		System.out.println("Jöjjön új vonat?	(I/N)");
 		try {
 			Bekeres b = new Bekeres();
-			char c = b.valaszbekeres().toCharArray()[0];
-			if(c=='i'){ // itt még ezer dolgot meg fog vizsgálni h mikor jöjjön vonat de majd csak a kész programban ;)
+			char c = (b.valaszbekeres().toUpperCase()).toCharArray()[0];
+			if(c=='I'){ // itt még ezer dolgot meg fog vizsgálni h mikor jöjjön vonat de majd csak a kész programban ;)
 				spawnTrain();
 				return null;
 			}					
