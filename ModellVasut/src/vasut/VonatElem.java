@@ -1,8 +1,23 @@
 package vasut;
 
+import java.io.IOException;
+
 public class VonatElem {
 	
 	public VonatElem(){};
+	
+	public void changeColor() {
+		/** Beállítja a kocsi színét szürkére, az előtte álló kocsi színétől függően. */
+		System.out.println("Meghívódott a színváltás függvényem. Szürke az előttem álló kocsi?");
+		try {
+			if(new Bekeres().valaszbekeres().equals("I")) 
+				System.out.println("Megváltozott a színem szürkére.");
+			else
+				System.out.println("Nem változott semmi");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
 
 	public Sin getWhereAmI() {
 		/** Lekérdezzük az aktuális tartózkodási helyét */
