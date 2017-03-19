@@ -9,18 +9,18 @@ public class Valto extends Sin{
 	}
 	
 	public int getActState(){
-		System.out.println("Lek�rdezt�k az aktu�lis �llapotot.");
+		System.out.println("Lekérdeztük az aktuális állapotot.");
 		return 0;
-		/** Lek�rdezi az aktu�lis �llapotot*/
+		/** Lekérdezi az aktuális állapotot*/
 	}
 	
 	public void nextState(){
-		System.out.println("Az �llapot megv�ltozott. (1->2 / 2->3 / 3->1)");
-		/** Megv�ltoztatja az �llapot�t*/
+		System.out.println("Az állapot megváltozott. (1->2 / 2->3 / 3->1)");
+		/** Megváltoztatja az állapotot*/
 	}
 	
 	public void addConnectPoints(Sin a){
-		System.out.println("Kapcsol�d�si pont hozz�adva.");
-		/** Hozz�adja a kapcsol�d�si pontot a list�hoz*/
+		System.out.println("Kapcsolódási pont hozzáadva.");
+		/** Hozzáadja a kapcsolodósi pontot a listához*/
 	}
 }
