@@ -1,5 +1,4 @@
 package vasut;
-
 import java.io.IOException;
 
 public class KulonlegesHely extends Sin{
@@ -22,6 +21,6 @@ public class KulonlegesHely extends Sin{
 			Sin exit = aObserver.build(null);
 			aObserver.setExitA(null);
 			setBPoint(null);
-		}		
+		}
 	}
 }
