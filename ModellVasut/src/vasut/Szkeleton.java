@@ -17,6 +17,9 @@ public class Szkeleton {
 			System.out.println("Váltó állítása. (3)");
 			System.out.println("Kezdő pont. (4)");
 			System.out.println("Játék vége. (5)");
+			System.out.println("Új Pálya. (6)");
+			System.out.println("Következő pálya. (7)");
+			System.out.println("Pálya Betöltése. (8)");
 			System.out.println("Teszt vége. (Q)");
 			
 			try {
@@ -37,6 +40,15 @@ public class Szkeleton {
 						System.out.println("Játék vége");
 						break;
 						/** Ezt még nem tudom.... */
+					case "6":
+						new Jatek().newGame();
+						break;
+					case "7":
+						new Jatek().nextMap();
+						break;
+					case "8":
+						new Jatek().mapLoad();
+						break;
 					case "Q": 
 						/* Nem csinálunk itt semmit, csak a default üzenet kiküszöbölésére kell. */
 						break;
