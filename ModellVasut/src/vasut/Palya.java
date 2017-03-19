@@ -24,7 +24,7 @@ public class Palya {
 		} catch (IOException e) {
 			throw e;
 		}
-		System.out.println("Palya: Az utolsó kocsi színe szürke volt? (I/N): ");
+		System.out.println("Palya: Minden kocsi színe szürke volt? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
 				System.out.println("Palya: Pálya teljesítve.");
