@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class Palya {
+	public Palya(){
+		
+	}
 	
 	public void quitToMain(){
 		System.out.println("Palya.quitToMain()");

@@ -2,8 +2,7 @@ package vasut;
 
 public class Valto extends Sin{
 
-	public Valto(Sin aPoint_) {
-		super(aPoint_);
+	public Valto() {
 	}
 	
 	public int getActState(){
