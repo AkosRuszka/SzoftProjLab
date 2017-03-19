@@ -15,9 +15,9 @@ public class Kezdopont extends Sin{
 		System.out.println("Kezdopont.spawnTrain()");
 		System.out.println("Hány kocsija legyen a vonatnak?");
 		Bekeres b = new Bekeres();
-		int i = 0;
+		char i = '0';
 		try {
-			i = (int)b.valaszbekeres().toCharArray()[0];
+			i = b.valaszbekeres().toCharArray()[0];
 		} catch (IOException e) {
 			System.out.print(e.getMessage());
 		}
