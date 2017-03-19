@@ -15,6 +15,12 @@ public class Jatek {
 		Sin sin2 = new Sin();
 		sin1.setBPoint(sin2);
 		sin2.setBPoint(sin1);
+		
+		try {
+			new Palya().run();
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+		}
 	}
 	public void nextMap(){
 		System.out.println("Jatek.nextMap()");
@@ -28,6 +34,11 @@ public class Jatek {
 		sin2.setAPoint(sin1);
 		sin2.addConnectPoints(sin1);
 		
+		try {
+			new Palya().run();
+		} catch (Exception e) {
+			System.out.print(e.getMessage());
+		}	
 	}
 	public void mapLoad(){
 		System.out.println("Jatek.mapLoad()");
@@ -54,8 +65,9 @@ public class Jatek {
 				sin2.setAPoint(sin1);
 				sin2.addConnectPoints(sin1);
 			}
+				new Palya().run();
 		}
-		catch (IOException e) {
+		catch (Exception e) {
 			System.out.print(e.getMessage());
 		}
 	}

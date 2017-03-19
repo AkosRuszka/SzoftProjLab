@@ -6,8 +6,7 @@ import vasut.*;
 
 public class Kezdopont extends Sin{
 	
-	public Kezdopont() {		
-		super();
+	public Kezdopont() {
 		System.out.println("Kezdopont létrejött");
 		Sin sin1 = new Sin();
 		this.setAPoint(sin1);
