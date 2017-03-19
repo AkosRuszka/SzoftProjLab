@@ -7,7 +7,6 @@ import vasut.*;
 public class Kezdopont extends Sin{
 	
 	public Kezdopont() {
-		System.out.println("Kezdopont létrejött");
 		//beállítodnak az attribútumok
 		//elkészük a "spawnTunnel"
 	}
