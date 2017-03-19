@@ -8,23 +8,23 @@ public class Allomas extends Sin{
 		super(apoint_);
 	}
 	public String getColor() {
-		/** Visszaadjuk a színt */
-		System.out.println("Állomás színének lekérdezése.");
+		/** Visszaadjuk a szÃ­nt */
+		System.out.println("ÃllomÃ¡s szÃ­nÃ©nek lekÃ©rdezÃ©se.");
 		return null;
 	}
 	@Override
 	public Sin actMove() {
-		/** nem ugyan az fog történni mint a sima sin actMove()-ban */
-		System.out.println("Állomás actMove() meghívva.");
+		/** nem ugyan az fog tÃ¶rtÃ©nni mint a sima sin actMove()-ban */
+		System.out.println("ÃllomÃ¡s actMove() meghÃ­vva.");
 		
-		new VonatElem().getColor(); /* Aktuális rajta lévõ vagon (ami meghívta rá a függvényt) */
+		new VonatElem().getColor(); /* AktuÃ¡lis rajta lÃ©vÅ‘ vagon (ami meghÃ­vta rÃ¡ a fÃ¼ggvÃ©nyt) */
 		
-		System.out.println("Egyezik e a kocsi színe az állomáséval ? (I/N): ");
+		System.out.println("Egyezik e a kocsi szÃ­ne az Ã¡llomÃ¡sÃ©val ? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
 				new VonatElem().changeColor();
 			} else {
-				System.out.println("Nem történik színváltás kérés.");
+				System.out.println("Nem tÃ¶rtÃ©nik szÃ­nvÃ¡ltÃ¡s kÃ©rÃ©s.");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -33,12 +33,12 @@ public class Allomas extends Sin{
 		new Sin(null).getActVonatElem();
 		new Sin(null).getActVonatElem();
 		
-		System.out.println("Ütközni fogunk ? (I/N): ");
+		System.out.println("ÃœtkÃ¶zni fogunk ? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
-				System.out.println("Kisiklottunk, vége.");
+				System.out.println("Kisiklottunk, vÃ©ge.");
 			} else {
-				System.out.println("Visszaadjuk az egyik Sin referenciát");
+				System.out.println("Visszaadjuk az egyik Sin referenciÃ¡t");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

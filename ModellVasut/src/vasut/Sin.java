@@ -5,47 +5,47 @@ import java.io.IOException;
 public class Sin {
 
 	public Sin(Sin aPoint_){
-		/** Megkapja az egyik már létrehozott oldalát, többit nullázza. */
+		/** Megkapja az egyik mÃ¡r lÃ©trehozott oldalÃ¡t, tÃ¶bbit nullÃ¡zza. */
 
 	}
 	public Sin getAPoint() {
-		/** Lekérdezi az aPontot */
-		System.out.println("Lekérdezzük az A pontot.");
+		/** LekÃ©rdezi az aPontot */
+		System.out.println("LekÃ©rdezzÃ¼k az A pontot.");
 		return null;
 	}
 	public Sin getBPoint() {
-		/** Lekérdezi a bPontot */
-		System.out.println("Lekérdezzük a B pontot.");
+		/** LekÃ©rdezi a bPontot */
+		System.out.println("LekÃ©rdezzÃ¼k a B pontot.");
 		return new Sin(this);
 	}
 	public void setAPoint(Sin ap) {
-		/** Beállítja az aPontot */
-		System.out.println("Beállítjuk az A pontot.");
+		/** BeÃ¡llÃ­tja az aPontot */
+		System.out.println("BeÃ¡llÃ­tjuk az A pontot.");
 	}
 	public void setBPoint(Sin bp) {
-		/** Beállítja a bPontot */
-		System.out.println("Beállítjuk a B pontot.");
+		/** BeÃ¡llÃ­tja a bPontot */
+		System.out.println("BeÃ¡llÃ­tjuk a B pontot.");
 	}
 	public void setActVonatElem(VonatElem akt) {
-		/** Beállítjuk a actVonatElem-et */
-		System.out.println("Beállítjuk a Sin-en lévõ Mozdonyt.");
+		/** BeÃ¡llÃ­tjuk a actVonatElem-et */
+		System.out.println("BeÃ¡llÃ­tjuk a Sin-en lÃ©vÅ‘ Mozdonyt.");
 	}
 	public VonatElem getActVonatElem() {
-		/** Lekérdezzük az actVonatElem-et */
-		System.out.println("Lekérdezzük a Sin-en lévõ Mozdonyt.");
+		/** LekÃ©rdezzÃ¼k az actVonatElem-et */
+		System.out.println("LekÃ©rdezzÃ¼k a Sin-en lÃ©vÅ‘ Mozdonyt.");
 		return null;
 	}
 	public Sin actMove() throws Exception {
 		/** Visszaadjuk hogy merre mehet a vonat */
-		System.out.println("Meghívódott az actMove() függvény.");
+		System.out.println("MeghÃ­vÃ³dott az actMove() fÃ¼ggvÃ©ny.");
 		
 		new Sin(null).getActVonatElem();
 		new Sin(null).getActVonatElem();
 		
-		System.out.println("Ütközni fog a vonat ? (I/N): ");
+		System.out.println("ÃœtkÃ¶zni fog a vonat ? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
-				System.out.println("Kisiklottunk, vége.");
+				System.out.println("Kisiklottunk, vÃ©ge.");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
