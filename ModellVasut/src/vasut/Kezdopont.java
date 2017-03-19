@@ -9,6 +9,26 @@ public class Kezdopont extends Sin{
 	public Kezdopont(Sin aPoint_) {		
 		super(aPoint_);
 		System.out.println("Kezdopont létrejött");
+		Sin sin1 = new Sin(this);
+		this.setAPoint(sin1);
+		Sin sin2 = new Sin(sin1);
+		sin1.setBPoint(sin2);
+		Sin sin3 = new Sin(sin2);
+		sin2.setBPoint(sin3);
+		Sin sin4 = new Sin(sin3);
+		sin3.setBPoint(sin4);
+		Sin sin5 = new Sin(sin4);
+		sin4.setBPoint(sin5);
+		Sin sin6 = new Sin(sin5);
+		sin5.setBPoint(sin6);
+		Sin sin7 = new Sin(sin6);
+		sin6.setBPoint(sin7);
+		Sin sin8 = new Sin(sin7);
+		sin7.setBPoint(sin8);
+		Sin sin9 = new Sin(sin8);
+		sin8.setBPoint(sin9);
+		Sin sin10 = new Sin(sin9);
+		sin9.setBPoint(sin10);
 		//beállítodnak az attribútumok
 		//elkészük a "spawnTunnel"
 	}
