@@ -19,12 +19,12 @@ public class Allomas extends Sin{
 		
 		new VonatElem().getColor(); /* Aktuális rajta lévõ vagon (ami meghívta rá a függvényt) */
 		
-		System.out.println("Egyezik e a kocsi színe az állomáséval ? (I/N): ");
+		System.out.println("Állomás: egyezik e a kocsi színe az állomáséval ? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
 				new VonatElem().changeColor();
 			} else {
-				System.out.println("Nem történik színváltás kérés.");
+				System.out.println("Állomás: nem történik színváltás kérés.");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
@@ -33,12 +33,12 @@ public class Allomas extends Sin{
 		new Sin(null).getActVonatElem();
 		new Sin(null).getActVonatElem();
 		
-		System.out.println("Ütközni fogunk ? (I/N): ");
+		System.out.println("Állomás: ütközni fogunk ? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
-				System.out.println("Kisiklottunk, vége.");
+				System.out.println("Állomás: kisiklottunk, vége.");
 			} else {
-				System.out.println("Visszaadjuk az egyik Sin referenciát");
+				System.out.println("Állomás: visszaadjuk az egyik Sin referenciát");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
