@@ -4,8 +4,8 @@ import java.io.IOException;
 
 public class Allomas extends Sin{
 	
-	public Allomas(Sin apoint_, String color_) {
-		super(apoint_);
+	public Allomas() {
+		/** Jelenleg üres */
 	}
 	public String getColor() {
 		/** Visszaadjuk a színt */
@@ -13,32 +13,33 @@ public class Allomas extends Sin{
 		return null;
 	}
 	@Override
-	public Sin actMove() {
+	public Sin actMove() throws Exception {
 		/** nem ugyan az fog történni mint a sima sin actMove()-ban */
-		System.out.println("Állomás actMove() meghívva.");
+		System.out.println("Állomás: actMove() függvény meghívva.");
 		
 		new VonatElem().getColor(); /* Aktuális rajta lévő vagon (ami meghívta rá a függvényt) */
 		
-		System.out.println("Egyezik e a kocsi színe az állomáséval ? (I/N): ");
+		System.out.println("Állomas: Egyezik e a kocsi színe az állomáséval ? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
 				new VonatElem().changeColor();
 			} else {
-				System.out.println("Nem történik színváltás kérés.");
+				System.out.println("Állomas: Nem történik színváltás.");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		
-		new Sin(null).getActVonatElem();
-		new Sin(null).getActVonatElem();
+		new Sin().getActVonatElem();
+		new Sin().getActVonatElem();
 		
-		System.out.println("Ütközni fogunk ? (I/N): ");
+		System.out.println("Állomás: Ütközni fog a vonat ? (I/N): ");
 		try {
 			if(new Bekeres().valaszbekeres().equals("I")) {
-				System.out.println("Kisiklottunk, vége.");
+				System.out.println("Állomás: A vonat ütközik.");
+				throw new Exception("Játék vége ütközés miatt.");
 			} else {
-				System.out.println("Visszaadjuk az egyik Sin referenciát");
+				System.out.println("Állomás: visszaadjuk az egyik Sin referenciát");
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
