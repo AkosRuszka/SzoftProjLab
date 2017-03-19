@@ -35,7 +35,7 @@ public class Sin {
 		System.out.println("Lekérdezzük a Sin-en lévõ Mozdonyt.");
 		return null;
 	}
-	public Sin actMove() {
+	public Sin actMove() throws Exception {
 		/** Visszaadjuk hogy merre mehet a vonat */
 		System.out.println("Meghívódott az actMove() függvény.");
 		
@@ -45,14 +45,18 @@ public class Sin {
 		System.out.println("Mi legyen az esemény ? ");
 		System.out.println("Vonat kisiklik (1)");
 		System.out.println("Vonat ütközik (2)");
+		System.out.print("Vonat szépen fut tovább (3");
 		
 		try {
 			switch(new Bekeres().valaszbekeres()) {
 				case "1":
 					System.out.println("A szomszéd sin null-ra mutat, azzal térünk vissza.");
+					return null;
 				case "2":
 					System.out.print("Mindkét szomszédon van Vonat, ezért exceptiont dobunk.");
 					/** Itt kéne dobni egy exception-t, csakhogy nem itt kéne elkapnunk...*/
+				case "3":
+					
 				default:
 			}
 		} catch (IOException e) {
