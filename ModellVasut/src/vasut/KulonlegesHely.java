@@ -3,13 +3,13 @@ package vasut;
 import java.io.IOException;
 
 public class KulonlegesHely extends Sin{
-	private Alagut aObserver;
+	private Alagut aObserver; //Alagút
 	
 	KulonlegesHely(Sin _aPoint){
 		super(_aPoint);
 	}
 	
-	public void checkTunnels() throws IOException{
+	public void checkTunnels() throws IOException{ //Megnézi, hogy van-e alagút felépítve már és ez alapján cselekszik
 		System.out.println("chechTunnel() metódus");
 		System.out.println("Tartozik már hozzá alagút?");
 		if(new Bekeres().valaszbekeres().equals("I")){
