@@ -26,7 +26,7 @@ public class Mozdony extends VonatElem {
 				return false;
 		}
 		else
-			System.out.println("Kisiklottunk, játék vége");
+			System.out.println("Kisiklottunk.");
 		return false;
 		
  			
