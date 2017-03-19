@@ -1,14 +1,28 @@
 package vasut;
 
+import java.io.IOException;
 
-public class KulonlegesHely {
+public class KulonlegesHely extends Sin{
 	private Alagut aObserver;
 	
-	KulonlegesHely(){
-		
+	KulonlegesHely(Sin _aPoint){
+		super(_aPoint);
 	}
 	
-	public void checkTunnels(){
-		System.out.println("chechTunnel() metódus lefutott");		
+	public void checkTunnels() throws IOException{
+		System.out.println("chechTunnel() metódus");
+		System.out.println("Tartozik már hozzá alagút?");
+		if(new Bekeres().valaszbekeres().equals("I")){
+			aObserver.destroy(null);
+			setBPoint(null);
+		}
+		
+		System.out.println("Fel van építve máshol alagút ? (I/N):");
+		if(new Bekeres().valaszbekeres().equals("N")){
+			Sin exit = aObserver.build(null);
+			aObserver.setExitA(null);
+			setBPoint(null);
+		}
+		
 	}
 }
