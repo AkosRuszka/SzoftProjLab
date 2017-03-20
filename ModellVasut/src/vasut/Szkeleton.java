@@ -25,7 +25,11 @@ public class Szkeleton {
 			try {
 				switch(s = new Bekeres().valaszbekeres()) {
 					case "1":
-						new Mozdony().run();
+						try {
+							new Mozdony().run();
+						} catch(Exception e) {
+							System.out.println(e); // speciális eset lejátszása, a mozdony dobhat kivételt ezért felkészítjük rá.
+						}
 						break;
 					case "2":
 						new KulonlegesHely().checkTunnels();
