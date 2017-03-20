@@ -20,11 +20,11 @@ public class Sin {
 	}
 	public void setAPoint(Sin ap) {
 		/** Beállítja az aPontot */
-		System.out.println("Sin: A pontot beállítása.");
+		System.out.println("Sin: A pont beállítása.");
 	}
 	public void setBPoint(Sin bp) {
 		/** Beállítja a bPontot */
-		System.out.println("Sin: B pontot beállítása.");
+		System.out.println("Sin: B pont beállítása.");
 	}
 	public void setActVonatElem(VonatElem akt) {
 		/** Beállítjuk a actVonatElem-et */
