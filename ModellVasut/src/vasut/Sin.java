@@ -1,12 +1,10 @@
 package vasut;
 
-import java.io.IOException;
-
 public class Sin {
-	VonatElem actVonatElem;
-	Sin aPoint;		/** Sin mögötti elem */
-	Sin bPoint;		/** Sin előtti elem */
-	boolean dir; 	/** Aktuális menetirány */
+	protected VonatElem actVonatElem;
+	protected Sin aPoint;		/** Sin mögötti elem */
+	protected Sin bPoint;		/** Sin előtti elem */
+	protected boolean dir; 	/** Aktuális menetirány (true esetén bPoint)*/
 
 	public Sin(Sin aPoint_){
 		/** Megkapja az előtte lévő sínt, többit nullázza. */
@@ -78,20 +76,5 @@ public class Sin {
 		
 		 /* Ha idáig eljutottunk akkor mindkét irányba van kocsi és ütközés történik! */
 		throw new Exception("Ütközés történt");
-		
-		/* Szkeleton része!
-		System.out.println("Sin: ütközni fog a vonat ? (I/N): ");
-		try {
-			if(new Bekeres().valaszbekeres().equals("I")) {
-				System.out.println("Sin: a vonat ütközik.");
-				throw new Exception("Játék vége ütközés miatt.");
-			} else {
-				System.out.println("Sin: visszaadjuk az egyik Sin referenciát");
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		return null;
-		*/
 	}
 }
