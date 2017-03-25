@@ -2,8 +2,16 @@ package vasut;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 
 public class Palya {
+	private ArrayList<Sin> map;
+	private Sin startPoint;
+	private ArrayList<Mozdony> engines;
+	private boolean speed;
+	private boolean done;
+	private Alagut tunnel;
+	
 	public Palya(){
 		
 	}
@@ -13,6 +21,7 @@ public class Palya {
 	}
 	
 	public void mapSave(InputStream in){
+		//Szerializálós magic függvény
 		System.out.println("Palya.mapSave()");
 	}
 	
