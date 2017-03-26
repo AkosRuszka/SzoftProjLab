@@ -3,8 +3,18 @@ package vasut;
 import java.io.IOException;
 
 public class VonatElem {
+	Sin whereAmI;
+	VonatElem frontElem;
+	VonatElem backElem;
+	String color;
 	
-	public VonatElem(){};
+	public VonatElem(Sin whereAmI_, VonatElem frontElem_, VonatElem backElem_, String color_){
+		whereAmI = whereAmI_;
+		frontElem = frontElem_;
+		backElem = backElem_;
+		color = color_;
+	}
+	public VonatElem(){}
 	
 	public void changeColor() {
 		/** Beállítja a kocsi színét szürkére, az előtte álló kocsi színétől függően. */
