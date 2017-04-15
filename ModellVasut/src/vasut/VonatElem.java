@@ -16,9 +16,9 @@ public class VonatElem {
 	}
 	
 	public void changeColor() {
-		System.out.println("VonatElem: Meghívódott a színváltás függvényem. Megkérdezem az előző kocsim színét");
-		if(frontElem.getColor().equals("szurke")){
-			color = "szurke";
+		System.out.println("VonatElem: Meghívódott a színváltás függvényem");
+		if(frontElem.getColor().equals("grey")){
+			color = "grey";
 			System.out.println("VonatElem: Megváltozott a színem szürkére.");
 		}
 		else{
