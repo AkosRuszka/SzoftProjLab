@@ -5,10 +5,10 @@ import java.io.IOException;
 public class VonatElem {
 	Sin whereAmI;
 	VonatElem frontElem;
-	VonatElem backElem;
+	Kocsi backElem;
 	String color;
 	
-	public VonatElem(Sin whereAmI_, VonatElem frontElem_, VonatElem backElem_, String color_){
+	public VonatElem(Sin whereAmI_, VonatElem frontElem_, Kocsi backElem_, String color_){
 		whereAmI = whereAmI_;
 		frontElem = frontElem_;
 		backElem = backElem_;
@@ -44,14 +44,10 @@ public class VonatElem {
 		frontElem = frontElem_;
 	}
 	
-	public void setBackElem(VonatElem backElem_) {
+	public void setBackElem(Kocsi backElem_) {
 		/** Beállítja az mögötte álló VonatElem-re mutató referenciát */
 		System.out.println("VonatElem: Beállítottuk a mögöttem álló vonatelemet.");
 		backElem = backElem_;
-	}
-	
-	public VonatElem getBackElem(){
-		return backElem;
 	}
 	
 	public String getColor() {
