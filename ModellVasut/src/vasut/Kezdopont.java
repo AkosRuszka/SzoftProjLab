@@ -31,40 +31,36 @@ public class Kezdopont extends Sin{
 	public void spawnTrain(){		
 		
 		try {
-			train.add(new Mozdony());			train.get(0).changeColor();
-			train.get(0).setWhereAmI(spawnTunnel.get(0));
-			train.get(0).setFrontElem(null);
+			train.add(new Mozdony(spawnTunnel.get(0), null, null, "grey"));
 			spawnTunnel.get(0).setActVonatElem(train.get(0));
-			train.add(new Kocsi("grey"));
+			
+			train.add(new Kocsi(spawnTunnel.get(1), train.get(0), null,"grey"));
 			train.get(0).setBackElem(train.get(1));
-			train.get(1).setWhereAmI(spawnTunnel.get(1));
-			train.get(1).setFrontElem(train.get(0));
-			train.get(1).setBackElem(null);
 			spawnTunnel.get(1).setActVonatElem(train.get(1));
+			
 			Random rand = new Random();
 			for (int i = 2; i < 7; i++) {				
-				int color = rand.nextInt(6);
+				int color = rand.nextInt(4);
 				switch (color) {
 				case 0:
-					train.add(new Kocsi("red"));
+					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),null,"red"));
 					break;
 				case 1:
-					train.add(new Kocsi("yellow"));
+					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),null,"yellow"));
 					break;
 				case 2:
-					train.add(new Kocsi("green"));
+					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),null,"green"));
 					break;
 				case 3:
-					train.add(new Kocsi("blue"));
+					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),null,"blue"));
 					break;
 				}
-				train.get(i).setWhereAmI(spawnTunnel.get(i));
-				train.get(i).setFrontElem(train.get(i-1));
-				train.get(i).setBackElem(null);
 				train.get(i-1).setBackElem(train.get(i));
 				spawnTunnel.get(i).setActVonatElem(train.get(i));
 			}
-		} catch (IOException e) {
+		}
+		catch (Exception e) {
+			
 			System.out.print(e.getMessage());
 		}
 		System.out.println("Létrejött a vonat 5(+1) darab kocsival");
