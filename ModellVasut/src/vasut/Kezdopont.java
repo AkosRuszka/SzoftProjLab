@@ -45,23 +45,17 @@ public class Kezdopont extends Sin{
 			for (int i = 2; i < 7; i++) {				
 				int color = rand.nextInt(6);
 				switch (color) {
-				case 1:
+				case 0:
 					train.add(new Kocsi("red"));
 					break;
-				case 2:
-					train.add(new Kocsi("orange"));
-					break;
-				case 3:
+				case 1:
 					train.add(new Kocsi("yellow"));
 					break;
-				case 4:
+				case 2:
 					train.add(new Kocsi("green"));
 					break;
-				case 5:
+				case 3:
 					train.add(new Kocsi("blue"));
-					break;
-				case 6:
-					train.add(new Kocsi("brown"));
 					break;
 				}
 				train.get(i).setWhereAmI(spawnTunnel.get(i));
