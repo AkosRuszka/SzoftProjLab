@@ -15,6 +15,7 @@ public class VonatElem {
 		color = color_;
 	}
 	
+	//itt majd meg kell valósítani a felszálláskor átállítódást :D
 	public void changeColor() {
 		System.out.println("VonatElem: Meghívódott a színváltás függvényem");
 		if(frontElem.getColor().equals("grey")){
