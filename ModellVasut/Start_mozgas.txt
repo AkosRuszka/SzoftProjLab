@@ -1,0 +1,6 @@
+Kezdopont.init/A 1,2,1
+Sin.init/B
+B.setB A
+A.setA B
+A.work/V
+V.run
