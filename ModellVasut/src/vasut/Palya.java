@@ -8,11 +8,11 @@ import java.util.ArrayList;
 import java.util.Random;
 
 public class Palya implements Serializable{
+	private boolean speed;
+	private boolean done;
 	private ArrayList<Sin> map;
 	private Kezdopont startPoint;
 	private ArrayList<Mozdony> engines;
-	private boolean speed;
-	private boolean done;
 	private Alagut tunnel;
 	
 	public Palya(){
@@ -21,67 +21,38 @@ public class Palya implements Serializable{
 		engines = new ArrayList<Mozdony>();
 		speed = false;
 		done = false;
-		//tunnel = new Alagut();
+		tunnel = new Alagut();
 	}
 	
-	public void makeMap(int length){//átmeneti függvény, csinál egy tesztpályát		
-		Sin seged = new Sin();
-		seged.setAPoint(null);
-		seged.setBPoint(null);
-		map.add(seged);
-		for (int i = 0; i < length; i++) {
-			Sin seged2 = new Sin();
-			seged2.setAPoint(map.get(i));
-			seged2.setBPoint(null);
-			map.get(i).setBPoint(seged);
-			map.add(seged2);
-		}
+	/** Buttonhoz eseményéhez kötött megszakítás. */
+	public void quitToMain() throws Exception {
+		throw new RuntimeException("quitToMain");
 	}
 	
-	public void quitToMain(){
-		System.out.println("Palya.quitToMain()");
-	}
-	
-	public void run() throws Exception{
-		System.out.println("Palya.run()");
-		startPoint.work();
-		new Mozdony(null,null,null).run();// <------------- ez még itt nem lesz jó csak kellett h ne legyen hiba XDD
-		System.out.println("Palya: Minden kocsi színe szürke volt? (I/N): ");
-		try {
-			if(new Bekeres().valaszbekeres().equals("I")) {
-				System.out.println("Palya: Pálya teljesítve.");
-				new Jatek().nextMap();
-			} else {
-				System.out.println("Palya: Megy tovább a játék.");
-			}
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		System.out.println("Palya: Megállítod a játékot? (I/N): ");
-		try {
-			if(new Bekeres().valaszbekeres().equals("I")) {
-				setStartStop();
-				System.out.println("Palya: Megállítottad a játékot. Elndítod? (I/N): ");
-				try {
-					if(new Bekeres().valaszbekeres().equals("I")) {
-						setStartStop();
-					} else {
-						System.out.println("Palya: Nem történt semmi.");
-					}
-				} catch (IOException e) {
-					e.printStackTrace();
+	/** A játék futása a megfelelő vizsgálatokkal. */
+	public void run() throws Exception{		
+		while(!done) {
+			while(speed) {
+				Mozdony uj = startPoint.work();
+				if(uj != null) {
+					engines.add(uj); 
 				}
-			} else {
-				System.out.println("Palya: Nem történt semmi.");
-				
+				for (Mozdony mozdony : engines) {
+					done &= mozdony.run();
+				}
 			}
-		} catch (IOException e) {
-			e.printStackTrace();
 		}
+		
 	}
 	
-	public void setStartStop(){
-		System.out.println("Palya.setStartStop()");
+	/** Megállítjuk illetve elindítjuk a játékot. */
+	public void setStartStop() throws Exception{
+		if(speed) {
+			speed = false;
+		} else {
+			speed = true;
+			//run(); lehet ez nem is kell...
+		}
 	}
 
 }
