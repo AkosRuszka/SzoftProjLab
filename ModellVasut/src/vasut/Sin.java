@@ -4,10 +4,14 @@ import java.io.Serializable;
 
 public class Sin implements Serializable{
 	protected VonatElem actVonatElem;
-	protected Sin aPoint;		/** Sin mögötti elem */
-	protected Sin bPoint;		/** Sin előtti elem */
-	protected Sin crossing;		/** Felette levő sín elem, kereszteződéseknél */
-	protected boolean dir; 		/** Aktuális menetirány (true esetén bPoint)*/
+	/** Sin mögötti elem */
+	protected Sin aPoint;	
+	/** Sin előtti elem */
+	protected Sin bPoint;	
+	/** Felette levő sín elem, kereszteződéseknél */
+	protected Sin crossing;		
+	/** Aktuális menetirány (true esetén bPoint)*/
+	protected boolean dir; 		
 
 	public Sin(Sin aPoint_){
 		/** Megkapja az előtte lévő sínt, többit nullázza. */
@@ -16,6 +20,7 @@ public class Sin implements Serializable{
 		aPoint = aPoint_;
 		aPoint.setBPoint(this); /** Beállítja az előtte álló elem bPoint-ját magára. */
 		bPoint = null;
+		crossing = null;
 	}
 	
 	/* Ezt majd ki kell szedni, csak a sintax error miatt van még benne!!! */
@@ -59,6 +64,13 @@ public class Sin implements Serializable{
 		return actVonatElem;
 	}
 	
+	public void setCrossing(Sin cross) {
+		crossing = cross;
+	}
+	public Sin getCrossing(){
+		return crossing;
+	}
+	
 	/** Visszaadjuk hogy merre mehet a vonat */
 	public Sin actMove() throws Exception {
 		//System.out.println("Sin: actMove() függvényt meghívták.");
@@ -66,20 +78,31 @@ public class Sin implements Serializable{
 		VonatElem ap = aPoint.getActVonatElem();
 		VonatElem bp = bPoint.getActVonatElem();
 		
-		/** Ha semelyik irányba nincs kocsi akkor a dir alapján döntünk */
-		if(ap == null && bp == null) {
-			if(dir) {
-				return bPoint;
-			} else {
-				return aPoint;
-			}
-		} else if(ap == null) { 	/** Megvizsgáljuk merre menjen a vonat normális esetben */
-			dir = false;
-			return aPoint;
-		} else if(bp == null) {
-			dir = true;
-			return bPoint;
+		VonatElem cross;
+		if(crossing != null) {
+			cross = crossing.getActVonatElem();
+		} else {
+			cross = null;
 		}
+		
+		/** Ha a cross értéke null, tehát a keresztsín nem létezik vagy nincs rajta kocsi akkor ... */
+		if(cross == null) {
+			/** Ha semelyik irányba nincs kocsi akkor a dir alapján döntünk */
+			if(ap == null && bp == null) {
+				if(dir) {
+					return bPoint;
+				} else {
+					return aPoint;
+				}
+			} else if(ap == null) { 	/** Megvizsgáljuk merre menjen a vonat normális esetben */
+				dir = false;
+				return aPoint;
+			} else if(bp == null) {
+				dir = true;
+				return bPoint;
+			}
+		}
+		/** Ha a cross értéke != null, akkor van a keresztsínen kocsi és az ütközéshez fog vezetni */
 		
 		 /** Ha idáig eljutottunk akkor mindkét irányba van kocsi és ütközés történik! */
 		throw new Exception("Ütközés történt");
