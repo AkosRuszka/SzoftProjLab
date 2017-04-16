@@ -1,0 +1,5 @@
+create sin 1 0
+create valto 2 1
+create sin 3 2
+create sin 4 2
+valtoAllitas 2
