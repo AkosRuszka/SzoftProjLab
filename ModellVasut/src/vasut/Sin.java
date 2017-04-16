@@ -23,11 +23,6 @@ public class Sin implements Serializable{
 		crossing = null;
 	}
 	
-	/* Ezt majd ki kell szedni, csak a sintax error miatt van még benne!!! */
-	public Sin() {
-		/* Üres konstruktor */
-	}
-	
 	/** Lekérdezi az aPontot */
 	public Sin getAPoint() {
 		//System.out.println("Sin: A pont lekérdezése");

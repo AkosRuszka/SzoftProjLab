@@ -9,11 +9,6 @@ public class KulonlegesHely extends Sin{
 		aObserver = a;
 	}
 	
-	//Ki kell majd törölni!!! - syntax error
-	KulonlegesHely(){
-		
-	}
-	
 	public void checkTunnels() throws IOException{ 
 		//Megnézi, hogy van-e alagút felépítve már és ez alapján cselekszik
 		/**Alagutat kell építeni, ha a vagy b pontja null, és az aObserver build metódusát, ennek függvényében meghívni
