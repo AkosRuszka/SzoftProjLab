@@ -1,0 +1,17 @@
+create sin 1 0 
+create sin 2 1
+create sin 3 2
+create sin 4 3
+create sin 5 4
+create sin 6 5
+create allomas 7 6 -piros
+create sin 8 7
+create sin 9 8
+create sin 10 9 1
+put mozdony 1 0 2 szurke
+put mozdony 2 0 6 szurke
+put kocsi 3 1 1 kek
+put kocsi 4 2 5 piros -tele
+run
+run
+run
