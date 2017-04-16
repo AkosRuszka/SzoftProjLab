@@ -33,7 +33,7 @@ public class Jatek {
 		Random r = new Random();
 		int railCount = r.nextInt(4);
 		actGame = new Palya();
-		actGame.makeMap(railCount);		
+		actGame.makeMap(railCount); // Töröltem ezt a függvényt a Palya-ból: Ákos		
 	}
 	
 	public void newGame(){
