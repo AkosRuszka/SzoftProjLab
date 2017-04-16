@@ -14,7 +14,8 @@ public class Kezdopont extends Sin{
 	private ArrayList<VonatElem> train;	//ebben a listában lesz az éppen lerakás alatt lévő vonat.
 	private boolean newspawn;//még nem rakott le vonatot 
 	
-	public Kezdopont(int spt, int stt, int tr) {
+	public Kezdopont(int spt, int stt, int tr, Sin A) {
+		super(A);
 		spawnTunnel = new ArrayList<Sin>();
 		train = new ArrayList<VonatElem>();
 		time = 0;
@@ -26,8 +27,7 @@ public class Kezdopont extends Sin{
 		System.out.println("SpawnTunnel setup:");
 		spawnTunnel.add(this);
 		for (int i = 0; i < 7; i++) {
-			Sin seged = new Sin();
-			seged.setAPoint(spawnTunnel.get(i));
+			Sin seged = new Sin(spawnTunnel.get(i));
 			seged.setBPoint(null);
 			spawnTunnel.get(i).setBPoint(seged);
 			spawnTunnel.add(seged);
@@ -73,29 +73,38 @@ public class Kezdopont extends Sin{
 		System.out.println("Létrejött a vonat 5(+1) darab kocsival");
 	}
 	
-	public VonatElem work(){
-		if(newspawn){
-			newspawn = false;
-			if(time<startTime){
-				time++;
-				return null;
+	public Mozdony work(){
+		if(trains>0){
+			System.out.println("Kezdopont.work()");
+			if(newspawn){
+				newspawn = false;
+				if(time<startTime){
+					time++;
+					return null;
+				}
+				else{
+					time = 0;
+					spawnTrain();
+					trains--;
+					return (Mozdony)train.get(0);
+				}
 			}
 			else{
-				time = 0;
-				spawnTrain();
-				return train.get(0);
+				if(time<spawnTime){
+					time++;
+					return null;
+				}
+				else{
+					time = 0;
+					spawnTrain();
+					trains--;
+					return (Mozdony)train.get(0);
+				}
 			}
 		}
 		else{
-			if(time<spawnTime){
-				time++;
-				return null;
-			}
-			else{
-				time = 0;
-				spawnTrain();
-				return train.get(0);
-			}
+			System.out.println("Nincs több vonat!");
+			return null;
 		}
 	}
 }

@@ -28,14 +28,6 @@ public class Jatek {
 		return actMap;
 	}
 	
-	public void makeMap(){//átmeneti függvény, csinál egy tesztpályát
-		System.out.println("Jatek.makeMap()");
-		Random r = new Random();
-		int railCount = r.nextInt(4);
-		actGame = new Palya();
-		actGame.makeMap(railCount);		
-	}
-	
 	public void newGame(){
 		System.out.println("Jatek.newGame()");
 		//pálya 1		
