@@ -1,0 +1,4 @@
+Kezdopont.init 3,2,1
+kezdopont.work
+kezdopont.work
+kezdopont.work

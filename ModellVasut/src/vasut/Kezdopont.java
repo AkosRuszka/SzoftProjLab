@@ -73,7 +73,7 @@ public class Kezdopont extends Sin{
 		System.out.println("Létrejött a vonat 5(+1) darab kocsival");
 	}
 	
-	public VonatElem work(){
+	public Mozdony work(){
 		if(trains>0){
 			System.out.println("Kezdopont.work()");
 			if(newspawn){
@@ -86,7 +86,7 @@ public class Kezdopont extends Sin{
 					time = 0;
 					spawnTrain();
 					trains--;
-					return train.get(0);
+					return (Mozdony)train.get(0);
 				}
 			}
 			else{
@@ -98,7 +98,7 @@ public class Kezdopont extends Sin{
 					time = 0;
 					spawnTrain();
 					trains--;
-					return train.get(0);
+					return (Mozdony)train.get(0);
 				}
 			}
 		}
