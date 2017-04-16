@@ -79,33 +79,44 @@ public class Sin implements Serializable{
 		VonatElem bp = bPoint.getActVonatElem();
 		
 		/** Megvizsgáljuk hogy a bp (következő sín) felett levő sínen (ha van ilyen) van e vonatElem */
-		VonatElem bp_crossing_actvonatelem;
+		VonatElem bp_crossing;
 		if(bPoint.getCrossing() != null) {
-			bp_crossing_actvonatelem = bPoint.getCrossing().getActVonatElem();
+			bp_crossing = bPoint.getCrossing().getActVonatElem();
 		} else {
-			bp_crossing_actvonatelem = null;
+			bp_crossing = null;
 		}
 		
-		
-		
-		/** Ha a bp_crossing_actvonatelem értéke null, tehát a keresztsín nem létezik vagy nincs rajta kocsi akkor ... */
-		if(bp_crossing_actvonatelem == null) {
-			/** Ha semelyik irányba nincs kocsi akkor a dir alapján döntünk */
-			if(ap == null && bp == null) {
-				if(dir) {
+		VonatElem ap_crossing;
+		if(aPoint.getCrossing() != null) {
+			ap_crossing = bPoint.getCrossing().getActVonatElem();
+		} else { 
+			ap_crossing = null;
+		}
+			
+		/** Ha semelyik irányba nincs kocsi akkor a dir alapján döntünk */
+		if(ap == null && bp == null) {
+			if(dir) {
+				/** Ha dir alapján bPoint felé megyünk tovább, akkor nézzük a bPoint felett található sín-en levő actVonatElem-et  */
+				if(bp_crossing == null) {
 					return bPoint;
-				} else {
-					return aPoint;
 				}
-			} else if(ap == null) { 	/** Megvizsgáljuk merre menjen a vonat normális esetben */
-				dir = false;
-				return aPoint;
-			} else if(bp == null) {
-				dir = true;
-				return bPoint;
+			} else {
+				/** Ha dir alapján aPoint felé megyünk tovább, akkor nézzük az aPoint felett található sín-en levő actVonatElem-et  */
+				if(ap_crossing == null) {
+					return aPoint;	
+				}
 			}
+		/** Megvizsgáljuk merre menjen a vonat normális esetben (tehát nem az actVonatElem a vonat utolsó kocsija...)
+		 * 	Ha az xPoint-on nincs kocsi akkor arra küldenénk tovább az actVonatElem-et de mellé még megvizsgáljuk hogy
+		 *  az xPoint felett levő (ha van) sínen van e Vonat, csak akkor térünk vissza az xPoint-al ha mindkét feltétel teljesül
+		 * */
+		} else if(ap == null && ap_crossing == null) { 	
+			dir = false;
+			return aPoint;
+		} else if(bp == null && bp_crossing == null) {
+			dir = true;
+			return bPoint;
 		}
-		/** Ha a bp_crossing_actvonatelem értéke != null, akkor van a keresztsínen kocsi és az ütközéshez fog vezetni */
 		
 		 /** Ha idáig eljutottunk akkor mindkét irányba van kocsi és ütközés történik! */
 		throw new Exception("Ütközés történt");
