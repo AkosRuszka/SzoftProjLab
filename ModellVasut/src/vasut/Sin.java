@@ -78,15 +78,18 @@ public class Sin implements Serializable{
 		VonatElem ap = aPoint.getActVonatElem();
 		VonatElem bp = bPoint.getActVonatElem();
 		
-		VonatElem cross;
-		if(crossing != null) {
-			cross = crossing.getActVonatElem();
+		/** Megvizsgáljuk hogy a bp (következő sín) felett levő sínen (ha van ilyen) van e vonatElem */
+		VonatElem bp_crossing_actvonatelem;
+		if(bPoint.getCrossing() != null) {
+			bp_crossing_actvonatelem = bPoint.getCrossing().getActVonatElem();
 		} else {
-			cross = null;
+			bp_crossing_actvonatelem = null;
 		}
 		
-		/** Ha a cross értéke null, tehát a keresztsín nem létezik vagy nincs rajta kocsi akkor ... */
-		if(cross == null) {
+		
+		
+		/** Ha a bp_crossing_actvonatelem értéke null, tehát a keresztsín nem létezik vagy nincs rajta kocsi akkor ... */
+		if(bp_crossing_actvonatelem == null) {
 			/** Ha semelyik irányba nincs kocsi akkor a dir alapján döntünk */
 			if(ap == null && bp == null) {
 				if(dir) {
@@ -102,7 +105,7 @@ public class Sin implements Serializable{
 				return bPoint;
 			}
 		}
-		/** Ha a cross értéke != null, akkor van a keresztsínen kocsi és az ütközéshez fog vezetni */
+		/** Ha a bp_crossing_actvonatelem értéke != null, akkor van a keresztsínen kocsi és az ütközéshez fog vezetni */
 		
 		 /** Ha idáig eljutottunk akkor mindkét irányba van kocsi és ütközés történik! */
 		throw new Exception("Ütközés történt");
