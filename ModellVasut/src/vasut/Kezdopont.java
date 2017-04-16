@@ -10,32 +10,39 @@ public class Kezdopont extends Sin{
 	private int spawnTime;			//két vonat indulása között eltelt idő
 	private int startTime;			//a játék indulása és az első vonat indítása közötti idő
 	private int trains;				//a még indításra váró vonatok darabszáma (ha 0-nál kisebb, akkor végtelen)
-	private List<Sin> spawnTunnel;	//ide rakja le a KezdoPont a vonatot (ezek a sínek láthatatlanok)
-	private List<VonatElem> train;	//ebben a listában lesz az éppen lerakás alatt lévő vonat.
-	private boolean newspawn = true;//még nem rakott le vonatot 
+	private ArrayList<Sin> spawnTunnel;	//ide rakja le a KezdoPont a vonatot (ezek a sínek láthatatlanok)
+	private ArrayList<VonatElem> train;	//ebben a listában lesz az éppen lerakás alatt lévő vonat.
+	private boolean newspawn;//még nem rakott le vonatot 
 	
 	public Kezdopont(int spt, int stt, int tr) {
+		spawnTunnel = new ArrayList<Sin>();
+		train = new ArrayList<VonatElem>();
 		time = 0;
 		spawnTime = spt;
 		startTime = stt;
 		trains = tr;
-				
+		newspawn = true;
+		
+		System.out.println("SpawnTunnel setup:");
 		spawnTunnel.add(this);
 		for (int i = 0; i < 7; i++) {
-			Sin seged = new Sin(spawnTunnel.get(i));
+			Sin seged = new Sin();
+			seged.setAPoint(spawnTunnel.get(i));
+			seged.setBPoint(null);
 			spawnTunnel.get(i).setBPoint(seged);
 			spawnTunnel.add(seged);
 		}
+		System.out.println("SpawnTunnel setup end");
 	}
 	
 	public void spawnTrain(){		
 		
 		try {
-			train.add(new Mozdony(spawnTunnel.get(0), null, null, "grey"));
+			train.add(new Mozdony(spawnTunnel.get(0), null, null));
 			spawnTunnel.get(0).setActVonatElem(train.get(0));
 			
 			train.add(new Kocsi(spawnTunnel.get(1), train.get(0), null,"grey"));
-			train.get(0).setBackElem(train.get(1));
+			train.get(0).setBackElem((Kocsi)train.get(1));
 			spawnTunnel.get(1).setActVonatElem(train.get(1));
 			
 			Random rand = new Random();
@@ -55,7 +62,7 @@ public class Kezdopont extends Sin{
 					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),null,"blue"));
 					break;
 				}
-				train.get(i-1).setBackElem(train.get(i));
+				train.get(i-1).setBackElem((Kocsi)train.get(i));
 				spawnTunnel.get(i).setActVonatElem(train.get(i));
 			}
 		}

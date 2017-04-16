@@ -1,8 +1,9 @@
 package vasut;
 
 import java.io.IOException;
+import java.io.Serializable;
 
-public class VonatElem {
+public class VonatElem implements Serializable{
 	Sin whereAmI;
 	VonatElem frontElem;
 	Kocsi backElem;

@@ -7,9 +7,20 @@ import java.io.InputStreamReader;
 public class Szkeleton {
 
 	public static void main(String[] args) throws Exception {
-		String s = "Q";
+		Jatek j = new Jatek();
+		//j.makeMap();
+		//j.saveMap();
+		//j.makeMap();
+		j.newGame();
+		j.nextMap();
+		int p1 = j.getst();
+		j.mapLoad();
+		int p2 = j.getst();
+		System.out.println(p1==p2);
+		
+		/*String s = "Q";
 		do {
-			/* Itt kéne valami console clear... */
+			//* Itt kéne valami console clear... 
 			
 			System.out.println("Válassz teszteseteket az alábbiak közül.\n");
 			System.out.println("Mozdony mozgása. (1)");
@@ -43,7 +54,7 @@ public class Szkeleton {
 					case "5":
 						System.out.println("Játék vége");
 						break;
-						/** Ezt még nem tudom.... */
+						//** Ezt még nem tudom....
 					case "6":
 						new Jatek().newGame();
 						break;
@@ -54,7 +65,7 @@ public class Szkeleton {
 						new Jatek().mapLoad();
 						break;
 					case "Q": 
-						/* Nem csinálunk itt semmit, csak a default üzenet kiküszöbölésére kell. */
+						//* Nem csinálunk itt semmit, csak a default üzenet kiküszöbölésére kell.
 						break;
 					default:
 						System.out.println("Nem megfelelő választás.");
@@ -63,9 +74,9 @@ public class Szkeleton {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			System.out.println("\n\n"); /* Ha van console clear akkor ez nem kell... */
+			System.out.println("\n\n"); //* Ha van console clear akkor ez nem kell...
 		} while(!s.equals("Q"));
-		System.out.println("Kilépünk a szkeletonból.");
+		System.out.println("Kilépünk a szkeletonból.");*/
 	}
 }
 

@@ -1,6 +1,8 @@
 package vasut;
 
-public class Sin {
+import java.io.Serializable;
+
+public class Sin implements Serializable{
 	protected VonatElem actVonatElem;
 	protected Sin aPoint;		/** Sin mögötti elem */
 	protected Sin bPoint;		/** Sin előtti elem */

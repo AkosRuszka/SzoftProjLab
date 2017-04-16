@@ -1,74 +1,121 @@
 package vasut;
 
+import java.awt.Button;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.util.*;
+import javax.swing.JFileChooser;
+import vasut.*;
 
 public class Jatek {
+
+	private Palya actGame;	//a Játék tartalmazhat egy pályát
+	private int actMap;		//aktuális pálya
+	private String sugo;	//a Sugó szövege
+	
+	public Jatek(){
+		actGame = null;
+		actMap = 0;
+		sugo = "Ez csak egy minta, ennél valószínűleg több és hasznosabb info lesz leírva de ez nem az én feladatom lol. :D \n ps: ha ez marad bent akkor bocsánat!";
+	}
+	
+	public int getst(){
+		return actMap;
+	}
+	
+	public void makeMap(){//átmeneti függvény, csinál egy tesztpályát
+		System.out.println("Jatek.makeMap()");
+		Random r = new Random();
+		int railCount = r.nextInt(4);
+		actGame = new Palya();
+		actGame.makeMap(railCount);		
+	}
 	
 	public void newGame(){
 		System.out.println("Jatek.newGame()");
-		//pálya 1
-		Kezdopont kezd = new Kezdopont();
-		Sin sin1 = new Sin();
-		kezd.setBPoint(sin1);
-		sin1.setAPoint(kezd);
-		Sin sin2 = new Sin();
-		sin1.setBPoint(sin2);
-		sin2.setBPoint(sin1);
-		
+		//pálya 1		
 		try {
-			new Palya().run();
+			FileInputStream loadFile = new FileInputStream("map1.dat");
+            ObjectInputStream load = new ObjectInputStream(loadFile);
+            actGame = (Palya) load.readObject();
+            load.close();
+			actMap = 1;
+			
+			//new Palya().run();
 		} catch (Exception e) {
-			System.out.print(e.getMessage());
+			System.out.println(e.getMessage());
 		}
 	}
 	public void nextMap(){
 		System.out.println("Jatek.nextMap()");
-		//pálya 2
-		Kezdopont kezd = new Kezdopont();
-		Sin sin1 = new Sin();
-		kezd.setBPoint(sin1);
-		sin1.setAPoint(kezd);
-		Valto sin2 = new Valto();
-		sin1.setBPoint(sin2);
-		sin2.setAPoint(sin1);
-		sin2.addConnectPoints(sin1);
-		
+		//pálya 2	
 		try {
-			new Palya().run();
+			FileInputStream loadFile = new FileInputStream("map"+(actMap+1)+".dat");
+            ObjectInputStream load = new ObjectInputStream(loadFile);
+            actGame = (Palya) load.readObject();
+            load.close();
+			actMap++;
+			
+			//new Palya().run();
 		} catch (Exception e) {
-			System.out.print(e.getMessage());
+			System.out.println(e.getMessage());
 		}	
 	}
+	
 	public void mapLoad(){
-		System.out.println("Jatek.mapLoad()");
-		System.out.println("Melyik Pályát töltsük be? 1/2");
+		System.out.println("Jatek.mapLoad()");		
 		try {
-			Bekeres b = new Bekeres();
-			char c = b.valaszbekeres().toCharArray()[0];
-			if(c=='1'){ // itt még ezer dolgot meg fog vizsgálni h mikor jöjjön vonat de majd csak a kész programban ;)
-				Kezdopont kezd = new Kezdopont();
-				Sin sin1 = new Sin();
-				kezd.setBPoint(sin1);
-				sin1.setAPoint(kezd);
-				Sin sin2 = new Sin();
-				sin1.setBPoint(sin2);
-				sin2.setBPoint(sin1);
+			JFileChooser jfc = new JFileChooser();
+			jfc.setCurrentDirectory(new File("."));
+			jfc.setDialogTitle("Choose a map");
+			jfc.setFileSelectionMode(JFileChooser.FILES_ONLY);
+			if(jfc.showOpenDialog(new Button()) == JFileChooser.APPROVE_OPTION){
+				
 			}
-			else{
-				Kezdopont kezd = new Kezdopont();
-				Sin sin1 = new Sin();
-				kezd.setBPoint(sin1);
-				sin1.setAPoint(kezd);
-				Valto sin2 = new Valto();
-				sin1.setBPoint(sin2);
-				sin2.setAPoint(sin1);
-				sin2.addConnectPoints(sin1);
+			if(!jfc.getSelectedFile().getName().contains("dat"))
+				throw new IOException("Nem megfelelő fájltípus!");
+			
+			actMap = 0;
+			for (int i = 1; i < 20; i++) {
+				String name = "map"+(char)('0'+i);
+				if(jfc.getSelectedFile().getName().contains(name)){
+					FileInputStream loadFile = new FileInputStream(jfc.getSelectedFile());
+		            ObjectInputStream load = new ObjectInputStream(loadFile);
+		            actGame = (Palya) load.readObject();
+		            load.close();
+					actMap = i;
+					break;
+				}
 			}
-				new Palya().run();
+			if(actMap==0)
+				throw new IOException("Nem megfelelő fájlnév!");
+			
+			//new Palya().run();
 		}
-		catch (Exception e) {
-			System.out.print(e.getMessage());
+		catch (Exception e){
+			System.out.println(e.getMessage());
 		}
+	}
+	
+	public void saveMap(){
+		
+		JFileChooser sfc = new JFileChooser();
+	    sfc.setCurrentDirectory(new File("."));
+	    if (sfc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {
+	        try {
+	            FileOutputStream saveFile = new FileOutputStream(sfc.getSelectedFile());
+	            ObjectOutputStream save = new ObjectOutputStream(saveFile);
+	            save.writeObject(actGame);
+	            save.close();
+	        } catch (Exception e) {
+	        	System.out.println(e.getMessage());
+	        }
+	    }	
+		
 	}
 }
