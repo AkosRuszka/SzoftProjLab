@@ -38,7 +38,7 @@ public class Kezdopont extends Sin{
 	public void spawnTrain(){		
 		
 		try {
-			train.add(new Mozdony(spawnTunnel.get(0), null, null));
+			train.add(new Mozdony(spawnTunnel.get(0)));
 			spawnTunnel.get(0).setActVonatElem(train.get(0));
 			
 			train.add(new Kocsi(spawnTunnel.get(1), train.get(0), null,"grey"));
