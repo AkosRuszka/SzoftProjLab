@@ -3,6 +3,8 @@ package vasut;
 import java.io.Serializable;
 
 public class Sin implements Serializable{
+	
+	
 	protected VonatElem actVonatElem;
 	/** Sin mögötti elem */
 	protected Sin aPoint;	
@@ -11,7 +13,7 @@ public class Sin implements Serializable{
 	/** Felette levő sín elem, kereszteződéseknél */
 	protected Sin crossing;		
 	/** Aktuális menetirány (true esetén bPoint)*/
-	protected boolean dir; 		
+	protected boolean dir; 	
 
 	public Sin(Sin aPoint_){
 		/** Megkapja az előtte lévő sínt, többit nullázza. */
