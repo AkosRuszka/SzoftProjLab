@@ -2,8 +2,12 @@ package vasut;
 
 import java.io.Serializable;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
+
 public class Sin implements Serializable{
 	
+	private static final Logger Log = LogManager.getLogger(Sin.class);
 	
 	protected VonatElem actVonatElem;
 	/** Sin mögötti elem */
@@ -16,6 +20,7 @@ public class Sin implements Serializable{
 	protected boolean dir; 	
 
 	public Sin(Sin aPoint_){
+		Log.info("Sin konstruktor meghívva.");
 		/** Megkapja az előtte lévő sínt, többit nullázza. */
 		dir = true;
 		actVonatElem = null;
@@ -70,8 +75,10 @@ public class Sin implements Serializable{
 	
 	/** Visszaadjuk hogy merre mehet a vonat */
 	public Sin actMove() throws Exception {
-		//System.out.println("Sin: actMove() függvényt meghívták.");
 		
+		Log.info("actMove() meghívva.");
+		
+		//System.out.println("Sin: actMove() függvényt meghívták.");
 		VonatElem ap = aPoint.getActVonatElem();
 		VonatElem bp = bPoint.getActVonatElem();
 		
@@ -115,6 +122,7 @@ public class Sin implements Serializable{
 			return bPoint;
 		}
 		
+		Log.info("Exception(Ütközés történt)");
 		 /** Ha idáig eljutottunk akkor mindkét irányba van kocsi és ütközés történik! */
 		throw new Exception("Ütközés történt");
 	}
