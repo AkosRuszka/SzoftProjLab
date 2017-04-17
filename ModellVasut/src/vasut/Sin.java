@@ -25,7 +25,8 @@ public class Sin implements Serializable{
 		dir = true;
 		actVonatElem = null;
 		aPoint = aPoint_;
-		aPoint.setBPoint(this); /** Beállítja az előtte álló elem bPoint-ját magára. */
+		if(aPoint != null)
+			aPoint.setBPoint(this); /** Beállítja az előtte álló elem bPoint-ját magára. */
 		bPoint = null;
 		crossing = null;
 	}
