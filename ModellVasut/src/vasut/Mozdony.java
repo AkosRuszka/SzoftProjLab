@@ -4,12 +4,17 @@ public class Mozdony extends VonatElem {
 	
 	private Kocsi lastCart;
 	
-	public Mozdony(Sin whereAmI_, VonatElem frontElem_, Kocsi backElem_){
-		super(whereAmI_, frontElem_, backElem_, "grey");
+	public Mozdony(Sin whereAmI_){
+		super(whereAmI_, null, null, "grey");
 		lastCart = null;
 	}
 	
 	public boolean run() throws Exception {
+		if(lastCart == null){
+			for (Kocsi k = this.backElem; k != null ; k = k.backElem)
+				lastCart = k;
+		}
+		
 		/** Elindul a mozdony és maga után húzza a kocsijait. */
 		whereAmI.setActVonatElem(null);
 		whereAmI = whereAmI.actMove();
