@@ -2,13 +2,21 @@ package vasut;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Allomas extends Sin{
+	
+	private static final Logger Log = LogManager.getLogger(Allomas.class);
+	
 	private String color;
 	private List<String> risers;
 	
 	public Allomas(Sin aPoint_ , String color_){
 		super(aPoint_);
+		
+		Log.info("Állomás konstruktor meghívva.");
+		
 		risers = new ArrayList<String>();
 		color = color_;
 	}
@@ -21,6 +29,7 @@ public class Allomas extends Sin{
 	
 	@Override
 	public Sin actMove() throws Exception {
+		Log.info("actMove() meghívva.");
 		//System.out.println("Állomás: actMove() függvény meghívva.");
 		
 		
@@ -48,11 +57,12 @@ public class Allomas extends Sin{
 	
 	/** ???? */
 	public void Get_on() {
+		Log.info("Get_on() meghívva");
 		/** Az actVonatElem empty attributumát beállítjuk true-ra ezzel jelezve hogy felszálltak rá. */
 		actVonatElem.setEmpty(true);
 		
-		/* Ez biztos hogy az Állomás felelőssége ? 
+		/* Szekvencia diagram alapján ezt az Állomásnak kell beállítani, 
+		 * de szerintem a actVonatElem setEmpty metódusába is lehetne szórakozni ezzel (sőt...ott kéne!) */
 		actVonatElem.setGet_on(true);
-		*/
 	}
 }
