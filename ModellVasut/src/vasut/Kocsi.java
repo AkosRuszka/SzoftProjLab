@@ -7,8 +7,8 @@ public class Kocsi extends VonatElem {
 	}
 	
 	public void pull() throws Exception {
-		/** A mozdony hívja meg az osztálynak ezt a függvényét ha a kocsinak át kell mennie a következő sínre. A sínek segítségével pedig arrébb tudd mozogni a megfelelő irányba. */
-		System.out.println("Kocsi pull függvénye meghívódott");
+		/** A mozdony hívja meg az osztálynak ezt a függvényét ha a kocsinak át kell mennie a következő sínre. 
+		 * A sínek segítségével pedig arrébb tudd mozogni a megfelelő irányba. **/
 		whereAmI.setActVonatElem(null);
 		whereAmI = whereAmI.actMove();
 		whereAmI.setActVonatElem(this);
