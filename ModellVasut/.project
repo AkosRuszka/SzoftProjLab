@@ -14,4 +14,36 @@
 	<natures>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Alagut_fel.txt</name>
+			<type>1</type>
+			<location>D:/Egyetem/Projlab/Tesztek/Alagut_fel.txt</location>
+		</link>
+		<link>
+			<name>Alagut_le.txt</name>
+			<type>1</type>
+			<location>D:/Egyetem/Projlab/Tesztek/Alagut_le.txt</location>
+		</link>
+		<link>
+			<name>Alagut_teljes.txt</name>
+			<type>1</type>
+			<location>D:/Egyetem/Projlab/Tesztek/Alagut_teljes.txt</location>
+		</link>
+		<link>
+			<name>Alagut_van.txt</name>
+			<type>1</type>
+			<location>D:/Egyetem/Projlab/Tesztek/Alagut_van.txt</location>
+		</link>
+		<link>
+			<name>Kisiklas.txt</name>
+			<type>1</type>
+			<location>D:/Egyetem/Projlab/Tesztek/Kisiklas.txt</location>
+		</link>
+		<link>
+			<name>Utkozes.txt</name>
+			<type>1</type>
+			<location>D:/Egyetem/Projlab/Tesztek/Utkozes.txt</location>
+		</link>
+	</linkedResources>
 </projectDescription>
