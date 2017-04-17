@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
+import vasut.*;
 
 public class Proto {
 	
@@ -149,9 +150,26 @@ public class Proto {
 		}
 	}
 	
-	public void work(){
+	public void teszt2(){
+		ArrayList<Kezdopont> rail = new ArrayList<Kezdopont>();
 		for (int i = 0; i < inp.size(); i++) {
-			
+			String line[] = inp.get(i).split(" ");
+			switch(line[0]){
+			case "kezdopont.init":{
+				int n1 = Integer.parseInt(line[1]);
+				int n2 = Integer.parseInt(line[2]);
+				int n3 = Integer.parseInt(line[3]);
+				rail.add(new Kezdopont(n1,n2,n3,null));
+				break;
+			}
+			case "kezdopont.work":{
+				Mozdony m = rail.get(0).work();
+				break;
+			}
+			default:
+				/// itt repül majd 1 hibaüzenet ;)
+				break;
+			}
 		}
 	}
 	

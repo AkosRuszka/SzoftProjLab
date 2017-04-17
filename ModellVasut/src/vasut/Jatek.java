@@ -24,7 +24,7 @@ public class Jatek {
 		sugo = "Ez csak egy minta, ennél valószínűleg több és hasznosabb info lesz leírva de ez nem az én feladatom lol. :D \n ps: ha ez marad bent akkor bocsánat!";
 	}
 	
-	public int getst(){
+	public int getAM(){
 		return actMap;
 	}
 	
@@ -43,6 +43,7 @@ public class Jatek {
 			System.out.println(e.getMessage());
 		}
 	}
+	
 	public void nextMap(){
 		System.out.println("Jatek.nextMap()");
 		//pálya 2	
