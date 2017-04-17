@@ -33,37 +33,31 @@ public class Sin implements Serializable{
 	
 	/** Lekérdezi az aPontot */
 	public Sin getAPoint() {
-		//System.out.println("Sin: A pont lekérdezése");
 		return aPoint;
 	}
 	
 	/** Lekérdezi a bPontot */
 	public Sin getBPoint() {
-		//System.out.println("Sin: B pont lekérdezése");
 		return bPoint;
 	}
 	
 	/** Beállítja az aPontot */
 	public void setAPoint(Sin ap) {
-		//System.out.println("Sin: A pont beállítása.");
 		aPoint = ap;
 	}
 	
 	/** Beállítja a bPontot */
 	public void setBPoint(Sin bp) {
-		//System.out.println("Sin: B pont beállítása.");
 		bPoint = bp;
 	}
 	
 	/** Beállítjuk a actVonatElem-et */
 	public void setActVonatElem(VonatElem akt) {	
-		//System.out.println("Sin: mozdony beállítása.");
 		actVonatElem = akt;
 	}
 	
 	/** Lekérdezzük az actVonatElem-et */
 	public VonatElem getActVonatElem() {
-		//System.out.println("Sin: mozdony lekérdezése");
 		return actVonatElem;
 	}
 	
@@ -79,7 +73,6 @@ public class Sin implements Serializable{
 		
 		Log.info("actMove() meghívva.");
 		
-		//System.out.println("Sin: actMove() függvényt meghívták.");
 		VonatElem ap = aPoint.getActVonatElem();
 		VonatElem bp = bPoint.getActVonatElem();
 		

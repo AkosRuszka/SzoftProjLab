@@ -23,15 +23,13 @@ public class Allomas extends Sin{
 	
 	/** Visszaadjuk a színt */
 	public String getColor() {
-		//System.out.println("Állomás színének lekérdezése.");
 		return color;
 	}
 	
 	@Override
 	public Sin actMove() throws Exception {
-		Log.info("actMove() meghívva.");
-		//System.out.println("Állomás: actMove() függvény meghívva.");
 		
+		Log.info("actMove() meghívva.");		
 		
 		/** Csak akkor történik leszállás a vagonokról ha nem történik rá felszállás */
 		if(risers.isEmpty() != true) {
