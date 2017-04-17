@@ -1,4 +1,4 @@
-Kezdopont.init/A 3,2,1
-kezdopont.work/V
-kezdopont.work/V
-kezdopont.work/V
+kezdopont.init 3 2 1
+kezdopont.work
+kezdopont.work
+kezdopont.work
