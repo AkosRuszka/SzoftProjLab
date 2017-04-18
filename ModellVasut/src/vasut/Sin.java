@@ -116,7 +116,7 @@ public class Sin implements Serializable{
 			return bPoint;
 		}
 		
-		Log.info("Exception(Ütközés történt)");
+		Log.info("Exception(Ütközés történt) dobás");
 		 /** Ha idáig eljutottunk akkor mindkét irányba van kocsi és ütközés történik! */
 		throw new Exception("Ütközés történt");
 	}
