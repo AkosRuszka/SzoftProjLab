@@ -15,10 +15,16 @@ public class Mozdony extends VonatElem {
 				lastCart = k;
 		}
 		
-		whereAmI = whereAmI.actMove();
+		Sin idefogokmozogni = whereAmI.actMove();
+		//whereAmI = whereAmI.actMove();
 		
-		if (whereAmI != null){
+		if (idefogokmozogni != null){
+			// már megvan hogy merre mozoghatunk ezért nullázzuk az actuális által tárolt VonatElem-et (hisz lejövünk róla)
+			whereAmI.setActVonatElem(null); 
+			
+			whereAmI = idefogokmozogni;
 			whereAmI.setActVonatElem(this);
+			
 			backElem.pull();
 			if (backElem.getEmpty()&&backElem.getEmptyable()){//üres és előtte üresekvannak
 				return true;
