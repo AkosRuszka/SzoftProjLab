@@ -15,13 +15,12 @@ public class Mozdony extends VonatElem {
 				lastCart = k;
 		}
 		
-		/** Elindul a mozdony és maga után húzza a kocsijait. */
-		whereAmI.setActVonatElem(null);
 		whereAmI = whereAmI.actMove();
+		
 		if (whereAmI != null){
 			whereAmI.setActVonatElem(this);
 			backElem.pull();
-			if (lastCart.getColor().equals("grey")){
+			if (backElem.getEmpty()&&backElem.getEmptyable()){//üres és előtte üresekvannak
 				return true;
 			}
 			else{
