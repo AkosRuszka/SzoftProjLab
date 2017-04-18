@@ -19,7 +19,7 @@ public class Alagut implements Serializable{
 		
 		//Láncolt lista felépítése
 		Sin elozo = new Sin(null);
-		for(int i = 0; i < tunnel.size(); i++){
+		for(int i = 0; i < 10; i++){
 			Sin s = new Sin(elozo);
 			tunnel.add(s);
 			elozo = s;

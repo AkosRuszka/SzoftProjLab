@@ -1,4 +1,4 @@
 Alagut konstruktor meghívva
-KulonlegesHely konstruktora meghívva
+A KulonlegesHely konstruktora meghívva
 Alagut: exitA helyre KulonlegesHely bekötve
-KulonlegesHely: aPoint-jához hozzákapcsolódott az Alagut
+KulonlegesHely: bPoint-jához hozzákapcsolódott az Alagut
