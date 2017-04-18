@@ -316,7 +316,7 @@ public class Proto {
 					break;
 				}
 				default:{
-					//hiba
+					log.info("teszthiba --- hibás bemenet");
 				}
 				}
 			}
@@ -375,7 +375,6 @@ public class Proto {
 			}
 		}		
 	}
-	
 	
 	public void teszt14(){
 		ArrayList<Sin> rails = new ArrayList<Sin>();
@@ -441,10 +440,14 @@ public class Proto {
 			switch(line[0]){
 			case "allomas.init":{
 				int n1 = Integer.parseInt(line[1])-1;
+				String s[] = null;
+				for (int j = 3; j < line.length; j++) {
+					s[j-3] = line[j];
+				}
 				if(n1<0)
-					rails.add(new Valto(null));
+					rails.add(new Allomas(null,line[2],s));
 				else
-					rails.add(new Valto(rails.get(n1)));
+					rails.add(new Allomas(rails.get(n1),line[2],s));
 				break;
 			}
 			case "sin.init":{
@@ -458,27 +461,43 @@ public class Proto {
 			case "sin.setA":{
 				int n1 = Integer.parseInt(line[1])-1;
 				int n2 = Integer.parseInt(line[2])-1;
-				((Valto)(rails.get(n1))).addConnectPoints(rails.get(n2));
+				rails.get(n1).setAPoint(rails.get(n2));
 				break;
 			}
 			case "sin.setB":{
 				int n1 = Integer.parseInt(line[1])-1;
-				((Valto)(rails.get(n1))).nextState();
+				int n2 = Integer.parseInt(line[2])-1;
+				rails.get(n1).setBPoint(rails.get(n2));
 				break;
 			}
 			case "mozdony.init":{
 				int n1 = Integer.parseInt(line[1])-1;
-				states.add(((Valto)(rails.get(n1))).getActState());
+				trains.add(new Mozdony(rails.get(n1)));
 				break;
 			}
 			case "kocsi.init":{
-				int n1 = Integer.parseInt(line[1]);
-				int n2 = Integer.parseInt(line[2]);
-				if(states.get(n1)==states.get(n2)){
-					log.info("megegyezik a 2 pálya!");
-				}
-				else{
-					log.info("nem egyezik meg a 2 pálya!");
+				int n1 = Integer.parseInt(line[1])-1;
+				int n2 = Integer.parseInt(line[2])-1;
+				if(n2<0)
+					trains.add(new Kocsi(rails.get(n1),null,line[3]));
+				else
+					trains.add(new Kocsi(rails.get(n1),trains.get(n2),line[3]));
+				break;
+			}
+			case "kocsi.setback":{
+				int n1 = Integer.parseInt(line[1])-1;
+				int n2 = Integer.parseInt(line[2])-1;
+				trains.get(n1).setBackElem(((Kocsi)trains.get(n2)));
+				break;
+			}
+			case "run":{
+				int n1 = Integer.parseInt(line[1])-1;
+				try {
+					boolean t = ((Mozdony)trains.get(n1)).run();
+					log.info(t);
+				} catch (Exception e) {
+					log.info("elkapott hiba: "+e.getMessage());
+					e.printStackTrace();
 				}
 				break;
 			}
