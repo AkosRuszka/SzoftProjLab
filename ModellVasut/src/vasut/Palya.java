@@ -6,8 +6,13 @@ import java.io.Serializable;
 import java.rmi.server.Operation;
 import java.util.ArrayList;
 import java.util.Random;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Palya implements Serializable{
+	
+	private static final Logger Log = LogManager.getLogger(Allomas.class);
+	
 	private boolean speed;
 	private boolean done;
 	private ArrayList<Sin> map;
@@ -18,6 +23,9 @@ public class Palya implements Serializable{
 	public Palya(){
 		map=new ArrayList<Sin>();
 		//startPoint = new Kezdopont(5,6,2);
+		
+		Log.info("Palya konstruktora meghívva.");
+		
 		engines = new ArrayList<Mozdony>();
 		speed = false;
 		done = false;
@@ -26,6 +34,7 @@ public class Palya implements Serializable{
 	
 	/** Buttonhoz eseményéhez kötött megszakítás. */
 	public void quitToMain() throws Exception {
+		Log.info("Exception(quitToMain)");
 		throw new RuntimeException("quitToMain");
 	}
 	
@@ -42,6 +51,7 @@ public class Palya implements Serializable{
 				}
 			}
 		}
+		Log.info("Palya run() metódusa véget ért.");
 		
 	}
 	
