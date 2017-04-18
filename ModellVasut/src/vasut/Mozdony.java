@@ -5,7 +5,7 @@ public class Mozdony extends VonatElem {
 	private Kocsi lastCart;
 	
 	public Mozdony(Sin whereAmI_){
-		super(whereAmI_, null, null, "grey");
+		super(whereAmI_, null, "grey");
 		lastCart = null;
 	}
 	
