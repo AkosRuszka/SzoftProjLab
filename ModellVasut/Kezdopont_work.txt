@@ -1,4 +1,4 @@
-kezdopont.init 3 2 1
+kezdopont.init 2 2 1
 kezdopont.work
 kezdopont.work
 kezdopont.work
