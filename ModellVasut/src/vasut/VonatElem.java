@@ -9,6 +9,7 @@ public class VonatElem implements Serializable{
 	Kocsi backElem;
 	String color;
 	boolean empty = false;
+	boolean emptyable = false;
 	
 	public VonatElem(Sin whereAmI_, VonatElem frontElem_, Kocsi backElem_, String color_){
 		whereAmI = whereAmI_;
@@ -20,8 +21,7 @@ public class VonatElem implements Serializable{
 	//itt majd meg kell valósítani a felszálláskor átállítódást :D
 	// Fél óra folyamatos szekvenciadiagram szugerálás után arra jutottam, hogy én ezt nem értem
 	public void changeColor() {
-		if(frontElem.getEmpty()){
-			color = "grey";
+		if(emptyable){
 			empty = true;
 		}
 	}
@@ -51,7 +51,7 @@ public class VonatElem implements Serializable{
 		return color;
 	}
 	
-	public boolean getEmpty() {
+	public boolean getEmpty() { //ez már nem hiszem h kell
 		return empty;
 	}
 	
