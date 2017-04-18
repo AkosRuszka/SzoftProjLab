@@ -53,60 +53,60 @@ public class VonatElem implements Serializable{
 	}
 
 	public Sin getWhereAmI() {
-		log.info("VonatElem: getWhereAmI meghívva");
+		//log.info("VonatElem: getWhereAmI meghívva");
 		
 		/** Lekérdezzük az aktuális tartózkodási helyét */
 		return whereAmI;
 	}
 	
 	public void setWhereAmI(Sin elem) {
-		log.info("VonatElem: setWhereAmI meghívva");
+		//log.info("VonatElem: setWhereAmI meghívva");
 		
 		/** Beállítja az aktuális tartózkodási helyét */
 		whereAmI = elem;
 	}
 	
 	public void setFrontElem(VonatElem frontElem_) {
-		log.info("VonatElem: setFrontElem meghívva");
+		//log.info("VonatElem: setFrontElem meghívva");
 		
 		/** Beállítja az előtte álló VonatElem-re mutató referenciát */
 		frontElem = frontElem_;
 	}
 	
 	public void setBackElem(Kocsi backElem_) {
-		log.info("VonatElem: setBackElem meghívva");
+		//log.info("VonatElem: setBackElem meghívva");
 		
 		/** Beállítja az mögötte álló VonatElem-re mutató referenciát */
 		backElem = backElem_;
 	}
 	
 	public String getColor() {
-		log.info("VonatElem: getColor meghívva");
+		//log.info("VonatElem: getColor meghívva");
 		
 		/** Visszaadja az adott Kocsi színét. */
 		return color;
 	}
 	
 	public boolean getEmpty() {
-		log.info("VonatElem: getEmpty meghívva");
+		//log.info("VonatElem: getEmpty meghívva");
 		
 		return empty;
 	}
 	
 	public void setEmpty(boolean bool) {
-		log.info("VonatElem: setEmpty meghívva");
+		//log.info("VonatElem: setEmpty meghívva");
 		
 		empty = bool;
 	}
 	
 	public boolean getEmptyable() {
-		log.info("VonatElem: getEmptyable meghívva");
+		//log.info("VonatElem: getEmptyable meghívva");
 		
 		return emptyable;
 	}
 	
 	public void setEmptyable(boolean bool) {
-		log.info("VonatElem: setEmptyable meghívva");
+		//log.info("VonatElem: setEmptyable meghívva");
 		
 		emptyable = bool;
 	}
