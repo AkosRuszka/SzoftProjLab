@@ -1,5 +1,6 @@
 package vasut;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.log4j.LogManager;
@@ -36,7 +37,7 @@ public class Allomas extends Sin{
 			/** Ha az actVonatElem színe és a felszálló utasok színe egyezik akkor felszállnak rá */
 			if(actVonatElem.getColor().equals(risers.get(0))) {
 				risers.remove(0); 	// kiszedjük a tömbből azokat akik felszálltak a vonatra
-				Get_on(); 			// franc se tudja ez mi....
+				Get_on(); 			// Meghívjuk rá a felszállás függvényét
 			} else {
 				/** Ha a risers tömbünk nem üres és a felszállandó emberek nem egyeznek meg az actVonatElem-el, attól még 
 				 *  az actVonatElem-ről le lehet szállni. */
@@ -53,14 +54,10 @@ public class Allomas extends Sin{
 		return super.actMove();
 	}
 	
-	/** ???? */
+	/** Az adott kocsira felszállnak, ez meghívja a setEmpty függvényt, ami a Kocsi osztályban felül van írva, egy különleges vizsgálattal */
 	public void Get_on() {
 		Log.info("Get_on() meghívva");
-		/** Az actVonatElem empty attributumát beállítjuk true-ra ezzel jelezve hogy felszálltak rá. */
-		actVonatElem.setEmpty(true);
-		
-		/* Szekvencia diagram alapján ezt az Állomásnak kell beállítani, 
-		 * de szerintem a actVonatElem setEmpty metódusába is lehetne szórakozni ezzel (sőt...ott kéne!) */
-		actVonatElem.setGet_on(true);
+		/** Az actVonatElem empty attributumát beállítjuk false-ra ezzel jelezve hogy felszálltak rá. */
+		actVonatElem.setEmpty(false);
 	}
 }
