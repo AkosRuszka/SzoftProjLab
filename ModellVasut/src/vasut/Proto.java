@@ -219,10 +219,12 @@ public class Proto {
 		}
 	}
 	
-	/**Allomas athaladas tesztek*/
-	public void teszt3(){
+	/**Allomas athaladas tesztek
+	 * @throws Exception */
+	public void teszt456() throws Exception{
 		ArrayList<Sin> rail = new ArrayList<Sin>();
-		ArrayList<Mozdony> eng = new ArrayList<Mozdony>();
+		ArrayList<VonatElem> train = new ArrayList<VonatElem>();
+		ArrayList<Mozdony> engine = new ArrayList<Mozdony>();
 		for (int i = 0; i < inp.size(); i++) {
 			String line[] = inp.get(i).split(" ");
 			switch(line[0]){
@@ -259,10 +261,16 @@ public class Proto {
 				switch(line[1]){
 				case "mozdony" :{
 					Mozdony m = new Mozdony(rail.get(Integer.parseInt(line[4])));
-					eng.add(Integer.parseInt(line[2]),m);
+					train.add(Integer.parseInt(line[2]),m);
+					engine.add(Integer.parseInt(line[2]),m);
 				}
 				case "kocsi" :{
-					//Kocsi k = new Kocsi()
+					Kocsi k = new Kocsi(rail.get(Integer.parseInt(line[4])), train.get(Integer.parseInt(line[3])), line[5]);
+					if (line[6].equals("-tele"))
+						k.setEmpty(true);
+					else
+						k.setEmpty(false);
+					train.add(Integer.parseInt(line[2]), k);
 				}
 				default: {
 					//hiba
@@ -270,7 +278,9 @@ public class Proto {
 				}
 			}
 			case "run" :{
-				
+				for (int x = 0; x < engine.size(); x++){
+					engine.get(x).run();
+				}
 			}
 			default:{
 				//hiba
