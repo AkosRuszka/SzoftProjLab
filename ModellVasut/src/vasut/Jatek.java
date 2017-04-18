@@ -31,6 +31,10 @@ public class Jatek {
 		return actMap;
 	}
 	
+	public Palya getGame(){
+		return actGame;
+	}
+	
 	public void newGame(){
 		System.out.println("Jatek.newGame()");
 		//pálya 1		

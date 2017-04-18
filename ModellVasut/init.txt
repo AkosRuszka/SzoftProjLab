@@ -1,7 +1,7 @@
-jatek.init
-jatek.newgame
-keepmap
-jatek.savemap
-jatek.loadmap
-keepmap
-compare
+jatek.init 
+jatek.newgame 
+keepmap 
+jatek.savemap 
+jatek.loadmap 
+keepmap 
+compare 1 2

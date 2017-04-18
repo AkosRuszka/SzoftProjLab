@@ -7,9 +7,11 @@ import java.io.InputStreamReader;
 import java.io.ObjectInputStream;
 import java.util.ArrayList;
 import vasut.*;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Proto {
-	
+	private static final Logger log = LogManager.getLogger(Palya.class);
 	//tesztelés
 	private ArrayList<String> inp = new ArrayList<String>(); 
 	private ArrayList<String> oup = new ArrayList<String>(); 
@@ -147,6 +149,50 @@ public class Proto {
 		}
 		catch (Exception e){
 			System.out.println(e.getMessage());
+		}
+	}
+	
+	public void teszt1(){
+		ArrayList<Integer> maps = new ArrayList<Integer>();
+		Jatek j1 = null;
+		for (int i = 0; i < inp.size(); i++) {
+			String line[] = inp.get(i).split(" ");
+			switch(line[0]){
+			case "jatek.init":{
+				j1=new Jatek();
+				break;
+			}
+			case "jatek.newgame":{
+				j1.newGame();
+				break;
+			}
+			case "jatek.savemap":{
+				j1.saveMap();
+				break;
+			}
+			case "jatek.loadmap":{
+				j1.mapLoad();
+				break;
+			}
+			case "jatek.compare":{
+				int n1 = Integer.parseInt(line[1]);
+				int n2 = Integer.parseInt(line[2]);
+				if(maps.get(n1)==maps.get(n2)){
+					log.info("megegyezik a 2 pálya!");
+				}
+				else{
+					log.info("nem egyezik meg a 2 pálya!");
+				}
+				break;
+			}
+			case "keepmap":{
+				maps.add(j1.getAM());
+				break;
+			}
+			default:
+				/// itt repül majd 1 hibaüzenet ;)
+				break;
+			}
 		}
 	}
 	
