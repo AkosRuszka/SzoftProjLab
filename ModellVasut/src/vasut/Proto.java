@@ -294,11 +294,23 @@ public class Proto {
 				}
 				case "allomas" :{
 					if (!rail.isEmpty()){
-						Allomas a = new Allomas(rail.get(Integer.parseInt(line[3])), line[4]);
+						String[] pass1 = null;
+						for(int l = 5; l < line.length; l++){
+							for(int o = 0; o < line.length; o++){
+								pass1[o]=line[l];
+							}
+						}
+						Allomas a = new Allomas(rail.get(Integer.parseInt(line[3])), line[4], pass1);
 						rail.add(Integer.parseInt(line[2]),a);
 					}
 					else {
-						Allomas a = new Allomas(null, line[4]);
+						String[] pass2 = null;
+						for(int l = 5; l < line.length; l++){
+							for(int o = 0; o < line.length; o++){
+								pass2[o]=line[l];
+							}
+						}	
+						Allomas a = new Allomas(null, line[4], pass2);
 						rail.add(Integer.parseInt(line[2]),a);
 					}
 					break;
