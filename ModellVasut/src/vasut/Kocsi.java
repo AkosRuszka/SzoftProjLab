@@ -9,8 +9,8 @@ public class Kocsi extends VonatElem{
 	//Logoláshoz
 	private static final Logger log = LogManager.getLogger(VonatElem.class);
 	
-	public Kocsi(Sin whereAmI_, VonatElem frontElem_, Kocsi backElem_, String color_){
-		super(whereAmI_, frontElem_, backElem_, color_);
+	public Kocsi(Sin whereAmI_, VonatElem frontElem_, String color_){
+		super(whereAmI_, frontElem_, color_);
 		log.info("Kocsi konstruktora meghívva");
 	}
 	

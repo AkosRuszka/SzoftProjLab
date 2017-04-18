@@ -15,10 +15,9 @@ public class VonatElem implements Serializable{
 	//Logoláshoz
 	private static final Logger log = LogManager.getLogger(VonatElem.class);
 	
-	public VonatElem(Sin whereAmI_, VonatElem frontElem_, Kocsi backElem_, String color_){
+	public VonatElem(Sin whereAmI_, VonatElem frontElem_, String color_){
 		whereAmI = whereAmI_;
 		frontElem = frontElem_;
-		backElem = backElem_;
 		color = color_;
 		if(color == "grey"){//szeneskocsi :D
 			empty=true;
