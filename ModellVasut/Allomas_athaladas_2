@@ -5,7 +5,7 @@ create allomas 4 3 red
 create sin 5 4
 create sin 6 5
 create sin 7 6
-put mozdony 1 0 3 grey
+put mozdony 1 0 3
 put kocsi 2 1 2 blue -tele
 put kocsi 3 2 1 red -tele
 run

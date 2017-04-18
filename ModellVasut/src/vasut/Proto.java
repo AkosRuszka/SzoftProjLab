@@ -173,6 +173,66 @@ public class Proto {
 		}
 	}
 	
+	/**Allomas athaladas tesztek*/
+	public void teszt3(){
+		ArrayList<Sin> rail = new ArrayList<Sin>();
+		ArrayList<Mozdony> eng = new ArrayList<Mozdony>();
+		for (int i = 0; i < inp.size(); i++) {
+			String line[] = inp.get(i).split(" ");
+			switch(line[0]){
+			case "create" :{
+				switch(line[1]){
+				case "sin" :{
+					if (!rail.isEmpty()){
+						Sin s = new Sin(rail.get(Integer.parseInt(line[3])));
+						rail.add(Integer.parseInt(line[2]),s);
+					}
+					else{
+						Sin s = new Sin(null);
+						rail.add(Integer.parseInt(line[2]),s);
+					}
+					break;
+				}
+				case "allomas" :{
+					if (!rail.isEmpty()){
+						Allomas a = new Allomas(rail.get(Integer.parseInt(line[3])), line[4]);
+						rail.add(Integer.parseInt(line[2]),a);
+					}
+					else {
+						Allomas a = new Allomas(null, line[4]);
+						rail.add(Integer.parseInt(line[2]),a);
+					}
+					break;
+				}
+				default:{
+					//hiba
+				}
+				}
+			}
+			case "put" :{
+				switch(line[1]){
+				case "mozdony" :{
+					Mozdony m = new Mozdony(rail.get(Integer.parseInt(line[4])));
+					eng.add(Integer.parseInt(line[2]),m);
+				}
+				case "kocsi" :{
+					//Kocsi k = new Kocsi()
+				}
+				default: {
+					//hiba
+				}
+				}
+			}
+			case "run" :{
+				
+			}
+			default:{
+				//hiba
+			}
+			}
+		}
+	}
+	
 	//futtatás
 	public static void main(String[] args) throws Exception {
 		
