@@ -427,7 +427,7 @@ public class Proto {
 		for (int i = 0; i < inp.size(); i++) {
 			String line[] = inp.get(i).split(" ");
 			switch(line[0]){
-			case "valto.init":{
+			case "allomas.init":{
 				int n1 = Integer.parseInt(line[1])-1;
 				if(n1<0)
 					rails.add(new Valto(null));
@@ -443,23 +443,23 @@ public class Proto {
 					rails.add(new Sin(rails.get(n1)));
 				break;
 			}
-			case "valto.add":{
+			case "sin.setA":{
 				int n1 = Integer.parseInt(line[1])-1;
 				int n2 = Integer.parseInt(line[2])-1;
 				((Valto)(rails.get(n1))).addConnectPoints(rails.get(n2));
 				break;
 			}
-			case "valto.nextState":{
+			case "sin.setB":{
 				int n1 = Integer.parseInt(line[1])-1;
 				((Valto)(rails.get(n1))).nextState();
 				break;
 			}
-			case "valto.keepState":{
+			case "mozdony.init":{
 				int n1 = Integer.parseInt(line[1])-1;
 				states.add(((Valto)(rails.get(n1))).getActState());
 				break;
 			}
-			case "jatek.compare":{
+			case "kocsi.init":{
 				int n1 = Integer.parseInt(line[1]);
 				int n2 = Integer.parseInt(line[2]);
 				if(states.get(n1)==states.get(n2)){
