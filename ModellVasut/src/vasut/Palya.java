@@ -39,24 +39,29 @@ public class Palya implements Serializable{
 	}
 	
 	/** A játék futása a megfelelő vizsgálatokkal. */
-	public void run() throws Exception{		
-		while(!done) {
-			while(speed) {
-				Mozdony uj = startPoint.work();
-				if(uj != null) {
-					engines.add(uj); 
-				}
-				for (Mozdony mozdony : engines) {
-					done &= mozdony.run();
+	public void run() throws Exception{
+		try {
+			while(!done) {
+				while(speed) {
+					Mozdony uj = startPoint.work();
+					if(uj != null) {
+						engines.add(uj); 
+					}
+					for (Mozdony mozdony : engines) {
+						done &= mozdony.run();
+					}
 				}
 			}
+		} catch(Exception e) {
+			Log.info("Exception: " + e.Message());
+			System.out.println(e.Message());
 		}
 		Log.info("Palya run() metódusa véget ért.");
-		
 	}
 	
 	/** Megállítjuk illetve elindítjuk a játékot. */
 	public void setStartStop() throws Exception{
+		Log.info("Speed változtatása.");
 		if(speed) {
 			speed = false;
 		} else {
