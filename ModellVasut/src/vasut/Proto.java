@@ -152,6 +152,34 @@ public class Proto {
 		}
 	}
 	
+	public boolean logCheck(){
+		int goodRow = 0;
+		
+		try{
+		FileInputStream fstream = new FileInputStream("abc.log");
+		BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+		String strLine;
+		
+		for (int i = 0; i < oup.size(); i++) {
+			while ((strLine = br.readLine()) != null)   {
+				if(strLine.contains(oup.get(i))){
+					goodRow++;
+				}					
+			}
+		}
+		br.close();
+		}
+		
+		catch (Exception e){
+			System.out.println(e.getMessage());
+		}
+		
+		if(goodRow == oup.size())
+			return true;
+		else
+			return false;
+	}
+	
 	public void teszt1(){
 		ArrayList<Integer> maps = new ArrayList<Integer>();
 		Jatek j1 = null;
