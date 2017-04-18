@@ -540,6 +540,8 @@ public class Proto {
 	public static void main(String[] args) throws Exception {
 		
 		Jatek j = new Jatek();
+		j.makeGame();
+		j.saveMap();
 	}
 }
 

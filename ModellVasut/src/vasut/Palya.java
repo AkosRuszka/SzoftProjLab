@@ -19,12 +19,14 @@ public class Palya implements Serializable, Runnable{
 	private Alagut tunnel;
 	private boolean killed = false;
 	
-	public Palya(int i){
+	public Palya(){
 		map=new ArrayList<Sin>();
 		engines = new ArrayList<Mozdony>();
 		speed = false;
 		done = false;
 		tunnel = new Alagut();
+		startPoint = new Kezdopont(1, 5, 1, null);
+		map.add(startPoint);
 	}
 	
 	/** Buttonhoz eseményéhez kötött megszakítás. */
