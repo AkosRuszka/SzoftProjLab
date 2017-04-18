@@ -16,13 +16,19 @@ public class VonatElem implements Serializable{
 		frontElem = frontElem_;
 		backElem = backElem_;
 		color = color_;
+		if(color == "grey"){//szeneskocsi :D
+			empty=true;
+			emptyable=true;
+		}
 	}
 	
 	//itt majd meg kell valósítani a felszálláskor átállítódást :D
 	// Fél óra folyamatos szekvenciadiagram szugerálás után arra jutottam, hogy én ezt nem értem
 	public void changeColor() {
-		if(emptyable){
+		if(emptyable||frontElem.getColor()=="grey"){
 			empty = true;
+			emptyable = true;
+			backElem.emptyable=true;
 		}
 	}
 
