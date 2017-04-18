@@ -28,8 +28,11 @@ public class VonatElem implements Serializable{
 	}
 	
 	public void changeColor() { //Az állomás leszálláskor hívja ezt a függvényt
+		//Log
+		log.info("VonatElem: changeColor meghívva");
 		if(emptyable||frontElem.getColor()=="grey"){
 			empty = true;
+			log.info("Leszálltak");
 			emptyable = false;
 			//Meg kell keresni, hogy leszállás után, ki az első olyan nem üres kocsi, akiről
 			//leszállhatnak majd
@@ -46,9 +49,11 @@ public class VonatElem implements Serializable{
 		/*Ez azért működik, mert ha le tudtak szállni, akkor előtte bíztosan mindenki üres
 		 * tehát a következő kocsi-ra kell beállítanunk a emptyable-t, ami nem üres
 		 */
+		else {  // csak log miatt
+			log.info("Nem szálltak le");
+		}
 		
-		//Log
-		log.info("VonatElem: changeColor meghívva");
+		
 	}
 
 	public Sin getWhereAmI() {

@@ -41,6 +41,7 @@ public class Allomas extends Sin{
 			} else {
 				/** Ha a risers tömbünk nem üres és a felszállandó emberek nem egyeznek meg az actVonatElem-el, attól még 
 				 *  az actVonatElem-ről le lehet szállni. */
+				Log.info("Nem szálltak fel");
 				if(actVonatElem.getColor().equals(color)) {
 					actVonatElem.changeColor();
 				}	
@@ -57,6 +58,7 @@ public class Allomas extends Sin{
 	/** Az adott kocsira felszállnak, ez meghívja a setEmpty függvényt, ami a Kocsi osztályban felül van írva, egy különleges vizsgálattal */
 	public void Get_on() {
 		Log.info("Get_on() meghívva");
+		Log.info("Felszálltak");
 		/** Az actVonatElem empty attributumát beállítjuk false-ra ezzel jelezve hogy felszálltak rá. */
 		actVonatElem.setEmpty(false);
 	}
