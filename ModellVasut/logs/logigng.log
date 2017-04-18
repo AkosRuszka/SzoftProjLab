@@ -52,3 +52,48 @@
 2017-04-18 22:28:07 INFO  Sin:23 - Sin konstruktor meghívva.
 2017-04-18 22:28:07 INFO  Palya:39 - Spawntunnel setup end
 2017-04-18 22:28:07 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:30:21 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:30:21 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:30:32 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:30:37 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:33:51 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:33:51 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:34:00 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:34:07 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:37:28 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:37:28 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:37:32 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:37:34 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:38:39 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:38:39 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:39:47 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:42:30 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:43:22 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:43:22 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:43:27 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:43:29 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:44:18 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:44:18 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:44:26 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:46:01 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:46:01 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:46:04 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:46:06 INFO  Palya:212 - nem egyezik meg a 2 pálya!
+2017-04-18 22:46:13 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:46:13 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:46:56 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:46:56 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:47:01 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:49:20 INFO  Palya:212 - nem egyezik meg a 2 pálya!
+2017-04-18 22:51:01 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:51:01 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:51:43 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:51:54 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 22:52:16 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:52:17 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:52:22 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:52:50 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 22:54:10 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:54:11 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:54:14 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:54:20 INFO  Palya:210 - megegyezik a 2 pálya!
