@@ -3,8 +3,11 @@ package vasut;
 import java.io.IOException;
 import java.util.*;
 import vasut.*;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Kezdopont extends Sin{
+	private static final Logger log = LogManager.getLogger(Palya.class);
 	
 	private int time;				//0-tól a spawnTime-ig megy majd egy vonat lerakásakor újra nulla lesz
 	private int spawnTime;			//két vonat indulása között eltelt idő
@@ -23,8 +26,9 @@ public class Kezdopont extends Sin{
 		startTime = stt;
 		trains = tr;
 		newspawn = true;
-		
+		log.info("Spawntunnel setup");
 		System.out.println("SpawnTunnel setup:");
+		
 		spawnTunnel.add(this);
 		for (int i = 0; i < 7; i++) {
 			Sin seged = new Sin(spawnTunnel.get(i));
@@ -32,6 +36,7 @@ public class Kezdopont extends Sin{
 			spawnTunnel.get(i).setBPoint(seged);
 			spawnTunnel.add(seged);
 		}
+		log.info("Spawntunnel setup end");
 		System.out.println("SpawnTunnel setup end");
 	}
 	
@@ -67,14 +72,16 @@ public class Kezdopont extends Sin{
 			}
 		}
 		catch (Exception e) {
-			
+			log.info("Hiba elkapva: " + e.getMessage());
 			System.out.print(e.getMessage());
 		}
+		log.info("Létrejött a vonat 5(+1) darab kocsival");
 		System.out.println("Létrejött a vonat 5(+1) darab kocsival");
 	}
 	
 	public Mozdony work(){
 		if(trains>0){
+			log.info("Kezdopont.work()");
 			System.out.println("Kezdopont.work()");
 			if(newspawn){
 				newspawn = false;
@@ -103,6 +110,7 @@ public class Kezdopont extends Sin{
 			}
 		}
 		else{
+			log.info("Elfogytak a vonatok");
 			System.out.println("Nincs több vonat!");
 			return null;
 		}

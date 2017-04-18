@@ -11,9 +11,12 @@ import java.io.ObjectOutputStream;
 import java.util.*;
 import javax.swing.JFileChooser;
 import vasut.*;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Jatek {
-
+	private static final Logger log = LogManager.getLogger(Palya.class);
+	
 	private Palya actGame;	//a Játék tartalmazhat egy pályát
 	private int actMap;		//aktuális pálya
 	private String sugo;	//a Sugó szövege
@@ -40,6 +43,7 @@ public class Jatek {
 			
 			//new Palya().run();
 		} catch (Exception e) {
+			log.info("Hiba elkapva: "+e.getMessage());
 			System.out.println(e.getMessage());
 		}
 	}
@@ -56,6 +60,7 @@ public class Jatek {
 			
 			//new Palya().run();
 		} catch (Exception e) {
+			log.info("Hiba elkapva: "+e.getMessage());
 			System.out.println(e.getMessage());
 		}	
 	}
@@ -91,6 +96,7 @@ public class Jatek {
 			//new Palya().run();
 		}
 		catch (Exception e){
+			log.info("Hiba elkapva: "+e.getMessage());
 			System.out.println(e.getMessage());
 		}
 	}
@@ -106,6 +112,7 @@ public class Jatek {
 	            save.writeObject(actGame);
 	            save.close();
 	        } catch (Exception e) {
+	        	log.info("Hiba elkapva: "+e.getMessage());
 	        	System.out.println(e.getMessage());
 	        }
 	    }	

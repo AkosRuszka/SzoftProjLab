@@ -1,8 +1,12 @@
 package vasut;
 
 import java.util.List;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
 public class Valto extends Sin{
+	
+	private static final Logger Log = LogManager.getLogger(Allomas.class);
 	
 	private int actState = 0;
 	private List<Sin> connectPoints;
@@ -12,12 +16,14 @@ public class Valto extends Sin{
 	}
 	
 	public int getActState(){
+		Log.info("Valto.getActState()");
 		System.out.println("Valto.getActState()");
 		return actState;
 	}
 	
 	public void nextState(){
-		System.out.println("Valto.nextState())");
+		Log.info("Valto.nextState()");
+		System.out.println("Valto.nextState()");
 		switch(actState){ // Ide kéne valami okos algoritmus a kapcsolódó sínek átállításához
 		// Jelenlegi módszer: feltesszük, hogy a váltó A pont bPoint-ja, B és C pont aPointja.
 		case 0: // A-ból B-be -> B-ből C-be
@@ -48,6 +54,7 @@ public class Valto extends Sin{
 	}
 	
 	public void addConnectPoints(Sin a){
+		Log.info("Valto.addConnectPoints()");
 		System.out.println("Valto.addConnectPoints()");
 		connectPoints.add(a);
 	}
