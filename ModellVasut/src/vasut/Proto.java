@@ -340,6 +340,31 @@ public class Proto {
 		}
 	}
 	
+	public void teszt10111213(){
+		Alagut a = new Alagut();
+		ArrayList<KulonlegesHely> kh = new ArrayList<KulonlegesHely>();
+		
+		for(int i = 0; i < inp.size(); i++){
+			String line[] = inp.get(i).split(" ");
+			switch(line[0]){
+				case "create":{
+					if(line[1].equals("alagut"))
+						a = new Alagut();
+					else if(line[1].equals("kulonlegeshely") && line[3] == "0" && line[4] == "alagut"){
+						Sin s = new Sin(null);
+						kh.add(new KulonlegesHely(s, a));
+					}
+					break;
+				}
+				case "alagutEpit":
+				case "alagutBont":
+					kh.get(Integer.parseInt(line[1])).checkTunnels();
+					break;				
+			}
+		}		
+	}
+	
+	
 	public void teszt14(){
 		ArrayList<Sin> rails = new ArrayList<Sin>();
 		ArrayList<Integer> states = new ArrayList<Integer>();

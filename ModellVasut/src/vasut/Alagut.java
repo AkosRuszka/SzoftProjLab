@@ -44,8 +44,10 @@ public class Alagut implements Serializable{
 			tunnel.get(tunnel.size()-1).setBPoint(exitB);
 			return tunnel.get(tunnel.size()-1);
 		}
-		else
+		else{
+			log.info("Alagut: az Alagut már be van kötve");
 			return null;
+		}
 	}
 	
 	public Sin destroy(KulonlegesHely hely){
