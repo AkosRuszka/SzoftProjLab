@@ -13,12 +13,15 @@ public class Allomas extends Sin{
 	private String color;
 	private List<String> risers;
 	
-	public Allomas(Sin aPoint_ , String color_){
+	public Allomas(Sin aPoint_ , String color_, String pass[]){
 		super(aPoint_);
 		
 		Log.info("Állomás konstruktor meghívva.");
 		
 		risers = new ArrayList<String>();
+		for (int i = 0; i < pass.length; i++) {
+			risers.add(pass[i]);
+		}
 		color = color_;
 	}
 	

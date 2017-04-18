@@ -398,7 +398,7 @@ public class Proto {
 	
 	public void teszt15(){
 		ArrayList<Sin> rails = new ArrayList<Sin>();
-		ArrayList<Integer> states = new ArrayList<Integer>();
+		ArrayList<VonatElem> trains = new ArrayList<VonatElem>();
 		for (int i = 0; i < inp.size(); i++) {
 			String line[] = inp.get(i).split(" ");
 			switch(line[0]){
