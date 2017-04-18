@@ -156,7 +156,7 @@ public class Proto {
 		int goodRow = 0;
 		
 		try{
-		FileInputStream fstream = new FileInputStream("abc.log");
+		FileInputStream fstream = new FileInputStream("\\logs\\logigng.log");
 		BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
 		String strLine;
 		
