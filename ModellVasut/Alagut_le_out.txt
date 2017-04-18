@@ -1,0 +1,2 @@
+Alagut: exitA helyről a KulonlgesHely lebontva
+KulonlegesHely: az Alagut bejárata lebontódott

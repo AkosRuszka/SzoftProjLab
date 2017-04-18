@@ -17,7 +17,7 @@ public class KulonlegesHely extends Sin implements Serializable{
 		log.info("A KulonlegesHely konstruktora meghívva");
 	}
 	
-	public void checkTunnels() throws IOException{ 
+	public void checkTunnels(){ 
 		//Megnézi, hogy van-e alagút felépítve már és ez alapján cselekszik
 		
 		/**Alagutat kell építeni, ha a vagy b pontja null, és az aObserver build metódusát, ennek függvényében meghívni
