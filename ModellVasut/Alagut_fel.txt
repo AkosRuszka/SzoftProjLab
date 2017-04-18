@@ -1,3 +1,3 @@
-create alagut	
+create alagut
 create kulonlegeshely 1 0 alagut
 alagutEpit 1

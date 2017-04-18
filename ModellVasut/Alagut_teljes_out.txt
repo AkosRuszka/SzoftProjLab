@@ -1,4 +1,4 @@
 Alagut: exitA helyre KulonlegesHely bekötve
-KulonlegesHely: aPoint-jához hozzákapcsolódott az Alagut
+KulonlegesHely: bPoint-jához hozzákapcsolódott az Alagut
 Alagut: exitB helyre KulonlegesHely bekötve
-KulonlegesHely: aPoint-jához hozzákapcsolódott az Alagut
+KulonlegesHely: bPoint-jához hozzákapcsolódott az Alagut
