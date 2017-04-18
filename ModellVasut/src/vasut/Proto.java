@@ -270,9 +270,9 @@ public class Proto {
 		}
 	}
 	
-	/**Allomas athaladas tesztek
+	/**Allomas athaladas tesztek + ütközés + kisiklás
 	 * @throws Exception */
-	public void teszt456() throws Exception{
+	public void teszt456789() throws Exception{
 		ArrayList<Sin> rail = new ArrayList<Sin>();
 		ArrayList<VonatElem> train = new ArrayList<VonatElem>();
 		ArrayList<Mozdony> engine = new ArrayList<Mozdony>();

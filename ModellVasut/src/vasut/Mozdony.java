@@ -44,6 +44,7 @@ public class Mozdony extends VonatElem {
 			}
 		}
 		else{
+			log.info("EXception: Kisiklott a vonat");
 			throw new Exception("Kisiklott a vonat");
 		} 			
 	}
