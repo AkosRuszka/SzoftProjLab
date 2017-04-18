@@ -1,0 +1,34 @@
+	/* Leszállhatnak/nem szállhatnak le rólad beállítása */
+	public void setemptyable(boolean aa) {
+		emptyable = aa;
+		/* Ha üres vagyok akkor tovább kell hívnom az utánam levőre ezt. */
+		if(empty) {
+			backelem.setemptyable(aa);
+		}
+	}
+	
+	/* Leszállhatnak rólad jelzés. */
+	public void changecolor() {
+		/* Ha van is ki leszálljon rólam.... */
+		if(!empty) {
+			/* Ha az előttem álló üres. */
+			if(frontelem.getempty()) {
+				/* Ha leszállhatnak rólam. */
+				if(emtyable) {
+					empty = true;
+					/* A mögöttem levő elemekről is leszállhatnak. */
+					backelem.setemptyable(true);
+				}
+			}
+		}
+	}
+	
+	/* Ezt csak az állomás fogja meghívni és mindig csak a felszálláskor hívja meg tehát
+	 * az aa paraméter false lesz 
+	 */
+	public void setempty(boolean aa) {
+		/* ekvivalens azzal hogy empty = false; */ 
+		empty = aa; 
+		/* jelezni kell a mögöttem állónak hogy nem szállhatnak le róla mivel rám felszálltak. */
+		backelem.setemptyable(false);
+	}
