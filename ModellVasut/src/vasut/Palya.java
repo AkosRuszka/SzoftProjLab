@@ -3,7 +3,6 @@ package vasut;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
-import java.rmi.server.Operation;
 import java.util.ArrayList;
 import java.util.Random;
 import org.apache.log4j.LogManager;
