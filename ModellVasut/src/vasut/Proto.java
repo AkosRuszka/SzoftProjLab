@@ -198,6 +198,7 @@ public class Proto {
 	
 	public void teszt2(){
 		ArrayList<Kezdopont> rail = new ArrayList<Kezdopont>();
+		Mozdony m = null;
 		for (int i = 0; i < inp.size(); i++) {
 			String line[] = inp.get(i).split(" ");
 			switch(line[0]){
@@ -209,7 +210,57 @@ public class Proto {
 				break;
 			}
 			case "kezdopont.work":{
-				Mozdony m = rail.get(0).work();
+				m = rail.get(0).work();
+				break;
+			}
+			default:
+				/// itt repül majd 1 hibaüzenet ;)
+				break;
+			}
+		}
+	}
+	
+	public void teszt3(){
+		ArrayList<Sin> rail = new ArrayList<Sin>();
+		Mozdony m = null;
+		for (int i = 0; i < inp.size(); i++) {
+			String line[] = inp.get(i).split(" ");
+			switch(line[0]){
+			case "kezdopont.init":{
+				int n1 = Integer.parseInt(line[1]);
+				int n2 = Integer.parseInt(line[2]);
+				int n3 = Integer.parseInt(line[3]);
+				rail.add(new Kezdopont(n1,n2,n3,null));
+				break;
+			}
+			case "kezdopont.work":{
+				Kezdopont k = (Kezdopont)(rail.get(0));
+				m = k.work();
+				break;
+			}
+			case "sin.init":{
+				rail.add(new Sin(null));
+				break;
+			}
+			case "sin.setA":{
+				int n1 = Integer.parseInt(line[1]);
+				int n2 = Integer.parseInt(line[2]);
+				rail.get(n1).setAPoint(rail.get(n2));
+				break;
+			}
+			case "sin.setB":{
+				int n1 = Integer.parseInt(line[1]);
+				int n2 = Integer.parseInt(line[2]);
+				rail.get(n1).setBPoint(rail.get(n2));
+				break;
+			}			
+			case "mozdony.run":{
+				try {
+					m.run();
+				} catch (Exception e) {
+					log.info(e);
+					e.printStackTrace();
+				}
 				break;
 			}
 			default:

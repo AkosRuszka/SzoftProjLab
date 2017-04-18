@@ -1,6 +1,6 @@
-Kezdopont.init/A 1,2,1
-Sin.init/B
-B.setB A
-A.setA B
-A.work/V
-V.run
+kezdopont.init 1,2,1
+sin.init 
+sin.setB 1 2 
+sin.setA 2 1 
+kezdopont.work 
+mozdony.run 
