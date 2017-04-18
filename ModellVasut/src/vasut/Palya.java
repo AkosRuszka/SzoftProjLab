@@ -19,7 +19,7 @@ public class Palya implements Serializable, Runnable{
 	private Alagut tunnel;
 	private boolean killed = false;
 	
-	public Palya(){
+	public Palya(int i){
 		map=new ArrayList<Sin>();
 		engines = new ArrayList<Mozdony>();
 		speed = false;
