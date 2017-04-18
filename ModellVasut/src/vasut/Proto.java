@@ -175,8 +175,8 @@ public class Proto {
 				break;
 			}
 			case "jatek.compare":{
-				int n1 = Integer.parseInt(line[1]);
-				int n2 = Integer.parseInt(line[2]);
+				int n1 = Integer.parseInt(line[1])-1;
+				int n2 = Integer.parseInt(line[2])-1;
 				if(maps.get(n1)==maps.get(n2)){
 					log.info("megegyezik a 2 pálya!");
 				}
@@ -190,7 +190,7 @@ public class Proto {
 				break;
 			}
 			default:
-				/// itt repül majd 1 hibaüzenet ;)
+				log.info("teszthiba --- hibás bemenet");
 				break;
 			}
 		}
@@ -214,7 +214,7 @@ public class Proto {
 				break;
 			}
 			default:
-				/// itt repül majd 1 hibaüzenet ;)
+				log.info("teszthiba --- hibás bemenet");
 				break;
 			}
 		}
@@ -243,14 +243,14 @@ public class Proto {
 				break;
 			}
 			case "sin.setA":{
-				int n1 = Integer.parseInt(line[1]);
-				int n2 = Integer.parseInt(line[2]);
+				int n1 = Integer.parseInt(line[1])-1;
+				int n2 = Integer.parseInt(line[2])-1;
 				rail.get(n1).setAPoint(rail.get(n2));
 				break;
 			}
 			case "sin.setB":{
-				int n1 = Integer.parseInt(line[1]);
-				int n2 = Integer.parseInt(line[2]);
+				int n1 = Integer.parseInt(line[1])-1;
+				int n2 = Integer.parseInt(line[2])-1;
 				rail.get(n1).setBPoint(rail.get(n2));
 				break;
 			}			
@@ -264,7 +264,7 @@ public class Proto {
 				break;
 			}
 			default:
-				/// itt repül majd 1 hibaüzenet ;)
+				log.info("teszthiba --- hibás bemenet");
 				break;
 			}
 		}
@@ -336,6 +336,118 @@ public class Proto {
 			default:{
 				//hiba
 			}
+			}
+		}
+	}
+	
+	public void teszt14(){
+		ArrayList<Sin> rails = new ArrayList<Sin>();
+		ArrayList<Integer> states = new ArrayList<Integer>();
+		for (int i = 0; i < inp.size(); i++) {
+			String line[] = inp.get(i).split(" ");
+			switch(line[0]){
+			case "valto.init":{
+				int n1 = Integer.parseInt(line[1])-1;
+				if(n1<0)
+					rails.add(new Valto(null));
+				else
+					rails.add(new Valto(rails.get(n1)));
+				break;
+			}
+			case "sin.init":{
+				int n1 = Integer.parseInt(line[1])-1;
+				if(n1<0)
+					rails.add(new Sin(null));
+				else
+					rails.add(new Sin(rails.get(n1)));
+				break;
+			}
+			case "valto.add":{
+				int n1 = Integer.parseInt(line[1])-1;
+				int n2 = Integer.parseInt(line[2])-1;
+				((Valto)(rails.get(n1))).addConnectPoints(rails.get(n2));
+				break;
+			}
+			case "valto.nextState":{
+				int n1 = Integer.parseInt(line[1])-1;
+				((Valto)(rails.get(n1))).nextState();
+				break;
+			}
+			case "valto.keepState":{
+				int n1 = Integer.parseInt(line[1])-1;
+				states.add(((Valto)(rails.get(n1))).getActState());
+				break;
+			}
+			case "jatek.compare":{
+				int n1 = Integer.parseInt(line[1]);
+				int n2 = Integer.parseInt(line[2]);
+				if(states.get(n1)==states.get(n2)){
+					log.info("megegyezik a 2 pálya!");
+				}
+				else{
+					log.info("nem egyezik meg a 2 pálya!");
+				}
+				break;
+			}
+			default:
+				log.info("teszthiba --- hibás bemenet");
+				break;
+			}
+		}
+	}
+	
+	public void teszt15(){
+		ArrayList<Sin> rails = new ArrayList<Sin>();
+		ArrayList<Integer> states = new ArrayList<Integer>();
+		for (int i = 0; i < inp.size(); i++) {
+			String line[] = inp.get(i).split(" ");
+			switch(line[0]){
+			case "valto.init":{
+				int n1 = Integer.parseInt(line[1])-1;
+				if(n1<0)
+					rails.add(new Valto(null));
+				else
+					rails.add(new Valto(rails.get(n1)));
+				break;
+			}
+			case "sin.init":{
+				int n1 = Integer.parseInt(line[1])-1;
+				if(n1<0)
+					rails.add(new Sin(null));
+				else
+					rails.add(new Sin(rails.get(n1)));
+				break;
+			}
+			case "valto.add":{
+				int n1 = Integer.parseInt(line[1])-1;
+				int n2 = Integer.parseInt(line[2])-1;
+				((Valto)(rails.get(n1))).addConnectPoints(rails.get(n2));
+				break;
+			}
+			case "valto.nextState":{
+				int n1 = Integer.parseInt(line[1])-1;
+				((Valto)(rails.get(n1))).nextState();
+				break;
+			}
+			case "valto.keepState":{
+				int n1 = Integer.parseInt(line[1])-1;
+				states.add(((Valto)(rails.get(n1))).getActState());
+				break;
+			}
+			case "jatek.compare":{
+				int n1 = Integer.parseInt(line[1]);
+				int n2 = Integer.parseInt(line[2]);
+				if(states.get(n1)==states.get(n2)){
+					log.info("megegyezik a 2 pálya!");
+				}
+				else{
+					log.info("nem egyezik meg a 2 pálya!");
+				}
+				break;
+			}
+			default:
+				log.info("teszthiba --- hibás bemenet");
+				break;
 			}
 		}
 	}
