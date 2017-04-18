@@ -37,6 +37,7 @@ public class Jatek {
 	
 	public void newGame(){
 		System.out.println("Jatek.newGame()");
+		log.info("Jatek.newGame()");
 		//pálya 1		
 		try {
 			FileInputStream loadFile = new FileInputStream("map1.dat");
@@ -54,6 +55,7 @@ public class Jatek {
 	
 	public void nextMap(){
 		System.out.println("Jatek.nextMap()");
+		log.info("Jatek.nextMap()");
 		//pálya 2	
 		try {
 			FileInputStream loadFile = new FileInputStream("map"+(actMap+1)+".dat");
@@ -70,7 +72,8 @@ public class Jatek {
 	}
 	
 	public void mapLoad(){
-		System.out.println("Jatek.mapLoad()");		
+		System.out.println("Jatek.mapLoad()");
+		log.info("Jatek.mapLoad()");
 		try {
 			JFileChooser jfc = new JFileChooser();
 			jfc.setCurrentDirectory(new File("."));
@@ -106,7 +109,8 @@ public class Jatek {
 	}
 	
 	public void saveMap(){
-		
+		System.out.println("Jatek.mapSave()");
+		log.info("Jatek.mapSave()");
 		JFileChooser sfc = new JFileChooser();
 	    sfc.setCurrentDirectory(new File("."));
 	    if (sfc.showSaveDialog(null) == JFileChooser.APPROVE_OPTION) {

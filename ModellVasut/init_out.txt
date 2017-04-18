@@ -1,0 +1,4 @@
+newGame
+mapSave
+mapLoad
+megegyezik
