@@ -51,11 +51,19 @@ public class VonatElem implements Serializable{
 		return color;
 	}
 	
-	public boolean getEmpty() { //ez már nem hiszem h kell
+	public boolean getEmpty() {
 		return empty;
 	}
 	
 	public void setEmpty(boolean bool) {
 		empty = bool;
+	}
+	
+	public boolean getEmptyable() {
+		return emptyable;
+	}
+	
+	public void setEmptyable(boolean bool) {
+		emptyable = bool;
 	}
 }
