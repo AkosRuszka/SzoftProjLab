@@ -73,35 +73,57 @@ public class Sin implements Serializable{
 		
 		Log.info("actMove() meghívva.");
 		
-		VonatElem ap = aPoint.getActVonatElem();
-		VonatElem bp = bPoint.getActVonatElem();
-		
-		/** Megvizsgáljuk hogy a bp (következő sín) felett levő sínen (ha van ilyen) van e vonatElem */
-		VonatElem bp_crossing;
-		if(bPoint.getCrossing() != null) {
-			bp_crossing = bPoint.getCrossing().getActVonatElem();
-		} else {
-			bp_crossing = null;
-		}
-		
+		/* Error: null.getActVonatElem() lehetséges... */
+		VonatElem ap;
 		VonatElem ap_crossing;
-		if(aPoint.getCrossing() != null) {
-			ap_crossing = bPoint.getCrossing().getActVonatElem();
-		} else { 
+		if(aPoint != null) {
+			ap = aPoint.getActVonatElem();
+			/** Megvizsgáljuk hogy a ap (következő sín) felett levő sínen (ha van ilyen) van e vonatElem */
+			if(aPoint.getCrossing() != null) {
+				ap_crossing = bPoint.getCrossing().getActVonatElem();
+			} else { 
+				ap_crossing = null;
+			}
+		} else {
+			ap = null;
 			ap_crossing = null;
 		}
+		
+		VonatElem bp;
+		VonatElem bp_crossing;
+		if(bPoint != null) {
+			bp = bPoint.getActVonatElem();
+			/** Megvizsgáljuk hogy a bp (következő sín) felett levő sínen (ha van ilyen) van e vonatElem */
+			if(bPoint.getCrossing() != null) {
+				bp_crossing = bPoint.getCrossing().getActVonatElem();
+			} else {
+				bp_crossing = null;
+			}
+		} else {
+			bp = null;
+			bp_crossing = null;
+		}
 			
-		/** Ha semelyik irányba nincs kocsi akkor a dir alapján döntünk */
+		/** Ha semelyik irányba nincs kocsi akkor a dir alapján döntünk , de itt még lehet az aPoint vagy bPoint null...*/
 		if(ap == null && bp == null) {
 			if(dir) {
 				/** Ha dir alapján bPoint felé megyünk tovább, akkor nézzük a bPoint felett található sín-en levő actVonatElem-et  */
 				if(bp_crossing == null) {
 					return bPoint;
+				} 
+				/* Ha bp_crossing != null akkor van felette VonatElem, ezért ütközés történik. */
+				else {
+					Log.info("Exception(Ütközés történt) dobás");
+					throw new Exception("Ütközés történt");
 				}
 			} else {
 				/** Ha dir alapján aPoint felé megyünk tovább, akkor nézzük az aPoint felett található sín-en levő actVonatElem-et  */
 				if(ap_crossing == null) {
 					return aPoint;	
+				}
+				else {
+					Log.info("Exception(Ütközés történt) dobás");
+					throw new Exception("Ütközés történt");
 				}
 			}
 		/** Megvizsgáljuk merre menjen a vonat normális esetben (tehát nem az actVonatElem a vonat utolsó kocsija...)
@@ -116,8 +138,11 @@ public class Sin implements Serializable{
 			return bPoint;
 		}
 		
+		/* Idáig állítólag sose jutunk el... */
+		
 		Log.info("Exception(Ütközés történt) dobás");
-		 /** Ha idáig eljutottunk akkor mindkét irányba van kocsi és ütközés történik! */
+		Log.info("---------------------------------------------------------------");
+		/** Ha idáig eljutottunk akkor mindkét irányba van kocsi és ütközés történik! */
 		throw new Exception("Ütközés történt");
 	}
 }
