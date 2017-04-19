@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 2017-04-18 22:14:49 INFO  Palya:40 - Jatek.newGame()
 2017-04-18 22:14:49 INFO  Palya:51 - Hiba elkapva: vasut.Palya; local class incompatible: stream classdesc serialVersionUID = 8459371322869859399, local class serialVersionUID = 4182631005236336290
@@ -501,6 +502,481 @@
 2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
 2017-04-19 22:55:58 INFO  Palya:39 - Spawntunnel setup end
 2017-04-19 22:55:58 INFO  Palya:117 - Jatek.mapSave()
+=======
+�� sr vasut.PalyaV���_9 Z doneZ killedZ speedL enginest Ljava/util/ArrayList;L mapq ~ L 
+startPointt Lvasut/Kezdopont;L tunnelt Lvasut/Alagut;xp   sr java.util.ArrayListx����a� I sizexp    w    xsq ~    w   sr vasut.Kezdoponte�Z��� Z newspawnI 	spawnTimeI 	startTimeI timeI trainsL spawnTunnelq ~ L trainq ~ xr 	vasut.Sin��Y�"�6 Z dirL aPointt Lvasut/Sin;L actVonatElemt Lvasut/VonatElem;L bPointq ~ 
+L crossingq ~ 
+xpppsq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~ pppppppppp             sq ~    w   q ~ q ~ q ~ q ~ q ~ q ~ q ~ q ~ xsq ~     w    xxq ~ sr vasut.Alagut�&���v/ L exitAt Lvasut/KulonlegesHely;L exitBq ~ L tunnelq ~ xpppsq ~    
+w   
+sq ~ 	sq ~ 	ppq ~ ppsq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~  psq ~ 	q ~ !psq ~ 	q ~ "psq ~ 	q ~ #ppppppppppppq ~ q ~ q ~ q ~ q ~  q ~ !q ~ "q ~ #q ~ $x2017-04-19 01:38:19 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:19 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 01:38:19 INFO  Palya:117 - Jatek.mapSave()
+2017-04-19 01:38:23 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:23 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 01:38:23 INFO  Palya:117 - Jatek.mapSave()
+2017-04-19 01:38:52 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:52 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 01:38:52 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:52 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:52 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:52 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:52 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:52 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:52 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:52 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 01:38:52 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:52 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:38:52 INFO  Palya:84 - Kezdopont.work()
+2017-04-19 01:38:52 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:38:52 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:38:52 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-19 01:39:00 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-19 01:39:11 INFO  Sin:74 - actMove() meghívva.
+2017-04-19 01:39:20 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:20 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 01:39:20 INFO  Palya:117 - Jatek.mapSave()
+2017-04-19 01:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:27 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 01:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:27 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 01:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:39:27 INFO  Palya:84 - Kezdopont.work()
+2017-04-19 01:39:27 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:39:27 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:39:27 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-19 01:39:31 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-19 01:40:48 INFO  Sin:74 - actMove() meghívva.
+2017-04-19 01:58:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:58:20 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 01:58:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:58:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:58:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:58:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:58:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:58:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:58:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:58:20 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 01:58:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:58:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:58:20 INFO  Palya:84 - Kezdopont.work()
+2017-04-19 01:58:20 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:58:20 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:58:20 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-19 01:58:20 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-19 01:58:20 INFO  Sin:74 - actMove() meghívva.
+2017-04-19 01:58:20 INFO  Palya:290 - java.lang.NullPointerException
+2017-04-19 01:59:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:59:14 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 01:59:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:59:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:59:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:59:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:59:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:59:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:59:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:59:14 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 01:59:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:59:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 01:59:14 INFO  Palya:84 - Kezdopont.work()
+2017-04-19 01:59:14 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 01:59:14 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 01:59:14 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-19 01:59:23 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-19 01:59:54 INFO  Sin:74 - actMove() meghívva.
+2017-04-19 02:00:03 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:03 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 02:00:03 INFO  Palya:117 - Jatek.mapSave()
+2017-04-19 02:00:30 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:30 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 02:00:30 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:30 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:30 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:30 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:30 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:30 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:30 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:30 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 02:00:30 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:30 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:00:30 INFO  Palya:84 - Kezdopont.work()
+2017-04-19 02:00:30 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:00:30 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:00:30 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-19 02:00:38 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-19 02:01:07 INFO  Sin:74 - actMove() meghívva.
+2017-04-19 02:01:35 INFO  Palya:290 - java.lang.NullPointerException
+2017-04-19 02:01:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:01:45 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 02:01:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:01:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:01:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:01:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:01:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:01:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:01:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:01:45 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 02:01:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:01:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:01:45 INFO  Palya:84 - Kezdopont.work()
+2017-04-19 02:01:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:01:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:01:45 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-19 02:01:46 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-19 02:01:46 INFO  Sin:74 - actMove() meghívva.
+2017-04-19 02:03:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:22 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 02:03:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:22 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 02:03:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:22 INFO  Palya:84 - Kezdopont.work()
+2017-04-19 02:03:22 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:22 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:22 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-19 02:03:23 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-19 02:03:23 INFO  Sin:74 - actMove() meghívva.
+2017-04-19 02:03:25 INFO  Palya:290 - java.lang.NullPointerException
+2017-04-19 02:03:31 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:31 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 02:03:31 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:31 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:31 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:31 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:31 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:31 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:31 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:31 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 02:03:31 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:31 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:31 INFO  Palya:84 - Kezdopont.work()
+2017-04-19 02:03:31 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:31 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:31 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-19 02:03:32 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-19 02:03:32 INFO  Sin:74 - actMove() meghívva.
+2017-04-19 02:03:41 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:41 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 02:03:41 INFO  Palya:117 - Jatek.mapSave()
+2017-04-19 02:03:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:49 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 02:03:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:49 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 02:03:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 02:03:49 INFO  Palya:84 - Kezdopont.work()
+2017-04-19 02:03:49 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 02:03:49 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-19 02:03:49 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-19 02:03:51 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-19 02:03:51 INFO  Sin:74 - actMove() meghívva.
+2017-04-19 22:12:51 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:12:51 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:12:51 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:12:51 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:12:51 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:12:51 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:14:40 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:15:20 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:34:02 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:34:02 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:34:02 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:34:02 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:34:02 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:34:02 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:34:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:36:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:36:26 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:36:32 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 22:43:15 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:43:15 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 22:43:15 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 22:45:57 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:45:57 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-19 22:45:57 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-19 22:47:53 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:47:53 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:47:53 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:49:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:49:15 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-19 22:49:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:49:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:49:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:49:51 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:49:52 INFO  Allomas:19 - Állomás konstruktor meghívva.
+>>>>>>> branch 'master' of https://github.com/AkosRuszka/SzoftProjLab.git
 =======
 �� sr vasut.PalyaV���_9 Z doneZ killedZ speedL enginest Ljava/util/ArrayList;L mapq ~ L 
 startPointt Lvasut/Kezdopont;L tunnelt Lvasut/Alagut;xp   sr java.util.ArrayListx����a� I sizexp    w    xsq ~    w   sr vasut.Kezdoponte�Z��� Z newspawnI 	spawnTimeI 	startTimeI timeI trainsL spawnTunnelq ~ L trainq ~ xr 	vasut.Sin��Y�"�6 Z dirL aPointt Lvasut/Sin;L actVonatElemt Lvasut/VonatElem;L bPointq ~ 
