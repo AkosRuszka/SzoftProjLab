@@ -19,7 +19,7 @@ public class Allomas extends Sin{
 		Log.info("Állomás konstruktor meghívva.");
 		
 		risers = new ArrayList<String>();
-		if(pass.length != 0){
+		if(pass != null){
 			for (int i = 0; i < pass.length; i++) {
 				risers.add(pass[i]);
 			}
