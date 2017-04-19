@@ -312,12 +312,12 @@ public class Proto {
 				switch(line[1]){
 				case "sin" :{
 					if (!rail.isEmpty()){
-						Sin s = new Sin(rail.get(Integer.parseInt(line[3])));
-						rail.add(Integer.parseInt(line[2]),s);
+						Sin s = new Sin(rail.get(Integer.parseInt(line[3])-1));
+						rail.add(Integer.parseInt(line[2])-1,s);
 					}
 					else{
 						Sin s = new Sin(null);
-						rail.add(Integer.parseInt(line[2]),s);
+						rail.add(Integer.parseInt(line[2])-1,s);
 					}
 					break;
 				}
@@ -329,8 +329,8 @@ public class Proto {
 								pass1[o]=line[l];
 							}
 						}
-						Allomas a = new Allomas(rail.get(Integer.parseInt(line[3])), line[4], pass1);
-						rail.add(Integer.parseInt(line[2]),a);
+						Allomas a = new Allomas(rail.get(Integer.parseInt(line[3])-1), line[4], pass1);
+						rail.add(Integer.parseInt(line[2])-1,a);
 					}
 					else {
 						String[] pass2 = null;
@@ -340,7 +340,7 @@ public class Proto {
 							}
 						}	
 						Allomas a = new Allomas(null, line[4], pass2);
-						rail.add(Integer.parseInt(line[2]),a);
+						rail.add(Integer.parseInt(line[2])-1,a);
 					}
 					break;
 				}
@@ -352,17 +352,17 @@ public class Proto {
 			case "put" :{
 				switch(line[1]){
 				case "mozdony" :{
-					Mozdony m = new Mozdony(rail.get(Integer.parseInt(line[4])));
-					train.add(Integer.parseInt(line[2]),m);
-					engine.add(Integer.parseInt(line[2]),m);
+					Mozdony m = new Mozdony(rail.get(Integer.parseInt(line[4])-1));
+					train.add(Integer.parseInt(line[2])-1,m);
+					engine.add(Integer.parseInt(line[2])-1,m);
 				}
 				case "kocsi" :{
-					Kocsi k = new Kocsi(rail.get(Integer.parseInt(line[4])), train.get(Integer.parseInt(line[3])), line[5]);
+					Kocsi k = new Kocsi(rail.get(Integer.parseInt(line[4])-1), train.get(Integer.parseInt(line[3])-1), line[5]);
 					if (line[6].equals("-tele"))
 						k.setEmpty(true);
 					else
 						k.setEmpty(false);
-					train.add(Integer.parseInt(line[2]), k);
+					train.add(Integer.parseInt(line[2])-1, k);
 				}
 				default: {
 					//hiba
