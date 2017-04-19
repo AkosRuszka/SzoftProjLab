@@ -1,6 +1,9 @@
-kezdopont.init 1,2,1
+kezdopont.init 0 0 1
 sin.init 
 sin.setB 1 2 
 sin.setA 2 1 
+sin.init 
+sin.setB 2 3 
+sin.setA 3 2 
 kezdopont.work 
 mozdony.run 

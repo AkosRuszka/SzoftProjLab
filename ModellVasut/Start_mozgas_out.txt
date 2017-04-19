@@ -1,7 +1,7 @@
-Mozdony run
-Kocsi pull
-Kocsi pull
-Kocsi pull
-Kocsi pull
-Kocsi pull
-Kocsi pull
+Mozdony: run meghívva
+Kocsi: pull meghívva
+Kocsi: pull meghívva
+Kocsi: pull meghívva
+Kocsi: pull meghívva
+Kocsi: pull meghívva
+Kocsi: pull meghívva

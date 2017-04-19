@@ -19,8 +19,10 @@ public class Allomas extends Sin{
 		Log.info("Állomás konstruktor meghívva.");
 		
 		risers = new ArrayList<String>();
-		for (int i = 0; i < pass.length; i++) {
-			risers.add(pass[i]);
+		if(pass.length != 0){
+			for (int i = 0; i < pass.length; i++) {
+				risers.add(pass[i]);
+			}
 		}
 		color = color_;
 	}

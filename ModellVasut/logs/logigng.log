@@ -1,0 +1,502 @@
+<<<<<<< HEAD
+=======
+2017-04-18 22:14:49 INFO  Palya:40 - Jatek.newGame()
+2017-04-18 22:14:49 INFO  Palya:51 - Hiba elkapva: vasut.Palya; local class incompatible: stream classdesc serialVersionUID = 8459371322869859399, local class serialVersionUID = 4182631005236336290
+2017-04-18 22:14:49 INFO  Palya:113 - Jatek.mapSave()
+2017-04-18 22:15:09 INFO  Palya:76 - Jatek.mapLoad()
+2017-04-18 22:15:19 INFO  Palya:106 - Hiba elkapva: Nem megfelelő fájltípus!
+2017-04-18 22:15:19 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:16:22 INFO  Palya:40 - Jatek.newGame()
+2017-04-18 22:16:22 INFO  Palya:51 - Hiba elkapva: vasut.Palya; local class incompatible: stream classdesc serialVersionUID = 8459371322869859399, local class serialVersionUID = 4182631005236336290
+2017-04-18 22:16:22 INFO  Palya:113 - Jatek.mapSave()
+2017-04-18 22:16:32 INFO  Palya:76 - Jatek.mapLoad()
+2017-04-18 22:16:38 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:19:20 INFO  Palya:40 - Jatek.newGame()
+2017-04-18 22:19:20 INFO  Palya:51 - Hiba elkapva: vasut.Palya; local class incompatible: stream classdesc serialVersionUID = 8459371322869859399, local class serialVersionUID = 4182631005236336290
+2017-04-18 22:19:55 INFO  Palya:40 - Jatek.newGame()
+2017-04-18 22:19:55 INFO  Palya:51 - Hiba elkapva: vasut.Palya; local class incompatible: stream classdesc serialVersionUID = 8459371322869859399, local class serialVersionUID = 4182631005236336290
+2017-04-18 22:27:43 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 22:27:43 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:43 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:43 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 22:27:43 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:43 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:43 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:43 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:43 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:43 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:43 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:43 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 22:27:43 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:27:58 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 22:27:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:58 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 22:27:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:27:58 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 22:27:58 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:28:07 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 22:28:07 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:28:07 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:28:07 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 22:28:07 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:28:07 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:28:07 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:28:07 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:28:07 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:28:07 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:28:07 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 22:28:07 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 22:28:07 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:30:21 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:30:21 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:30:32 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:30:37 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:33:51 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:33:51 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:34:00 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:34:07 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:37:28 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:37:28 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:37:32 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:37:34 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:38:39 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:38:39 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:39:47 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:42:30 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:43:22 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:43:22 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:43:27 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:43:29 INFO  Palya:221 - teszthiba --- hibás bemenet
+2017-04-18 22:44:18 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:44:18 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:44:26 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:46:01 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:46:01 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:46:04 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:46:06 INFO  Palya:212 - nem egyezik meg a 2 pálya!
+2017-04-18 22:46:13 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:46:13 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:46:56 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:46:56 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:47:01 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:49:20 INFO  Palya:212 - nem egyezik meg a 2 pálya!
+2017-04-18 22:51:01 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:51:01 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:51:43 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:51:54 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 22:52:16 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:52:17 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:52:22 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:52:50 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 22:54:10 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:54:11 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:54:14 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:54:20 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 22:57:22 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:57:22 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:57:25 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:57:27 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 22:58:21 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 22:58:21 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 22:58:24 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 22:58:26 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 23:01:21 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 23:01:21 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 23:01:23 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 23:01:25 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 23:01:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:01:25 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:01:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:01:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:01:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:01:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:01:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:01:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:01:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:01:25 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:01:25 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:01:25 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:01:25 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:03:25 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Palya:458 - teszthiba --- hibás bemenet
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-18 23:03:25 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 23:03:25 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 23:24:57 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 23:25:00 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:25:00 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:25:00 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:25:00 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:25:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Palya:458 - teszthiba --- hibás bemenet
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-18 23:30:12 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 23:30:12 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 23:30:16 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 23:30:19 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:30:19 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:30:19 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:30:19 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:30:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Palya:458 - teszthiba --- hibás bemenet
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-18 23:31:27 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 23:31:27 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 23:31:31 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 23:31:33 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:31:33 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:31:33 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:31:33 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:31:33 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:31:33 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:31:33 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:31:33 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Palya:458 - teszthiba --- hibás bemenet
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:03 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Palya:458 - teszthiba --- hibás bemenet
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:33:39 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Palya:458 - teszthiba --- hibás bemenet
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-18 23:34:35 INFO  Palya:44 - Jatek.newGame()
+2017-04-18 23:34:35 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 23:34:42 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-18 23:34:45 INFO  Palya:210 - megegyezik a 2 pálya!
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:34:45 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:34:45 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:34:45 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:34:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:34:45 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:34:45 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:34:45 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:36:29 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:36:29 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:36:29 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:36:29 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:36:29 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:36:29 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:36:29 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:36:29 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:36:29 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:36:29 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:36:29 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:36:29 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:36:29 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 23:38:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:38:09 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:38:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:38:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:38:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:38:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:38:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:38:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:38:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:38:09 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:38:14 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:38:27 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:38:39 INFO  Palya:290 - java.lang.NullPointerException
+2017-04-18 23:39:19 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:39:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:19 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:39:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:19 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:19 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:39:19 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 23:39:22 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-18 23:39:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:22 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:39:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:22 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:22 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:39:22 INFO  Palya:117 - Jatek.mapSave()
+2017-04-18 23:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:27 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:27 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:39:27 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:38 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:38 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:39:38 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:38 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:38 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:38 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:38 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:38 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:38 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:39:38 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:39:38 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:40:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:40:09 INFO  Palya:29 - Spawntunnel setup
+2017-04-18 23:40:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:40:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:40:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:40:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:40:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:40:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:40:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:40:09 INFO  Palya:39 - Spawntunnel setup end
+2017-04-18 23:40:09 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-18 23:40:09 INFO  Palya:84 - Kezdopont.work()
+2017-04-18 23:40:09 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-18 23:40:09 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-18 23:40:09 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-18 23:40:09 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-18 23:40:09 INFO  Sin:74 - actMove() meghívva.
+2017-04-18 23:40:09 INFO  Palya:290 - java.lang.NullPointerException
+>>>>>>> branch 'master' of https://github.com/AkosRuszka/SzoftProjLab.git
+2017-04-19 22:55:58 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Palya:29 - Spawntunnel setup
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-19 22:55:58 INFO  Palya:39 - Spawntunnel setup end
+2017-04-19 22:55:58 INFO  Palya:117 - Jatek.mapSave()

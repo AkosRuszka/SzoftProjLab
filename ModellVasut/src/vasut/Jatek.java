@@ -35,6 +35,10 @@ public class Jatek {
 		return actGame;
 	}
 	
+	public void makeGame(){
+		actGame = new Palya();
+	}
+	
 	public void newGame(){
 		System.out.println("Jatek.newGame()");
 		log.info("Jatek.newGame()");

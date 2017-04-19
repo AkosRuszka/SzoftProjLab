@@ -11,7 +11,7 @@ import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
 public class Proto {
-	private static final Logger log = LogManager.getLogger(Palya.class);
+	public static final Logger log = LogManager.getLogger(Palya.class);
 	//tesztelés
 	private ArrayList<String> inp = new ArrayList<String>(); 
 	private ArrayList<String> oup = new ArrayList<String>(); 
@@ -156,7 +156,7 @@ public class Proto {
 		int goodRow = 0;
 		
 		try{
-		FileInputStream fstream = new FileInputStream("\\logs\\logigng.log");
+		FileInputStream fstream = new FileInputStream(".\\logs\\logigng.log");
 		BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
 		String strLine;
 		
@@ -164,6 +164,7 @@ public class Proto {
 			while ((strLine = br.readLine()) != null)   {
 				if(strLine.contains(oup.get(i))){
 					goodRow++;
+					break;
 				}					
 			}
 		}
@@ -202,7 +203,7 @@ public class Proto {
 				j1.mapLoad();
 				break;
 			}
-			case "jatek.compare":{
+			case "compare":{
 				int n1 = Integer.parseInt(line[1])-1;
 				int n2 = Integer.parseInt(line[2])-1;
 				if(maps.get(n1)==maps.get(n2)){
@@ -390,7 +391,7 @@ public class Proto {
 				case "create":{
 					if(line[1].equals("alagut"))
 						a = new Alagut();
-					else if(line[1].equals("kulonlegeshely") && line[3] == "0" && line[4] == "alagut"){
+					else if(line[1].equals("kulonlegeshely") && line[3].equals("0") && line[4].equals("alagut")){
 						Sin s = new Sin(null);
 						kh.add(new KulonlegesHely(s, a));
 					}
@@ -398,7 +399,7 @@ public class Proto {
 				}
 				case "alagutEpit":
 				case "alagutBont":
-					kh.get(Integer.parseInt(line[1])).checkTunnels();
+					kh.get(Integer.parseInt(line[1])-1).checkTunnels();
 					break;				
 			}
 		}		
@@ -540,6 +541,8 @@ public class Proto {
 	public static void main(String[] args) throws Exception {
 		
 		Jatek j = new Jatek();
+		j.makeGame();
+		j.saveMap();
 	}
 }
 
