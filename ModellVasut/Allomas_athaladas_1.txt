@@ -1,14 +1,14 @@
-create sin 1 0
-create sin 2 1
-create sin 3 2
-create allomas 4 3 red
-create sin 5 4
-create sin 6 5
-create sin 7 6
-put mozdony 1 0 2
-put kocsi 2 1 1 red -tele
-run
-run
-run
-run
-run
+create sin 1 0 
+create sin 2 1 
+create sin 3 2 
+create allomas 4 3 red 
+create sin 5 4 
+create sin 6 5 
+create sin 7 6 
+put mozdony 1 0 2 
+put kocsi 2 1 1 red -tele 
+run 
+run 
+run 
+run 
+run 
