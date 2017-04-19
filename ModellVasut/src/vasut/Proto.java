@@ -444,8 +444,8 @@ public class Proto {
 				break;
 			}
 			case "jatek.compare":{
-				int n1 = Integer.parseInt(line[1]);
-				int n2 = Integer.parseInt(line[2]);
+				int n1 = Integer.parseInt(line[1])-1;
+				int n2 = Integer.parseInt(line[2])-1;
 				if(states.get(n1)==states.get(n2)){
 					log.info("megegyezik a 2 pálya!");
 				}
