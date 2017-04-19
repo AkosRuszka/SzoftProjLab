@@ -1,6 +1,8 @@
 package vasut;
 
+
 import java.util.ArrayList;
+
 import java.util.List;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -10,6 +12,7 @@ public class Valto extends Sin{
 	private static final Logger Log = LogManager.getLogger(Allomas.class);
 	
 	private int actState = 0;
+
 	private ArrayList<Sin> connectPoints;
 
 	public Valto(Sin aPoint_) {
