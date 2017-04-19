@@ -391,7 +391,7 @@ public class Proto {
 				case "create":{
 					if(line[1].equals("alagut"))
 						a = new Alagut();
-					else if(line[1].equals("kulonlegeshely") && line[3] == "0" && line[4] == "alagut"){
+					else if(line[1].equals("kulonlegeshely") && line[3].equals("0") && line[4].equals("alagut")){
 						Sin s = new Sin(null);
 						kh.add(new KulonlegesHely(s, a));
 					}
@@ -399,7 +399,7 @@ public class Proto {
 				}
 				case "alagutEpit":
 				case "alagutBont":
-					kh.get(Integer.parseInt(line[1])).checkTunnels();
+					kh.get(Integer.parseInt(line[1])-1).checkTunnels();
 					break;				
 			}
 		}		
