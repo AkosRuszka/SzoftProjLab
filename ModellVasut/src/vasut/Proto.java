@@ -360,6 +360,7 @@ public class Proto {
 					Mozdony m = new Mozdony(rail.get(Integer.parseInt(line[4])-1));
 					train.add(Integer.parseInt(line[2])-1,m);
 					engine.add(Integer.parseInt(line[2])-1,m);
+					break;
 				}
 				case "kocsi" :{
 					Kocsi k = new Kocsi(rail.get(Integer.parseInt(line[4])-1), train.get(Integer.parseInt(line[3])-1), line[5]);
@@ -368,6 +369,7 @@ public class Proto {
 					else
 						k.setEmpty(false);
 					train.add(Integer.parseInt(line[2])-1, k);
+					break;
 				}
 				default: {
 					//hiba
@@ -378,6 +380,7 @@ public class Proto {
 				for (int x = 0; x < engine.size(); x++){
 					engine.get(x).run();
 				}
+				break;
 			}
 			default:{
 				//hiba
