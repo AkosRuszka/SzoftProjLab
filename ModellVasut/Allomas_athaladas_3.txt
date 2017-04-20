@@ -1,11 +1,15 @@
-create sin 1 0
-create sin 2 1
-create allomas 3 2 red blue
-create sin 4 3
-create sin 5 4
-put mozdony 1 0 2
-put kocsi 2 1 1 red
-run
-run	
-run	
-run
+sin.init 0
+sin.init 1
+sin.setB 1 2
+allomas.init 2 red blue
+sin.setB 3 2
+sin.init 3
+sin.setB 4 3
+sin.init 4
+sin.setB 5 4
+mozdony.init 2
+kocsi.init 1 1 blue
+kocsi.setback 1 2
+run 1
+run 1
+run 1
