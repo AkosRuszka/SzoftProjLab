@@ -32,7 +32,7 @@ public class vasutTeszt {
 		p.loadOutput(3);
 		p.teszt3();		
 		Assert.assertTrue(p.logCheck());
-	}	*/
+	}	
 	@Test
 	public void test4() {
 		System.out.println("4. teszt------------------");
@@ -44,7 +44,7 @@ public class vasutTeszt {
 			e.printStackTrace();
 		}		
 		Assert.assertTrue(p.logCheck());
-	}	/*
+	}	
 	@Test
 	public void test5() {
 		System.out.println("5. teszt------------------");
@@ -68,7 +68,7 @@ public class vasutTeszt {
 			e.printStackTrace();
 		}		
 		Assert.assertTrue(p.logCheck());
-	}
+	}*/
 	@Test
 	public void test7() {
 		System.out.println("7. teszt------------------");
@@ -87,12 +87,12 @@ public class vasutTeszt {
 		p.loadInput(8);
 		p.loadOutput(8);
 		try {
-			p.teszt456789();
+			p.teszt8();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
 		Assert.assertTrue(p.logCheck());
-	}
+	}/*
 	@Test
 	public void test9() {
 		System.out.println("9. teszt------------------");
@@ -144,7 +144,7 @@ public class vasutTeszt {
 		p.loadOutput(14);
 		p.teszt14();			
 		Assert.assertTrue(p.logCheck());
-	}*/
+	}
 	@Test
 	public void test15() {
 		System.out.println("15. teszt------------------");
@@ -152,5 +152,5 @@ public class vasutTeszt {
 		p.loadOutput(15);
 		p.teszt15();			
 		Assert.assertTrue(p.logCheck());
-	}
+	}*/
 }
