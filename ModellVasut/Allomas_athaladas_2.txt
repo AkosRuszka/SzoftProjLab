@@ -21,5 +21,3 @@ kocsi.setback 2 3
 run 1 
 run 1 
 run 1 
-run 1 
-run 1
