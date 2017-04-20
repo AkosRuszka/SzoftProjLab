@@ -5,7 +5,7 @@ sin.init 2
 sin.setB 2 3 
 sin.init 3 
 sin.setB 4 3 
-allomas.init 4 piros  
+allomas.init 4 red  
 sin.setB 5 4 
 sin.init 5 
 sin.setB 6 5
@@ -14,12 +14,8 @@ sin.setB 7 6
 sin.init 7 
 sin.setB 8 7 
 mozdony.init 4
-kocsi.init 3 1 szurke
+kocsi.init 3 1 red
 kocsi.setback 1 2 
-kocsi.init 2 2 piros
-kocsi.setback 2 3 
-kocsi.init 1 3 piros 
-kocsi.setback 3 4 
 run 1 
 run 1 
 run 1 

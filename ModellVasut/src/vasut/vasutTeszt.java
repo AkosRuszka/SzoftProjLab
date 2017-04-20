@@ -8,7 +8,7 @@ import vasut.*;
 import org.junit.Test;
 
 public class vasutTeszt {
-	Proto p = new Proto();
+	Proto p = new Proto();/*
 	@Test
 	public void test1() {
 		System.out.println("1. teszt------------------");
@@ -144,8 +144,7 @@ public class vasutTeszt {
 		p.loadOutput(14);
 		p.teszt14();			
 		Assert.assertTrue(p.logCheck());
-	}
-
+	}*/
 	@Test
 	public void test15() {
 		System.out.println("15. teszt------------------");

@@ -33,7 +33,7 @@ public class VonatElem implements Serializable{
 		if(emptyable||frontElem.getColor()=="grey"){
 			empty = true;
 			log.info("Leszálltak");
-			emptyable = false;
+			emptyable = true; // eddig false volt de csak akkor false ha volt előtte felszállás, de az nem itt állítódik :D
 			//Meg kell keresni, hogy leszállás után, ki az első olyan nem üres kocsi, akiről
 			//leszállhatnak majd
 			boolean kov_emptyable = true; //false-ra állítjuk, ha meg van

@@ -1899,3 +1899,530 @@ sq ~ 	sq ~ 	ppq ~ ppsq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~ psq ~ 	q ~ psq ~ 
 2017-04-20 00:50:03 INFO  VonatElem:27 - VonatElem konstruktora meghívva
 2017-04-20 00:50:03 INFO  VonatElem:15 - Mozdony konstruktora meghívva
 >>>>>>> branch 'master' of https://github.com/AkosRuszka/SzoftProjLab.git
+2017-04-20 01:59:00 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Alagut:17 - A KulonlegesHely konstruktora meghívva
+2017-04-20 01:59:00 INFO  Alagut:33 - Alagut: exitA helyre KulonlegesHely bekötve
+2017-04-20 01:59:00 INFO  Alagut:32 - KulonlegesHely: bPoint-jához hozzákapcsolódott az Alagut
+2017-04-20 01:59:00 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Alagut:17 - A KulonlegesHely konstruktora meghívva
+2017-04-20 01:59:00 INFO  Alagut:33 - Alagut: exitA helyre KulonlegesHely bekötve
+2017-04-20 01:59:00 INFO  Alagut:32 - KulonlegesHely: bPoint-jához hozzákapcsolódott az Alagut
+2017-04-20 01:59:00 INFO  Alagut:67 - Alagut: exitA helyről a KulonlgesHely lebontva
+2017-04-20 01:59:00 INFO  Alagut:40 - KulonlegesHely: az Alagut bejárata lebontódott
+2017-04-20 01:59:00 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Alagut:17 - A KulonlegesHely konstruktora meghívva
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Alagut:17 - A KulonlegesHely konstruktora meghívva
+2017-04-20 01:59:00 INFO  Alagut:33 - Alagut: exitA helyre KulonlegesHely bekötve
+2017-04-20 01:59:00 INFO  Alagut:32 - KulonlegesHely: bPoint-jához hozzákapcsolódott az Alagut
+2017-04-20 01:59:00 INFO  Alagut:41 - Alagut: exitB helyre KulonlegesHely bekötve
+2017-04-20 01:59:00 INFO  Alagut:32 - KulonlegesHely: bPoint-jához hozzákapcsolódott az Alagut
+2017-04-20 01:59:00 INFO  Alagut:16 - Alagut konstruktor meghívva
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Alagut:17 - A KulonlegesHely konstruktora meghívva
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Alagut:17 - A KulonlegesHely konstruktora meghívva
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Alagut:17 - A KulonlegesHely konstruktora meghívva
+2017-04-20 01:59:00 INFO  Alagut:33 - Alagut: exitA helyre KulonlegesHely bekötve
+2017-04-20 01:59:00 INFO  Alagut:32 - KulonlegesHely: bPoint-jához hozzákapcsolódott az Alagut
+2017-04-20 01:59:00 INFO  Alagut:41 - Alagut: exitB helyre KulonlegesHely bekötve
+2017-04-20 01:59:00 INFO  Alagut:32 - KulonlegesHely: bPoint-jához hozzákapcsolódott az Alagut
+2017-04-20 01:59:00 INFO  Alagut:48 - Alagut: az Alagut már be van kötve
+2017-04-20 01:59:00 INFO  Alagut:32 - KulonlegesHely: bPoint-jához hozzákapcsolódott az Alagut
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Allomas:62 - Valto.addConnectPoints()
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Allomas:62 - Valto.addConnectPoints()
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Allomas:62 - Valto.addConnectPoints()
+2017-04-20 01:59:00 INFO  Allomas:30 - Valto.nextState()
+2017-04-20 01:59:00 INFO  Allomas:24 - Valto.getActState()
+2017-04-20 01:59:00 INFO  Allomas:30 - Valto.nextState()
+2017-04-20 01:59:00 INFO  Allomas:24 - Valto.getActState()
+2017-04-20 01:59:00 INFO  Palya:463 - teszthiba --- hibás bemenet
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Allomas:62 - Valto.addConnectPoints()
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Allomas:62 - Valto.addConnectPoints()
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Allomas:62 - Valto.addConnectPoints()
+2017-04-20 01:59:00 INFO  Allomas:30 - Valto.nextState()
+2017-04-20 01:59:00 INFO  Allomas:24 - Valto.getActState()
+2017-04-20 01:59:00 INFO  Allomas:30 - Valto.nextState()
+2017-04-20 01:59:00 INFO  Allomas:24 - Valto.getActState()
+2017-04-20 01:59:00 INFO  Palya:463 - teszthiba --- hibás bemenet
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:00 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 01:59:00 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:00 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:00 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:00 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:00 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:00 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:00 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  Palya:531 - false
+2017-04-20 01:59:00 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 01:59:00 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  Palya:531 - false
+2017-04-20 01:59:00 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  Palya:531 - false
+2017-04-20 01:59:00 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:32 - VonatElem: changeColor meghívva
+2017-04-20 01:59:00 INFO  VonatElem:53 - Nem szálltak le
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:00 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:00 INFO  Palya:531 - false
+2017-04-20 01:59:00 INFO  Palya:44 - Jatek.newGame()
+2017-04-20 01:59:00 INFO  Palya:117 - Jatek.mapSave()
+2017-04-20 01:59:08 INFO  Palya:80 - Jatek.mapLoad()
+2017-04-20 01:59:11 INFO  Palya:215 - megegyezik a 2 pálya!
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Palya:29 - Spawntunnel setup
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Palya:39 - Spawntunnel setup end
+2017-04-20 01:59:11 INFO  Palya:84 - Kezdopont.work()
+2017-04-20 01:59:11 INFO  Palya:84 - Kezdopont.work()
+2017-04-20 01:59:11 INFO  Palya:84 - Kezdopont.work()
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Palya:29 - Spawntunnel setup
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Palya:39 - Spawntunnel setup end
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Palya:84 - Kezdopont.work()
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 01:59:11 INFO  Palya:78 - Létrejött a vonat 5(+1) darab kocsival
+2017-04-20 01:59:11 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 01:59:11 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:11 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:11 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:11 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:11 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:11 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:11 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:11 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:11 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:11 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:11 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:11 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 01:59:11 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 01:59:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 01:59:11 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 02:01:24 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:01:24 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:01:24 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:01:24 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:01:24 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:01:24 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-20 02:01:24 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:01:24 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:01:24 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:01:24 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 02:01:24 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:01:24 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 02:01:24 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:01:24 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 02:01:24 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:01:24 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 02:01:24 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  Palya:531 - false
+2017-04-20 02:01:24 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:01:24 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  Palya:531 - false
+2017-04-20 02:01:24 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  Palya:531 - false
+2017-04-20 02:01:24 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:32 - VonatElem: changeColor meghívva
+2017-04-20 02:01:24 INFO  VonatElem:53 - Nem szálltak le
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:01:24 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:01:24 INFO  Palya:531 - false
+2017-04-20 02:03:17 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:03:17 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:03:17 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:03:17 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:03:17 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:03:17 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-20 02:03:17 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:03:17 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:03:17 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:03:17 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:03:17 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 02:03:17 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:03:17 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 02:03:17 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:03:17 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:03:17 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:03:17 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:03:17 INFO  Palya:531 - false
+2017-04-20 02:03:17 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:03:17 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:03:17 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:03:17 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:03:17 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:03:17 INFO  Palya:531 - false
+2017-04-20 02:03:17 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:03:17 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:03:17 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:03:17 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:03:17 INFO  VonatElem:32 - VonatElem: changeColor meghívva
+2017-04-20 02:03:17 INFO  VonatElem:35 - Leszálltak
+2017-04-20 02:03:17 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:03:17 INFO  Palya:531 - false
+2017-04-20 02:03:17 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:03:17 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:03:17 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:03:17 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:03:17 INFO  Palya:531 - false
+2017-04-20 02:04:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:11 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-20 02:04:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:11 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:04:11 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 02:04:11 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:04:11 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 02:04:18 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:04:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:49 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-20 02:04:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:49 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:04:49 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:04:49 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 02:04:49 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:04:49 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 02:04:49 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:04:49 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:04:49 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:04:49 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:04:49 INFO  Palya:531 - false
+2017-04-20 02:04:49 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:04:49 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:04:49 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:04:49 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:04:49 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:04:49 INFO  Palya:531 - false
+2017-04-20 02:04:49 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:04:49 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:04:49 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:04:49 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:04:49 INFO  VonatElem:32 - VonatElem: changeColor meghívva
+2017-04-20 02:04:49 INFO  VonatElem:35 - Leszálltak
+2017-04-20 02:04:49 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:04:49 INFO  Palya:531 - false
+2017-04-20 02:04:49 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:04:49 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:04:49 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:04:49 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:04:49 INFO  Palya:531 - false
+2017-04-20 02:05:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:05:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:05:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:05:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:05:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:05:00 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-20 02:05:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:05:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:05:00 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:05:00 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:05:00 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 02:05:00 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:05:00 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 02:05:11 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:05:25 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:06:40 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:06:59 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:07:27 INFO  Palya:531 - false
+2017-04-20 02:07:43 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:08:03 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:08:31 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:08:49 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:08:54 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:09:51 INFO  Palya:531 - false
+2017-04-20 02:10:01 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:10:03 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:10:09 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:10:12 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:11:03 INFO  VonatElem:32 - VonatElem: changeColor meghívva
+2017-04-20 02:11:14 INFO  VonatElem:35 - Leszálltak
+2017-04-20 02:11:41 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:18:18 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:18:18 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:18:18 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:18:18 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:18:18 INFO  Allomas:19 - Állomás konstruktor meghívva.
+2017-04-20 02:18:18 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:18:18 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:18:18 INFO  Sin:23 - Sin konstruktor meghívva.
+2017-04-20 02:18:18 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:18:18 INFO  VonatElem:15 - Mozdony konstruktora meghívva
+2017-04-20 02:18:18 INFO  VonatElem:27 - VonatElem konstruktora meghívva
+2017-04-20 02:18:18 INFO  VonatElem:14 - Kocsi konstruktora meghívva
+2017-04-20 02:18:18 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:18:18 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:18:18 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  Palya:531 - false
+2017-04-20 02:18:18 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:18:18 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:18:18 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  Palya:531 - false
+2017-04-20 02:18:18 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:18:18 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:18:18 INFO  Allomas:38 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  VonatElem:32 - VonatElem: changeColor meghívva
+2017-04-20 02:18:18 INFO  VonatElem:35 - Leszálltak
+2017-04-20 02:18:18 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  Palya:531 - true
+2017-04-20 02:18:18 INFO  VonatElem:19 - Mozdony: run meghívva
+2017-04-20 02:18:18 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  VonatElem:18 - Kocsi: pull meghívva
+2017-04-20 02:18:18 INFO  Sin:74 - actMove() meghívva.
+2017-04-20 02:18:18 INFO  Palya:531 - true
