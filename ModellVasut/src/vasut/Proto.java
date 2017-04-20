@@ -304,78 +304,6 @@ public class Proto {
 		}
 	}
 	
-	public void teszt8() throws Exception{
-		ArrayList<Sin> rails = new ArrayList<Sin>();
-		ArrayList<VonatElem> trains = new ArrayList<VonatElem>();
-		for (int i = 0; i < inp.size(); i++) {
-			String line[] = inp.get(i).split(" ");
-			switch(line[0]){
-			case "sin.init":{
-				int n1 = Integer.parseInt(line[1])-1;
-				if(n1<0)
-					rails.add(new Sin(null));
-				else
-					rails.add(new Sin(rails.get(n1)));
-				break;
-			}
-			case "sin.setA":{
-				int n1 = Integer.parseInt(line[1])-1;
-				int n2 = Integer.parseInt(line[2])-1;
-				rails.get(n1).setAPoint(rails.get(n2));
-				break;
-			}
-			case "sin.setB":{
-				int n1 = Integer.parseInt(line[1])-1;
-				int n2 = Integer.parseInt(line[2])-1;
-				rails.get(n1).setBPoint(rails.get(n2));
-				break;
-			}
-			case "mozdony.init":{
-				int n1 = Integer.parseInt(line[1])-1;
-				Mozdony m = new Mozdony(rails.get(n1));
-				trains.add(m);
-				rails.get(n1).setActVonatElem(m);
-				break;
-			}
-			case "kocsi.init":{
-				int n1 = Integer.parseInt(line[1])-1;
-				int n2 = Integer.parseInt(line[2])-1;
-				if(n2<0){
-					Kocsi k = new Kocsi(rails.get(n1),null,line[3]);
-					trains.add(k);
-					rails.get(n1).setActVonatElem(k);
-				}
-				else{
-					Kocsi k = new Kocsi(rails.get(n1),trains.get(n2),line[3]);
-					trains.add(k);
-					rails.get(n1).setActVonatElem(k);					
-				}
-				break;
-			}
-			case "kocsi.setback":{
-				int n1 = Integer.parseInt(line[1])-1;
-				int n2 = Integer.parseInt(line[2])-1;
-				trains.get(n1).setBackElem(((Kocsi)trains.get(n2)));
-				break;
-			}
-			case "run":{
-				int n1 = Integer.parseInt(line[1])-1;
-				try {
-					boolean t = ((Mozdony)trains.get(n1)).run();
-					log.info(t);
-				} catch (Exception e) {
-					log.info("elkapott hiba: "+e.getMessage());
-					e.printStackTrace();
-				}
-				break;
-			}
-			default:
-				log.info("teszthiba --- hibás bemenet");
-				break;
-			}
-		}
-	}
-	
 	public void teszt456789_newsintax() throws Exception {
 		ArrayList<Sin> rails = new ArrayList<Sin>();
 		ArrayList<VonatElem> trains = new ArrayList<VonatElem>();
@@ -445,6 +373,8 @@ public class Proto {
 					trains.add(k);
 					rails.get(n1).setActVonatElem(k);					
 				}
+				if(line.length >= 5 && line[4].equals("-tele"))
+					trains.get(n2).setEmpty(false);
 				break;
 			}
 			case "kocsi.setback":{

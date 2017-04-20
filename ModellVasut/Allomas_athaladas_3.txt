@@ -6,7 +6,6 @@ sin.setB 3 2
 sin.init 3
 sin.setB 4 3
 sin.init 4
-sin.setB 5 4
 mozdony.init 2
 kocsi.init 1 1 blue
 kocsi.setback 1 2

@@ -51,7 +51,7 @@ public class vasutTeszt {
 		p.loadInput(5);
 		p.loadOutput(5);
 		try {
-			p.teszt456789();
+			p.teszt456789_newsintax();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}		
