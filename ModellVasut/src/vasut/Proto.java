@@ -71,6 +71,9 @@ public class Proto {
 			case 15:
 				loadFile = new FileInputStream("Jatek_vege.txt");	            
 				break;
+			case 16:
+				loadFile = new FileInputStream("Le_Fel_szallas.txt");	            
+				break;
 			}
 			if(loadFile==null)
 				throw new Exception("Nem megfelelő file!");
@@ -138,6 +141,9 @@ public class Proto {
 				break;
 			case 15:
 				loadFile = new FileInputStream("Jatek_vege_out.txt");	            
+				break;
+			case 16:
+				loadFile = new FileInputStream("Le_Fel_szallas_out.txt");	            
 				break;
 			}
 			if(loadFile==null)

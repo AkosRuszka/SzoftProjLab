@@ -152,5 +152,18 @@ public class vasutTeszt {
 		p.loadOutput(15);
 		p.teszt15();			
 		Assert.assertTrue(p.logCheck());
+		
+	}
+	@Test
+	public void test16() {
+		System.out.println("16. teszt------------------");
+		p.loadInput(16);
+		p.loadOutput(16);
+		try {
+			p.teszt456789_newsintax();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}				
+		Assert.assertTrue(p.logCheck());
 	}
 }

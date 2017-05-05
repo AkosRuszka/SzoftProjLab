@@ -1,0 +1,56 @@
+sin.init 0 
+sin.init 1 
+sin.setB 1 2 
+sin.init 2 
+sin.setB 2 3 
+sin.init 3 
+sin.setB 3 4
+allomas.init 4 red  
+sin.setB 4 5 
+sin.init 5 
+sin.setB 5 6
+sin.init 6 
+sin.setB 6 7
+allomas.init 7 yellow 
+sin.setB 7 8 
+sin.init 8 
+sin.setB 8 9 
+sin.init 9 
+sin.setB 9 10
+allomas.init 10 blue red
+sin.setB 10 11
+sin.init 11 
+sin.setB 11 12 
+sin.init 12
+sin.setB 12 13 
+allomas.init 13 green
+sin.setB 13 14
+sin.init 14 
+sin.setB 14 15 
+sin.init 15
+sin.setB 15 16
+sin.init 16 
+sin.setB 16 17 
+sin.init 17
+sin.setB 17 18
+mozdony.init 4
+kocsi.init 3 1 red -tele
+kocsi.setback 1 2
+kocsi.init 2 2 yellow -tele
+kocsi.setback 2 3
+kocsi.init 1 3 green -tele
+kocsi.setback 3 4 
+run 1 
+run 1 
+run 1
+run 1
+run 1
+run 1
+run 1
+run 1
+run 1
+run 1
+run 1
+run 1
+run 1
+run 1
