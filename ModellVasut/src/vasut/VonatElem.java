@@ -50,7 +50,9 @@ public class VonatElem implements Serializable{
 					/* Direkt nem a setEmpty-t használva. (az felszálláshoz kell)*/
 					empty = true;
 					/* A mögöttem levő elemekről is leszállhatnak. */
-					backElem.setEmptyable(true);
+					if(backElem != null) {
+						backElem.setEmptyable(true);
+					}
 				} else {
 					/* Csak a log miatt */
 					log.info("emptyable = false");
