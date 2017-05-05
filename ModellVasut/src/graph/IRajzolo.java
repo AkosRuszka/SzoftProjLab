@@ -1,4 +1,4 @@
-package vasut;
+package graph;
 
 public interface IRajzolo {
 	public void rajzol();

@@ -1,7 +1,6 @@
 package graph;
 
 import vasut.Allomas;
-import vasut.IRajzolo;
 
 import java.awt.Image;
 import java.awt.Point;
