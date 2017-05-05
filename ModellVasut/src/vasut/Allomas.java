@@ -49,12 +49,16 @@ public class Allomas extends Sin{
 				Log.info("Nem szálltak fel");
 				if(actVonatElem.getColor().equals(color)) {
 					actVonatElem.changeColor();
-				}	
+				} else {
+					Log.info("Nem szálltak le");
+				}
 			}
 		} else {
 			/** Ha a risers üres, akkor biztos történhet (más feltételektől is függően) leszállás */
 			if(actVonatElem.getColor().equals(color)) {
 				actVonatElem.changeColor();
+			} else {
+				Log.info("Nem szálltak le");
 			}
 		}
 		return super.actMove();
