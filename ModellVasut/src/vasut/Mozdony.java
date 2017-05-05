@@ -15,8 +15,21 @@ public class Mozdony extends VonatElem {
 		log.info("Mozdony konstruktora meghívva");
 	}
 	
+	@Override
+	public boolean getEmpty() {
+		/* Azért kell hogy az utána következő kocsiról le tudjanak szállni */
+		return true;
+	}
+	
+	@Override
+	public boolean getEmptyable() {
+		/* Azért kell hogy az utána következő kocsiról le tudjanak szállni */
+		return true;
+	}
+	
 	public boolean run() throws Exception {
 		log.info("Mozdony: run meghívva");
+		/* Egyszeri lefutás 1. run-nál */
 		if(lastCart == null){
 			for (Kocsi k = this.backElem; k != null ; k = k.backElem)
 				lastCart = k;
@@ -36,7 +49,8 @@ public class Mozdony extends VonatElem {
 			whereAmI.setActVonatElem(this);
 			
 			backElem.pull();
-			if (backElem.getEmpty()&&backElem.getEmptyable()){//üres és előtte üresekvannak
+			
+			if (lastCart.getEmpty() && lastCart.getEmptyable()){//üres és előtte üresekvannak
 				return true;
 			}
 			else{
