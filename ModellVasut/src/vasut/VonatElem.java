@@ -5,12 +5,12 @@ import java.io.Serializable;
 import org.apache.log4j.*;
 
 public class VonatElem implements Serializable{
-	Sin whereAmI;
-	VonatElem frontElem;
-	Kocsi backElem;
-	String color;
-	boolean empty = false;
-	boolean emptyable = false;
+	protected Sin whereAmI;
+	protected VonatElem frontElem;
+	protected Kocsi backElem;
+	protected String color;
+	protected boolean empty = false;
+	protected boolean emptyable = false;
 	
 	//Logoláshoz
 	private static final Logger log = LogManager.getLogger(VonatElem.class);
@@ -114,6 +114,12 @@ public class VonatElem implements Serializable{
 	public String getColor() {
 		/** Visszaadja az adott Kocsi színét. */
 		return color;
+	}
+	
+	//A tesztekhez való beállítás
+	public void setEmptyFromTest(boolean em){
+		log.info("Kocsi: setEmptyFromTest meghívva");
+		empty = em;
 	}
 	
 	public boolean getEmpty() {

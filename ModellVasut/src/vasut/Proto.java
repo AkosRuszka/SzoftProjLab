@@ -379,8 +379,11 @@ public class Proto {
 					trains.add(k);
 					rails.get(n1).setActVonatElem(k);					
 				}
+				
 				if(line.length >= 5 && line[4].equals("-tele"))
-					trains.get(n2).setEmpty(false);
+					trains.get(n2+1).setEmptyFromTest(false);
+				else
+					trains.get(n2+1).setEmptyFromTest(true);
 				break;
 			}
 			case "kocsi.setback":{

@@ -5,12 +5,18 @@ sin.init 2
 sin.setB 2 3 
 sin.init 3 
 sin.setB 3 4  
-allomas.init 4 blue red  
+sin.init 4 
 sin.setB 4 5 
-sin.init 5 
+allomas.init 5 blue red 
 sin.setB 5 6 
 sin.init 6 
-sin.setB 6 7  
+sin.setB 6 7 
+sin.init 7 
+sin.setB 7 8
+sin.init 8 
+sin.setB 8 9
+sin.init 9 
+sin.setB 9 10    
 mozdony.init 4
 kocsi.init 3 1 red 
 kocsi.setback 1 2 
@@ -19,4 +25,8 @@ kocsi.setback 2 3
 kocsi.init 1 3 blue -tele 
 kocsi.setback 3 4
 run 1 
-run 1 
+run 1
+run 1
+run 1
+run 1
+run 1

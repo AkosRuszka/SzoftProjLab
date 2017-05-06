@@ -1,5 +1,3 @@
 Felszálltak
-Nem szálltak fel
 Nem szálltak le
-Nem szálltak fel
 Nem szálltak le
