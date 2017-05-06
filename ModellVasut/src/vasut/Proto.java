@@ -74,7 +74,11 @@ public class Proto {
 			case 16:
 				loadFile = new FileInputStream("Le_Fel_szallas.txt");	            
 				break;
+			case 17:
+				loadFile = new FileInputStream("Allomas_athaladas_5.txt");
+				break;
 			}
+				
 			if(loadFile==null)
 				throw new Exception("Nem megfelelő file!");
 			
@@ -144,6 +148,9 @@ public class Proto {
 				break;
 			case 16:
 				loadFile = new FileInputStream("Le_Fel_szallas_out.txt");	            
+				break;
+			case 17:
+				loadFile = new FileInputStream("Allomas_athaladas_5_out.txt");
 				break;
 			}
 			if(loadFile==null)

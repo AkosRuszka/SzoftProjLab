@@ -166,4 +166,16 @@ public class vasutTeszt {
 		}				
 		Assert.assertTrue(p.logCheck());
 	}
+	@Test
+	public void test17() {
+		System.out.println("17. teszt------------------");
+		p.loadInput(17);
+		p.loadOutput(17);
+		try {
+			p.teszt456789_newsintax();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}				
+		Assert.assertTrue(p.logCheck());
+	}
 }

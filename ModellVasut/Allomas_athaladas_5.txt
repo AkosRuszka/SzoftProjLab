@@ -1,0 +1,107 @@
+sin.init 0 
+sin.init 1 
+sin.setB 1 2 
+sin.init 2 
+sin.setB 2 3 
+sin.init 3 
+sin.setB 3 4  
+sin.init 4 
+sin.setB 4 5 
+allomas.init 5 red 
+sin.setB 5 6 
+sin.init 6 
+sin.setB 6 7 
+sin.init 7
+sin.setB 7 8
+sin.init 8
+sin.setB 8 9
+sin.init 9
+sin.setB 9 10
+allomas.init 10 green  
+sin.setB 10 11
+sin.init 11 
+sin.setB 11 12 
+sin.init 12
+sin.setB 12 13
+sin.init 13
+sin.setB 13 14
+sin.init 14
+sin.setB 14 15
+allomas.init 15 yellow red 
+sin.setB 15 16
+sin.init 16 
+sin.setB 16 17 
+sin.init 17
+sin.setB 17 18
+sin.init 18
+sin.setB 18 19
+sin.init 19
+sin.setB 19 20
+allomas.init 20 yellow yellow 
+sin.setB 20 21 
+sin.init 21 
+sin.setB 21 22 
+sin.init 22
+sin.setB 22 23
+sin.init 23
+sin.setB 23 24
+sin.init 24
+sin.setB 24 25
+allomas.init 25 red 
+sin.setB 25 26 
+sin.init 26 
+sin.setB 26 27 
+sin.init 27
+sin.setB 27 28
+sin.init 28
+sin.setB 28 29
+sin.init 29
+sin.setB 29 30  
+allomas.init 30 blue 
+sin.setB 30 31 
+sin.init 31 
+sin.setB 31 32 
+sin.init 32
+sin.setB 32 33
+sin.init 33
+sin.setB 33 34
+sin.init 34
+sin.setB 34 35
+mozdony.init 4
+kocsi.init 3 1 red -tele
+kocsi.setback 1 2 
+kocsi.init 2 2 green -tele
+kocsi.setback 2 3
+kocsi.init 1 3 blue -tele 
+kocsi.setback 3 4
+run 1 
+run 1
+run 1
+run 1
+run 1
+run 1
+run 1 
+run 1
+run 1
+run 1
+run 1 
+run 1
+run 1
+run 1
+run 1
+run 1
+run 1 
+run 1
+run 1
+run 1
+run 1 
+run 1
+run 1
+run 1
+run 1
+run 1
+run 1 
+run 1
+run 1
+run 1
+run 1
