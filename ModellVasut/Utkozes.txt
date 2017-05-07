@@ -1,13 +1,9 @@
-sin.init 0
-sin.init 1
-sin.setB 1 2
-sin.init 2
-sin.setB 2 3
-sin.init 3
-mozdony.init 2
-kocsi.init 1 1 red
-kocsi.setback 1 2
-mozdony.init 3
-kocsi.init 4 2 red
-kocsi.setback 3 4
-run 1
+create sin 1 0
+create sin 2 1
+create sin 3 2
+create sin 4 3
+put mozdony 1 0 2
+put kocsi 2 1 1 kek
+put mozdony 3 0 3 szurke 
+put kocsi 4 3 4 piros
+run

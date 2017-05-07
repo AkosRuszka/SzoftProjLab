@@ -3,7 +3,6 @@ package graph;
 import java.awt.Image;
 import java.awt.Point;
 
-
 public class KocsiRajzolo implements IRajzolo {
 
 	protected Image img;		// A Kocsit ábrázoló képfájl.
