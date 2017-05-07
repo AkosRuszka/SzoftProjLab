@@ -1,0 +1,39 @@
+package graph;
+
+import java.awt.Image;
+import java.awt.Point;
+
+import vasut.Kocsi;
+
+public class KocsiRajzolo implements IRajzolo{
+	private Kocsi kocsi;
+	private Image img;
+	private Point coord;
+	public boolean visible;
+	
+	public KocsiRajzolo(Kocsi kocsi, Image img, Point coord) {
+		this.kocsi = kocsi;
+		this.img = img;
+		this.coord = coord;
+		visible = true;
+	}
+
+	public Point getCoord() {
+		return coord;
+	}
+
+	public void setCoord(Point coord) {
+		this.coord = coord;
+	}
+
+	@Override
+	public void rajzol() {
+		/* TODO: logika */
+		
+	}
+
+	@Override
+	public Object getObject() {
+		return kocsi;
+	}
+}
