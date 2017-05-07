@@ -23,7 +23,7 @@ public class Menu extends JFrame{
 	private String sugo_string;
 	
 	public Menu(){
-		sugo_string = "Bla-bla... wip";
+		sugo_string = "Egyszer itt volt egy tök jó kis szöveg... csak elfelejtettem lementeni -.-";
 		initComponents();
 	}
 	
