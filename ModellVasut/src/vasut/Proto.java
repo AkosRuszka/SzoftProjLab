@@ -317,6 +317,7 @@ public class Proto {
 		}
 	}
 	
+
 	public void teszt456789_newsintax() throws Exception {
 		ArrayList<Sin> rails = new ArrayList<Sin>();
 		ArrayList<VonatElem> trains = new ArrayList<VonatElem>();
@@ -418,92 +419,6 @@ public class Proto {
 	}
 	
 	
-	
-	/**Allomas athaladas tesztek + ütközés + kisiklás
-	 * @throws Exception */
-	public void teszt456789() throws Exception{
-		ArrayList<Sin> rail = new ArrayList<Sin>();
-		ArrayList<VonatElem> train = new ArrayList<VonatElem>();
-		ArrayList<Mozdony> engine = new ArrayList<Mozdony>();
-		for (int i = 0; i < inp.size(); i++) {
-			String line[] = inp.get(i).split(" ");
-			switch(line[0]){
-			case "create" :{
-				switch(line[1]){
-				case "sin" :{
-					if (!rail.isEmpty()){
-						Sin s = new Sin(rail.get(Integer.parseInt(line[3])-1));
-						rail.add(Integer.parseInt(line[2])-1,s);
-					}
-					else{
-						Sin s = new Sin(null);
-						rail.add(Integer.parseInt(line[2])-1,s);
-					}
-					break;
-				}
-				case "allomas" :{
-					if (!rail.isEmpty()){
-						String[] pass1 = null;
-						for(int l = 5; l < line.length; l++){
-							for(int o = 0; o < line.length; o++){
-								pass1[o]=line[l];
-							}
-						}
-						Allomas a = new Allomas(rail.get(Integer.parseInt(line[3])-1), line[4], pass1);
-						rail.add(Integer.parseInt(line[2])-1,a);
-					}
-					else {
-						String[] pass2 = null;
-						for(int l = 5; l < line.length; l++){
-							for(int o = 0; o < line.length; o++){
-								pass2[o]=line[l];
-							}
-						}	
-						Allomas a = new Allomas(null, line[4], pass2);
-						rail.add(Integer.parseInt(line[2])-1,a);
-					}
-					break;
-				}
-				default:{
-					log.info("teszthiba --- hibás bemenet");
-				}
-				}
-			}
-			case "put" :{
-				switch(line[1]){
-				case "mozdony" :{
-					Mozdony m = new Mozdony(rail.get(Integer.parseInt(line[4])-1));
-					train.add(Integer.parseInt(line[2])-1,m);
-					engine.add(Integer.parseInt(line[2])-1,m);
-					break;
-				}
-				case "kocsi" :{
-					Kocsi k = new Kocsi(rail.get(Integer.parseInt(line[4])-1), train.get(Integer.parseInt(line[3])-1), line[5]);
-					if (line[6].equals("-tele"))
-						k.setEmpty(true);
-					else
-						k.setEmpty(false);
-					train.add(Integer.parseInt(line[2])-1, k);
-					break;
-				}
-				default: {
-					//hiba
-				}
-				}
-			}
-			case "run" :{
-				for (int x = 0; x < engine.size(); x++){
-					engine.get(x).run();
-				}
-				break;
-			}
-			default:{
-				//hiba
-			}
-			}
-		}
-	}
-	
 	public void teszt10111213(){
 		Alagut a = new Alagut();
 		ArrayList<KulonlegesHely> kh = new ArrayList<KulonlegesHely>();
@@ -566,7 +481,7 @@ public class Proto {
 				states.add(((Valto)(rails.get(n1))).getActState());
 				break;
 			}
-			case "compare":{
+			case "jatek.compare":{
 				int n1 = Integer.parseInt(line[1])-1;
 				int n2 = Integer.parseInt(line[2])-1;
 				if(states.get(n1)==states.get(n2)){

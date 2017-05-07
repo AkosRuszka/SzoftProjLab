@@ -57,10 +57,26 @@ public class VonatElem implements Serializable{
 					/* Csak a log miatt */
 					log.info("emptyable = false");
 					log.info("Nem szálltak le");
+					if(emptyable||frontElem.getColor()=="grey"){
+						empty = true;
+						log.info("Leszálltak");
+						emptyable = false;
+						//Meg kell keresni, hogy leszállás után, ki az első olyan nem üres kocsi, akiről
+						//leszállhatnak majd
+						boolean kov_emptyable = true; //false-ra állítjuk, ha meg van
+						VonatElem kov = backElem;
+						while(kov != null && kov_emptyable && kov.getColor() != "grey"){
+							if(kov.getEmpty() == false){
+								kov.setEmptyable(true);
+								kov_emptyable = false;
+							}
+						}
+					}
 				}
 			}
 		}
 	}
+				
 	
 //	public void changeColor() { //Az állomás leszálláskor hívja ezt a függvényt
 //		//Log
