@@ -1,6 +1,7 @@
 package graph;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.Box;
@@ -31,12 +32,14 @@ public class Menu extends JFrame{
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		
 		bnewGame = new JButton("Új játék");
+		bnewGame.setAlignmentX(Component.CENTER_ALIGNMENT);
 		bnewGame.addActionListener(new ActionListener() { 
 			  public void actionPerformed(ActionEvent e) { 
 				  jatek.newGame();
 			  }
 		});
 		bmapLoad = new JButton("Pálya betöltése");
+		bmapLoad.setAlignmentX(Component.CENTER_ALIGNMENT);
 		bmapLoad.addActionListener(new ActionListener() { 
 			  public void actionPerformed(ActionEvent e) { 
 				  jatek.mapLoad();
@@ -44,6 +47,7 @@ public class Menu extends JFrame{
 		});
 		
 		bnextMap = new JButton("Következő pálya betöltése");
+		bnextMap.setAlignmentX(Component.CENTER_ALIGNMENT);
 		bnextMap.addActionListener(new ActionListener() { 
 			  public void actionPerformed(ActionEvent e) { 
 				  jatek.nextMap();
@@ -51,7 +55,8 @@ public class Menu extends JFrame{
 		});
 		
 		bsugo = new JButton("Súgó");
-		bsugo.addActionListener(new ActionListener() { 
+		bsugo.setAlignmentX(Component.CENTER_ALIGNMENT);
+		bsugo.addActionListener(new ActionListener() {
 			  public void actionPerformed(ActionEvent e) { 
 				  JOptionPane.showMessageDialog(null, sugo_string, "Súgó", JOptionPane.INFORMATION_MESSAGE);
 			  }
@@ -72,6 +77,10 @@ public class Menu extends JFrame{
 		panel.add(Box.createVerticalStrut(20));
 		panel.add(bsugo);
 		
-		this.add(panel, BorderLayout.CENTER);		
+		this.setSize(500, 230);
+		this.setResizable(false);
+		
+		this.add(panel, BorderLayout.CENTER);
+		
 	}
 }
