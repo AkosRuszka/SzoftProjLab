@@ -4,19 +4,38 @@ import vasut.Valto;
 
 import java.awt.Image;
 import java.awt.Point;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
-public class ValtoRajzolo implements IRajzolo{
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+
+public class ValtoRajzolo extends JButton implements IRajzolo{
 	private Valto valto;
 	private Image img;
 	private Point coord;
 	public boolean visible;
 	
 	public ValtoRajzolo(Image img, Point coord, Valto valto) {
-		/* Koordináta és kép beállítása */
-		this.img = img;
-		this.coord = coord;
+		/* Koordináta, kép, ActionListener beállítása */
+		setLocation(coord);
+		setIcon(new ImageIcon(img));
+		
+		addActionListener(new ActionListener() { 
+			  public void actionPerformed(ActionEvent e) { 
+				  valto.nextState();
+			  }
+		});
+		
 		this.valto = valto;
+		this.img = img;
+		this.coord = coord;		
+		this.visible = true;
+		
 	}
+
 	
 	public Point getCoord() {
 		return coord;
@@ -36,5 +55,4 @@ public class ValtoRajzolo implements IRajzolo{
 	public Object getObject() {
 		return this;
 	}
-
 }
