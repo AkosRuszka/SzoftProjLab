@@ -12,15 +12,16 @@ import javax.swing.JPanel;
 import vasut.Jatek;
 
 public class Menu extends JFrame{
-	Jatek jatek = new Jatek(); 
+	private Jatek jatek = new Jatek(); 
 	
-	JButton newGame;
-	JButton loadGame;
-	JButton sugo;
-	JPanel panel;
-	String sugo_string;
+	private JButton bnewGame;
+	private JButton bmapLoad;
+	private JButton bnextMap;
+	private JButton bsugo;
+	private JPanel panel;
+	private String sugo_string;
 	
-	Menu(){
+	public Menu(){
 		sugo_string = "Bla-bla... wip";
 		initComponents();
 	}
@@ -29,20 +30,28 @@ public class Menu extends JFrame{
 		this.setTitle("Vasút modell");
 		this.setDefaultCloseOperation(DISPOSE_ON_CLOSE);
 		
-		newGame = new JButton("Új játék");
-		newGame.addActionListener(new ActionListener() { 
+		bnewGame = new JButton("Új játék");
+		bnewGame.addActionListener(new ActionListener() { 
 			  public void actionPerformed(ActionEvent e) { 
 				  jatek.newGame();
 			  }
 		});
-		loadGame = new JButton("Előző pálya betöltése");
-		loadGame.addActionListener(new ActionListener() { 
+		bmapLoad = new JButton("Pálya betöltése");
+		bmapLoad.addActionListener(new ActionListener() { 
 			  public void actionPerformed(ActionEvent e) { 
 				  jatek.mapLoad();
 			  }
 		});
-		sugo = new JButton("Súgó");
-		sugo.addActionListener(new ActionListener() { 
+		
+		bnextMap = new JButton("Következő pálya betöltése");
+		bnextMap.addActionListener(new ActionListener() { 
+			  public void actionPerformed(ActionEvent e) { 
+				  jatek.nextMap();
+			  }
+		});
+		
+		bsugo = new JButton("Súgó");
+		bsugo.addActionListener(new ActionListener() { 
 			  public void actionPerformed(ActionEvent e) { 
 				  JOptionPane.showMessageDialog(null, sugo_string, "Súgó", JOptionPane.INFORMATION_MESSAGE);
 			  }
@@ -52,13 +61,16 @@ public class Menu extends JFrame{
 		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 		
 		panel.add(Box.createVerticalStrut(20));
-		panel.add(newGame);
+		panel.add(bnewGame);
 		
 		panel.add(Box.createVerticalStrut(20));
-		panel.add(loadGame);
+		panel.add(bmapLoad);
 		
 		panel.add(Box.createVerticalStrut(20));
-		panel.add(sugo);
+		panel.add(bnextMap);
+		
+		panel.add(Box.createVerticalStrut(20));
+		panel.add(bsugo);
 		
 		this.add(panel, BorderLayout.CENTER);		
 	}
