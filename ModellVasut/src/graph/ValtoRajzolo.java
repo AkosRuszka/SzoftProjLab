@@ -16,7 +16,6 @@ public class ValtoRajzolo extends JButton implements IRajzolo{
 	private Valto valto;
 	private Image img;
 	private Point coord;
-	public boolean visible;
 	
 	public ValtoRajzolo(Image img, Point coord, Valto valto) {
 		/* Koordináta, kép, ActionListener beállítása */
@@ -31,8 +30,7 @@ public class ValtoRajzolo extends JButton implements IRajzolo{
 		
 		this.valto = valto;
 		this.img = img;
-		this.coord = coord;		
-		this.visible = true;
+		this.coord = coord;
 		
 	}
 
