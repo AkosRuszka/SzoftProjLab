@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import graph.RailEvent;
 
 public class Palya implements Serializable, Runnable{
 	private static final Logger log = LogManager.getLogger(Palya.class);
@@ -49,6 +50,7 @@ public class Palya implements Serializable, Runnable{
 					if(uj != null) {
 						engines.add(uj); 
 					}
+					done = true;// nullázzuk a done-t
 					for (Mozdony mozdony : engines) {					
 						done &= mozdony.run();
 					}
@@ -57,7 +59,10 @@ public class Palya implements Serializable, Runnable{
 					log.info("Hiba elkapva: "+e.getMessage());
 					break;
 				}
-				
+				//event----------------------------------
+				RailEvent re = new RailEvent(this, 1);
+				re.fire();
+				//endevent-------------------------------
 				try { 
 					Thread.sleep(200); 
 					} 
