@@ -14,6 +14,8 @@ import vasut.*;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
+import graph.RailEvent;
+
 public class Jatek {
 	private static final Logger log = LogManager.getLogger(Palya.class);
 	
@@ -49,7 +51,11 @@ public class Jatek {
             actGame = (Palya) load.readObject();
             load.close();
 			actMap = 1;
-			
+			//event----------------------------------
+			RailEvent re = new RailEvent(actGame, 0);
+			re.fire();
+			//endevent-------------------------------			
+			actGame.run();
 			//new Palya().run();
 		} catch (Exception e) {
 			log.info("Hiba elkapva: "+e.getMessage());
@@ -67,7 +73,11 @@ public class Jatek {
             actGame = (Palya) load.readObject();
             load.close();
 			actMap++;
-			
+			//event----------------------------------
+			RailEvent re = new RailEvent(actGame, 0);
+			re.fire();
+			//endevent-------------------------------
+			actGame.run();
 			//new Palya().run();
 		} catch (Exception e) {
 			log.info("Hiba elkapva: "+e.getMessage());
@@ -103,7 +113,11 @@ public class Jatek {
 			}
 			if(actMap==0)
 				throw new IOException("Nem megfelelő fájlnév!");
-			
+			//event----------------------------------
+			RailEvent re = new RailEvent(actGame, 0);
+			re.fire();
+			//endevent-------------------------------
+			actGame.run();
 			//new Palya().run();
 		}
 		catch (Exception e){
