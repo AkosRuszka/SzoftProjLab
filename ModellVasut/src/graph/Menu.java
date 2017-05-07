@@ -80,7 +80,6 @@ public class Menu extends JFrame{
 		this.setSize(500, 230);
 		this.setResizable(false);
 		
-		this.add(panel, BorderLayout.CENTER);
-		
+		this.add(panel, BorderLayout.CENTER);		
 	}
 }
