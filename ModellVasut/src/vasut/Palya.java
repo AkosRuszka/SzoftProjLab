@@ -102,4 +102,13 @@ public class Palya implements Serializable, Runnable{
 		}
 	}
 
+	
+	public ArrayList<Sin> getMap() {//ez a Viewnek kell a kirajzoláshoz
+		return map;
+	}
+
+	public ArrayList<Mozdony> getEngines() {//ez is a Viewnek kell a kirajzoláshoz
+		return engines;
+	}
+
 }
