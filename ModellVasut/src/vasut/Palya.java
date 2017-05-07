@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.Random;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import graph.RailEvent;
 
 public class Palya implements Serializable, Runnable{
 	private static final Logger log = LogManager.getLogger(Palya.class);
@@ -49,6 +50,7 @@ public class Palya implements Serializable, Runnable{
 					if(uj != null) {
 						engines.add(uj); 
 					}
+					done = true;//kb nullázzuk, hogy az előző kör eredménye ne számítson
 					for (Mozdony mozdony : engines) {					
 						done &= mozdony.run();
 					}
@@ -69,6 +71,10 @@ public class Palya implements Serializable, Runnable{
 					//System.out.println("Game thread is now stopped");
 					break;
 				}
+				// event-------------------------------------------------------
+				RailEvent re = new RailEvent(this, 1); // a kör vége eventje
+				re.fire();
+				//end event----------------------------------------------------
 			}
 			else{
 				synchronized (this){
@@ -102,4 +108,11 @@ public class Palya implements Serializable, Runnable{
 		}
 	}
 
+	public ArrayList<Sin> getMap(){// a vezérlőnek kell rajzolni
+		return map;
+	}
+	
+	public ArrayList<Mozdony> getEngines(){// ez is a vezérlőnek kell rajzolni
+		return engines;
+	}
 }
