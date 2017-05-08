@@ -60,16 +60,16 @@ public class SinRajzolo implements IRajzolo, ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		switch(e.getID()) {
-		case 0:
+		switch(e.getActionCommand()) {
+		case "INACTIVE":
 			/* AP/BP_INACTIVE */
 			paint_img = inactive_img;
 			break;
-		case 1:
+		case "ACTIVE":
 			/* AP/BP_ACTIVE */
 			paint_img = active_img;
 			break;
-		case 2:
+		case "CROSSING":
 			/* setCrossing-nál... */
 			paint_img = kereszt_image;
 			break;
