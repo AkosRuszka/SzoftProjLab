@@ -36,4 +36,14 @@ public class AllomasRajzolo implements IRajzolo{
 		return this;
 	}
 
+	@Override
+	public Point getPoint() {
+		return coord;
+	}
+
+	@Override
+	public void setPoint(Point point) {
+		coord = point;
+	}
+
 }

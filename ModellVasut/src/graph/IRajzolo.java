@@ -7,4 +7,6 @@ public interface IRajzolo {
 	public void setCoord(Point coord);
 	public void rajzol();
 	public Object getObject();
+	public Point getPoint();
+	public void setPoint(Point point);
 }
