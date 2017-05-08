@@ -12,16 +12,18 @@ public class SinRajzolo implements IRajzolo, ActionListener{
 	private Sin sin;
 	private Image active_img;
 	private Image inactive_img;
+	private Image kereszt_image;
 	private Image paint_img;
 	private Point coord;
 	public boolean visible;
 	
-	public SinRajzolo(Image actimg, Image inactimg , Point coord, Allomas sin) {
+	public SinRajzolo(Image actimg, Image inactimg , Image keresztimg, Point coord, Allomas sin) {
 		this.active_img = actimg;
 		this.inactive_img = inactimg;
 		this.coord = coord;
 		this.sin = sin;
 		this.paint_img = actimg;
+		this.kereszt_image = keresztimg;
 		
 		/* Feliratkozunk az sin eseményére */
 		this.sin.addActionListener(this);
@@ -58,12 +60,19 @@ public class SinRajzolo implements IRajzolo, ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getID() == 0) {
+		switch(e.getID()) {
+		case 0:
 			/* AP/BP_INACTIVE */
 			paint_img = inactive_img;
-		} else {
+			break;
+		case 1:
 			/* AP/BP_ACTIVE */
 			paint_img = active_img;
+			break;
+		case 2:
+			/* setCrossing-nál... */
+			paint_img = kereszt_image;
+			break;
 		}
 	}
 
