@@ -37,4 +37,14 @@ public class SinRajzolo implements IRajzolo{
 		return sin;
 	}
 
+	@Override
+	public Point getPoint() {
+		return coord;
+	}
+
+	@Override
+	public void setPoint(Point point) {
+		coord = point;
+	}
+
 }

@@ -51,4 +51,16 @@ public class KulonlegesHelyRajzolo extends JButton implements IRajzolo{
 	public Object getObject() {
 		return kh;
 	}
+
+
+	@Override
+	public Point getPoint() {
+		return coord;
+	}
+
+
+	@Override
+	public void setPoint(Point point) {
+		coord = point;
+	}
 }

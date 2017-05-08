@@ -36,4 +36,14 @@ public class MozdonyRajzolo implements IRajzolo{
 	public Object getObject() {
 		return mozdony;
 	}
+
+	@Override
+	public Point getPoint() {
+		return coord;
+	}
+
+	@Override
+	public void setPoint(Point point) {
+		coord = point;
+	}
 }

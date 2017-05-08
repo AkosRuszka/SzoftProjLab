@@ -36,4 +36,15 @@ public class KocsiRajzolo implements IRajzolo{
 	public Object getObject() {
 		return kocsi;
 	}
+
+	@Override
+	public Point getPoint() {
+		return coord;
+	}
+
+	@Override
+	public void setPoint(Point point) {
+		coord = point;
+		
+	}
 }
