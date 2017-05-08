@@ -14,7 +14,7 @@ public class Sin implements Serializable{
 	private static final Logger Log = LogManager.getLogger(Sin.class);
 	
 	/* Rá feliratkozott ActionListenerek*/
-	private List<ActionListener> list;
+	protected List<ActionListener> list;
 	
 	protected VonatElem actVonatElem;
 	/** Sin mögötti elem */

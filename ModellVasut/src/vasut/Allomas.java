@@ -1,5 +1,7 @@
 package vasut;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -8,7 +10,7 @@ import org.apache.log4j.Logger;
 
 public class Allomas extends Sin{
 	
-	private static final Logger Log = LogManager.getLogger(Allomas.class);
+	private static final Logger Log = LogManager.getLogger(Allomas.class); 
 	
 	private String color;
 	private List<String> risers;
@@ -32,6 +34,7 @@ public class Allomas extends Sin{
 		return color;
 	}
 	
+	/** Magic actMove függvény megvalósítás, mindent egy helyen a jólstruktúráltság jegyében! */
 	@Override
 	public Sin actMove() throws Exception {
 		
@@ -43,6 +46,12 @@ public class Allomas extends Sin{
 			if(actVonatElem.getColor().equals(risers.get(0))) {
 				risers.remove(0); 	// kiszedjük a tömbből azokat akik felszálltak a vonatra
 				Get_on(); 			// Meghívjuk rá a felszállás függvényét
+				
+				/* Eseményt adunk a felszállásról */
+				for(ActionListener act : list) {
+					act.actionPerformed(new ActionEvent(this,6,"FELSZALLAS"));
+				}
+				
 			} else {
 				/** Ha a risers tömbünk nem üres és a felszállandó emberek nem egyeznek meg az actVonatElem-el, attól még 
 				 *  az actVonatElem-ről le lehet szállni. */
@@ -70,5 +79,10 @@ public class Allomas extends Sin{
 		Log.info("Felszálltak");
 		/** Az actVonatElem empty attributumát beállítjuk false-ra ezzel jelezve hogy felszálltak rá. */
 		actVonatElem.setEmpty(false);
+	}
+
+	/** risers lista első elemének lekérdezése */
+	public String getRisers() {
+		return risers.get(0);
 	}
 }
