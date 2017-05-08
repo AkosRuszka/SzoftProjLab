@@ -60,9 +60,9 @@ public class Sin implements Serializable{
 		/* Event jelzés */
 		for(ActionListener act : list) {
 			if(ap == null) {
-				act.actionPerformed(new ActionEvent(this,0,"AP_INACTIV"));
+				act.actionPerformed(new ActionEvent(this,0,"INACTIVE"));
 			} else {
-				act.actionPerformed(new ActionEvent(this,1,"AP_ACTIVE"));
+				act.actionPerformed(new ActionEvent(this,1,"ACTIVE"));
 			}
 		}
 	}
@@ -73,9 +73,9 @@ public class Sin implements Serializable{
 		/* Event jelzés */
 		for(ActionListener act : list) {
 			if(bp == null) {
-				act.actionPerformed(new ActionEvent(this,0,"BP_INACTIV"));
+				act.actionPerformed(new ActionEvent(this,0,"INACTIVE"));
 			} else {
-				act.actionPerformed(new ActionEvent(this,1,"BP_ACTIVE"));
+				act.actionPerformed(new ActionEvent(this,1,"ACTIVE"));
 			}
 		}
 	}
@@ -191,4 +191,5 @@ public class Sin implements Serializable{
 		/** Ha idáig eljutottunk akkor mindkét irányba van kocsi és ütközés történik! */
 		throw new Exception("Ütközés történt");
 	}
+
 }
