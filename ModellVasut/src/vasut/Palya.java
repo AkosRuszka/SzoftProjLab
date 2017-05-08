@@ -107,6 +107,50 @@ public class Palya implements Serializable, Runnable{
 		}
 	}
 
+	public void map1(){
+		Sin mymap[][] = new Sin[30][30];
+		for (int i = 0; i < 30; i++) {
+			for (int j = 0; j < 30; j++) {
+				mymap[i][j] = null;
+			}
+		}
+		//25x29
+		Alagut a = new Alagut();
+		
+		
+		mymap[0][17] = new KulonlegesHely(null, a);
+		for (int i = 0; i < 9; i++) {
+			mymap[0][16-i] = new Sin(mymap[0][17-i]);
+			mymap[0][17-i].setBPoint(mymap[0][16-i]);
+		}
+		for (int i = 0; i < 2; i++) {
+			mymap[1+i][8] = new Sin(mymap[0+i][8]);
+			mymap[0+i][8].setBPoint(mymap[1+i][8]);
+		}
+		mymap[3][8] = new Valto(mymap[2][8]);
+		((Valto)mymap[3][8]).addConnectPoints(mymap[2][8]);
+		mymap[3][7] = new Sin(mymap[3][8]);
+		((Valto)mymap[3][8]).addConnectPoints(mymap[3][7]);
+		for (int i = 0; i < 6; i++) {
+			mymap[3][6-i] = new Sin(mymap[3][7-i]);
+			mymap[3][7-i].setBPoint(mymap[3][6-i]);
+		}
+		String[] s1 ={"Blue","Green","Green"};
+		mymap[3][0] = new Allomas(mymap[3][1],"Red",s1);
+		for (int i = 0; i < 11; i++) {
+			mymap[4+i][0] = new Sin(mymap[3+i][0]);
+			mymap[3+i][0].setBPoint(mymap[4+i][0]);
+		}
+		for (int i = 0; i < 4; i++) {
+			mymap[14][1+i] = new Sin(mymap[14][0+i]);
+			mymap[14][0+i].setBPoint(mymap[14][1+i]);
+		}
+		mymap[14][5] = new Valto(mymap[14][4]);
+		((Valto)mymap[14][5]).addConnectPoints(mymap[14][4]);
+		
+		//a bal szélső különlegeshelytől 
+		//a piros állomáson keresztül a az állomás utáni kereszteződésig
+	}
 	
 	public ArrayList<Sin> getMap() {//ez a Viewnek kell a kirajzoláshoz
 		return map;
