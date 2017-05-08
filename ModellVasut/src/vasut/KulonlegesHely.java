@@ -11,16 +11,12 @@ import org.apache.log4j.*;
 public class KulonlegesHely extends Sin implements Serializable{
 	private Alagut aObserver; //A pályához tartozó alagut referenciája
 	
-	//Rá feliratkozott ActionListenerek
-	private List<ActionListener> list;
-	
 	//Logoláshoz a logger osztály egy példánya
 	private static final Logger log = LogManager.getLogger(Alagut.class);
 	
 	KulonlegesHely(Sin aPoint_, Alagut a){		
 		super(aPoint_);
 		aObserver = a;
-		list = new ArrayList<ActionListener>();
 		
 		//Loglás
 		log.info("A KulonlegesHely konstruktora meghívva");

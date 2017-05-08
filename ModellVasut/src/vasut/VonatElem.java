@@ -1,7 +1,11 @@
 package vasut;
 
+import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
 import org.apache.log4j.*;
 
 public class VonatElem implements Serializable{
@@ -11,6 +15,9 @@ public class VonatElem implements Serializable{
 	protected String color;
 	protected boolean empty = false;
 	protected boolean emptyable = false;
+	
+	//Rá feliratkozott ActionListenerek
+	protected List<ActionListener> list;
 	
 	//Logoláshoz
 	private static final Logger log = LogManager.getLogger(VonatElem.class);
@@ -30,7 +37,14 @@ public class VonatElem implements Serializable{
 				emptyable = true;
 			} 
 		}
+		
+		list = new ArrayList<ActionListener>();
 		log.info("VonatElem konstruktora meghívva");
+	}
+	
+	//Listenerek felvétele
+	public void addActionListener(ActionListener listener) {
+		list.add(listener);
 	}
 	
 	/* Leszállhatnak rólad jelzés. */

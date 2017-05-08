@@ -1,5 +1,8 @@
 package vasut;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 
@@ -43,6 +46,12 @@ public class Mozdony extends VonatElem {
 			
 			/* beállítjuk magunknak az következő sin referenciát*/
 			whereAmI = idefogokmozogni;
+			
+			/* Event jelzés */
+			for(ActionListener act : list) {
+				act.actionPerformed(new ActionEvent(this,5,"MOZDONY_MOVED"));
+			}
+			
 			/* ne mutasson rá több referencia (nem tudom kell e) */
 			idefogokmozogni = null;
 			
