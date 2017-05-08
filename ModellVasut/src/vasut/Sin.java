@@ -1,6 +1,10 @@
 package vasut;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -8,6 +12,9 @@ import org.apache.log4j.Logger;
 public class Sin implements Serializable{
 	
 	private static final Logger Log = LogManager.getLogger(Sin.class);
+	
+	/* Rá feliratkozott */
+	private List<ActionListener> list = new ArrayList();
 	
 	protected VonatElem actVonatElem;
 	/** Sin mögötti elem */
@@ -41,6 +48,37 @@ public class Sin implements Serializable{
 		return bPoint;
 	}
 	
+	/** Listenerek felvétele */
+	public void addActionListener(ActionListener listener) {
+		list.add(listener);
+	}
+	
+	/** Váltó által meghívott setApoint (amikor elsütjük az eventet) */
+	public void setAPoint_Valto(Sin ap) {
+		aPoint = ap;
+		/* Event jelzés */
+		for(ActionListener act : list) {
+			if(ap == null) {
+				act.actionPerformed(new ActionEvent(this,0,"AP_INACTIV"));
+			} else {
+				act.actionPerformed(new ActionEvent(this,1,"AP_ACTIVE"));
+			}
+		}
+	}
+	
+	/** Váltó által meghívott setBpoint (amikor elsütjük az eventet) */
+	public void setBPoint_Valto(Sin bp) {
+		bPoint = bp;
+		/* Event jelzés */
+		for(ActionListener act : list) {
+			if(bp == null) {
+				act.actionPerformed(new ActionEvent(this,2,"BP_INACTIV"));
+			} else {
+				act.actionPerformed(new ActionEvent(this,3,"BP_ACTIVE"));
+			}
+		}
+	}
+	
 	/** Beállítja az aPontot */
 	public void setAPoint(Sin ap) {
 		aPoint = ap;
@@ -61,9 +99,12 @@ public class Sin implements Serializable{
 		return actVonatElem;
 	}
 	
+	/** Felette levő elem beállítása (kereszteződés) */
 	public void setCrossing(Sin cross) {
 		crossing = cross;
 	}
+	
+	/** Felette levő elem lekérdezése (kereszteződés) */
 	public Sin getCrossing(){
 		return crossing;
 	}
