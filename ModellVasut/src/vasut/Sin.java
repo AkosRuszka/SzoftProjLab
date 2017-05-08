@@ -100,9 +100,13 @@ public class Sin implements Serializable{
 		return actVonatElem;
 	}
 	
-	/** Felette levő elem beállítása (kereszteződés) */
+	/** Felette levő elem beállítása (kereszteződés)
+	 * 	Meghívásakkor eseményt indítunk, hogy a SinRajzolo képe változzon */
 	public void setCrossing(Sin cross) {
 		crossing = cross;
+		for(ActionListener act : list) {
+				act.actionPerformed(new ActionEvent(this,2,"CROSSING"));
+		}
 	}
 	
 	/** Felette levő elem lekérdezése (kereszteződés) */
