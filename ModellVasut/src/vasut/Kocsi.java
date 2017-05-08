@@ -1,5 +1,7 @@
 package vasut;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.Serializable;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -25,6 +27,12 @@ public class Kocsi extends VonatElem{
 		whereAmI.setActVonatElem(null);
 		
 		whereAmI = idefogokmozogni;
+		
+		/* Event jelzés */
+		for(ActionListener act : list) {
+			act.actionPerformed(new ActionEvent(this,6,"KOCSI_MOVED"));
+		}
+		
 		idefogokmozogni = null;
 		
 		whereAmI.setActVonatElem(this);
@@ -44,6 +52,11 @@ public class Kocsi extends VonatElem{
 		if(backElem != null) {
 			log.info("backElem != null tehát továbbhívom rá a setEmptyable-t");
 			backElem.setEmptyable(aa);
+		}
+		
+		/* Event jelzés */
+		for(ActionListener act : list) {
+			act.actionPerformed(new ActionEvent(this,7,"KOCSI_NOTEMPTY"));
 		}
 	}
 	
