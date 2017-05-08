@@ -11,7 +11,7 @@ public class KocsiRajzolo implements IRajzolo{
 	private Point coord;
 	public boolean visible;
 	
-	public KocsiRajzolo(Kocsi kocsi, Image img, Point coord) {
+	public KocsiRajzolo(Image img, Point coord, Kocsi kocsi) {
 		this.kocsi = kocsi;
 		this.img = img;
 		this.coord = coord;

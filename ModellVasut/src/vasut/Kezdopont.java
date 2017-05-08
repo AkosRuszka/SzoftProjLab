@@ -5,6 +5,7 @@ import java.util.*;
 import vasut.*;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import graph.RailEvent;
 
 public class Kezdopont extends Sin{
 	private static final Logger log = LogManager.getLogger(Palya.class);
@@ -76,6 +77,10 @@ public class Kezdopont extends Sin{
 			System.out.print(e.getMessage());
 		}
 		log.info("Létrejött a vonat 5(+1) darab kocsival");
+		//event----------------------------------
+		RailEvent re = new RailEvent(this, 3);
+		re.fire();
+		//endevent-------------------------------
 		System.out.println("Létrejött a vonat 5(+1) darab kocsival");
 	}
 	

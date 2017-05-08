@@ -34,6 +34,10 @@ public class Palya implements Serializable, Runnable{
 	public void quitToMain() throws Exception {
 		synchronized (this){
 			killed=true;
+			//event----------------------------------
+			RailEvent re = new RailEvent(this, 2);
+			re.fire();
+			//endevent-------------------------------
 			Thread.sleep(200);
 			log.info("Exception dobva: quitToMain");
 			throw new RuntimeException("quitToMain");

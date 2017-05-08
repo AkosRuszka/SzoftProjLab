@@ -17,6 +17,12 @@ class Vezerlo implements EventListener{
 		else if(event == 1){
 			view.mapRedraw();
 		}
+		else if(event == 2){
+			//kilépés a játékból
+		}
+		else if(event == 3){
+			view.addTrain((Palya)re.getSource());
+		}
 		else{
 			//valami más
 		}

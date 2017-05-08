@@ -90,6 +90,13 @@ public class VonatElem implements Serializable{
 //		
 //		
 //	}
+	public VonatElem getBackElem(){
+		return backElem;
+	}
+	
+	public VonatElem getBFrontElem(){
+		return frontElem;
+	}
 
 	public Sin getWhereAmI() {
 		/** Lekérdezzük az aktuális tartózkodási helyét */
