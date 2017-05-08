@@ -13,8 +13,8 @@ public class Sin implements Serializable{
 	
 	private static final Logger Log = LogManager.getLogger(Sin.class);
 	
-	/* Rá feliratkozott */
-	private List<ActionListener> list = new ArrayList();
+	/* Rá feliratkozott ActionListenerek*/
+	private List<ActionListener> list;
 	
 	protected VonatElem actVonatElem;
 	/** Sin mögötti elem */
@@ -36,6 +36,7 @@ public class Sin implements Serializable{
 			aPoint.setBPoint(this); /** Beállítja az előtte álló elem bPoint-ját magára. */
 		bPoint = null;
 		crossing = null;
+		list = new ArrayList<ActionListener>();
 	}
 	
 	/** Lekérdezi az aPontot */
@@ -72,9 +73,9 @@ public class Sin implements Serializable{
 		/* Event jelzés */
 		for(ActionListener act : list) {
 			if(bp == null) {
-				act.actionPerformed(new ActionEvent(this,2,"BP_INACTIV"));
+				act.actionPerformed(new ActionEvent(this,0,"BP_INACTIV"));
 			} else {
-				act.actionPerformed(new ActionEvent(this,3,"BP_ACTIVE"));
+				act.actionPerformed(new ActionEvent(this,1,"BP_ACTIVE"));
 			}
 		}
 	}
