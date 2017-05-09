@@ -29,6 +29,9 @@ public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionLi
 			e.getMessage();
 		}
 		
+		setSize(new Dimension(20,20));
+		setMaximumSize(getSize());
+		setPreferredSize(new Dimension(20,20));
 		
 		this.insets = frameinsets;
 		this.kh = kh;
