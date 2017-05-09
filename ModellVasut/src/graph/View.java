@@ -59,7 +59,7 @@ public class View extends JFrame{
 		int i = 0;
 		int j = 0;
 		for(Sin s[][] = actMap.getMap(); i < 30; i++){
-			for(; j < 20; j++){
+			for(; j < 30; j++){
 				// TODO: Labelek kirajzolása
 			}		
 		}
