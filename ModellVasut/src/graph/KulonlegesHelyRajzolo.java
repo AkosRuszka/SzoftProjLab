@@ -1,6 +1,8 @@
 package graph;
 
+import java.awt.Dimension;
 import java.awt.Image;
+import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -10,27 +12,41 @@ import vasut.KulonlegesHely;
 
 public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionListener{
 	private KulonlegesHely kh;
-	private Image img_kh;
-	private Image img_alagut;
-	private Image paint_img;
 	private Point coord;
+	private Insets insets;
 	
-	public KulonlegesHelyRajzolo(Image img_kh, Image img_a, Point coord, KulonlegesHely kh) {
+	private ImageIcon img_kh;
+	private ImageIcon img_alagut;
+	private ImageIcon paint_img;
+	
+	
+	public KulonlegesHelyRajzolo(Point coord, KulonlegesHely kh, Insets frameinsets) {
+		try{		
+			this.img_kh = new ImageIcon("\\img\\kulonlegeshely.png");
+			this.img_alagut = new ImageIcon("\\img\\alagut.png");
+			this.paint_img = img_kh;
+			setIcon(paint_img);	
+		} catch (Exception e) {
+			e.getMessage();
+		}
 		
-		setLocation(coord);
-		setIcon(new ImageIcon(img_kh));		
 		
+		this.insets = frameinsets;
+		this.kh = kh;
+		this.coord = coord;
+		
+		//Gomb esemény kezelője
 		addActionListener(new ActionListener() { 
 			  public void actionPerformed(ActionEvent e) { 
 				  kh.checkTunnels();
 			  }
 		});
 		
-		this.kh = kh;
-		this.img_kh = img_kh;
-		this.img_alagut = img_a;
-		this.paint_img = img_kh;
-		this.coord = coord;		
+		//Felíratkozunk a KülönlegesHely eseményeire
+		this.kh.addActionListener(this);
+		
+		Dimension size = getPreferredSize();
+		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top, 	size.width, size.height);	
 	}
 
 	@Override
