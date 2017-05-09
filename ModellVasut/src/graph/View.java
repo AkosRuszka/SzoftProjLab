@@ -42,7 +42,6 @@ public class View extends JFrame{
 					rails.setPoint(a);
 					mapon = true;
 					carts.setVisible(true);
-					carts.setFullImage(((Kocsi)carts.getObject()).getEmpty());
 				}
 			}
 			if(!mapon){
