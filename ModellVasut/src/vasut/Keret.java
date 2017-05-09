@@ -12,9 +12,7 @@ import graph.*;
 
 public class Keret {
 public static void main(String[] args) throws Exception {	
-		//Jatek j = new Jatek();
-		//View v = new View();
-		//Menu m = new Menu(j);
+		
 		Vezerlo vez = null;
 		
 		try {
@@ -26,6 +24,13 @@ public static void main(String[] args) throws Exception {
 	    }
 		
 		
+		if(vez==null){
+			Jatek j = new Jatek();
+			View v = new View();
+			Menu m = new Menu(j);
+			
+			vez = new Vezerlo(v, m, j);
+		}
 		
 		//event----------------------------------
 		RailEvent re = new RailEvent(vez.getJatek(), 2, vez);
