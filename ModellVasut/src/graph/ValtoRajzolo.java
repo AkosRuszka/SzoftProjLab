@@ -23,6 +23,10 @@ public class ValtoRajzolo extends JButton implements IRajzolo{
 		this.coord = coord;
 		this.insets = frameinsets;
 		
+		setSize(new Dimension(20,20));
+		setMaximumSize(getSize());
+		setPreferredSize(new Dimension(20,20));
+		
 		try{
 			this.img = new ImageIcon("\\img\\valto.png");
 			
