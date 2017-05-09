@@ -53,6 +53,7 @@ public class ValtoRajzolo extends JButton implements IRajzolo{
 
 	@Override
 	public void setPoint(Point point) {
-		coord = point;
+		/* Nem rakjuk arrébb a sin-t */
+		//coord = point;
 	}
 }
