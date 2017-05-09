@@ -24,8 +24,7 @@ public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionLi
 		try{		
 			this.img_kh = new ImageIcon("\\img\\kulonlegeshely.png");
 			this.img_alagut = new ImageIcon("\\img\\alagut.png");
-			this.paint_img = img_kh;
-			setIcon(paint_img);	
+			this.paint_img = img_kh;	
 		} catch (Exception e) {
 			e.getMessage();
 		}
@@ -34,6 +33,21 @@ public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionLi
 		this.insets = frameinsets;
 		this.kh = kh;
 		this.coord = coord;
+		
+		/* 20x20-as átméretezés */
+		Image resizedImage = paint_img.getImage();
+		Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+		paint_img = new ImageIcon(newimg);
+		
+		resizedImage = img_kh.getImage();
+		newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+		img_kh = new ImageIcon(newimg);
+		
+		resizedImage = img_alagut.getImage();
+		newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+		img_alagut = new ImageIcon(newimg);
+		
+		setIcon(paint_img);
 		
 		//Gomb esemény kezelője
 		addActionListener(new ActionListener() { 

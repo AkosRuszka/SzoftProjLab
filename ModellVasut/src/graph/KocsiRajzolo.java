@@ -49,6 +49,16 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 				break;
 			}
 			
+			/* Notempty_img 20x20-as átméretezése */
+			Image resizedImage = notempty_img.getImage();
+			Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			notempty_img = new ImageIcon(newimg);
+			
+			/* Empty_img 20x20-as átméretezése */
+			resizedImage = empty_img.getImage();
+			newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			empty_img = new ImageIcon(newimg);
+			
 			print_img = notempty_img;
 			setIcon(print_img);
 			
