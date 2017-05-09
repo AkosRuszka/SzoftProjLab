@@ -23,8 +23,10 @@ public class View extends JFrame{
 			for(IRajzolo rails : railElements){
 				if(((Sin) rails.getObject()).getActVonatElem() == ((VonatElem)trains.getObject())){
 					Point a = new Point();
-					a.setLocation(trains.getPoint().getX(), trains.getPoint().getY());
-					rails.setPoint(a);
+					/* Lemásoljuk a "tartalmazó" sin koordinátáját. */
+					a.setLocation(rails.getPoint().getX(), rails.getPoint().getY());
+					/* Átállítjuk a mozdony/kocsi koordinátáját. */
+					trains.setPoint(a);
 					mapon = true;
 					trains.setVisible(true);
 				}
@@ -38,8 +40,10 @@ public class View extends JFrame{
 			for(IRajzolo rails : railElements){
 				if(((Sin) rails.getObject()).getActVonatElem() == ((VonatElem)carts.getObject())){
 					Point a = new Point();
-					a.setLocation(carts.getPoint().getX(), carts.getPoint().getY());
-					rails.setPoint(a);
+					/* Lemásoljuk a "tartalmazó" sin koordinátáját. */
+					a.setLocation(rails.getPoint().getX(), rails.getPoint().getY());
+					/* Átállítjuk a mozdony/kocsi koordinátáját. */
+					carts.setPoint(a);
 					mapon = true;
 					carts.setVisible(true);
 				}
