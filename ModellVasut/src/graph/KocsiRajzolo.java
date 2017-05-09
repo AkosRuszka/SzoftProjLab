@@ -20,16 +20,34 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 	private Point coord;
 	private Insets insets;
 	
-	public KocsiRajzolo(ImageIcon print_img, Point coord, Kocsi kocsi, Insets frameinsets) {
+	public KocsiRajzolo(Point coord, Kocsi kocsi, Insets frameinsets) {
 		this.kocsi = kocsi;
 		this.insets = frameinsets;
-		this.print_img = print_img;
-		this.notempty_img = print_img;
-		this.empty_img = new ImageIcon("\\img\\kocsi_szurke.png");;
 		this.coord = coord;
 		
-		try{
+		try {
+			switch(kocsi.getColor().toUpperCase()) {
+			case "YELLOW":
+				notempty_img = new ImageIcon("\\img\\kocsi_sarga.png");
+				break;
+			case "RED":
+				notempty_img = new ImageIcon("\\img\\kocsi_piros.png");
+				break;
+			case "BLUE":
+				notempty_img = new ImageIcon("\\img\\kocsi_kek.png");
+				break;
+			case "GREEN":
+				notempty_img = new ImageIcon("\\img\\kocsi_zold.png");
+				break;
+			default:
+				notempty_img = null;
+				empty_img = null;
+				break;
+			}
+			
+			print_img = notempty_img;
 			setIcon(print_img);
+			
 		}
 		catch (Exception e) {
 			e.getMessage();
@@ -38,21 +56,6 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 		Dimension size = getPreferredSize();
 		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
 	             size.width, size.height);
-	}
-
-	public void setFullImage(boolean b){
-		if(b){//tele
-			print_img = notempty_img;
-		}
-		else{
-			print_img = empty_img;
-		}
-		try{
-			setIcon(print_img);
-		}
-		catch (Exception e) {
-			e.getMessage();
-		}
 	}
 	
 	@Override
@@ -76,7 +79,9 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 		if(e.getActionCommand().equals("KOCSI_NOTEMPTY")){
 			print_img = notempty_img;
 		}
-		else //IDE KÉNE EGY EVENT, CSAK NINCS A KOCSIBA MÁSHONNAN KELL HA KIÜRÜLT
-			print_img = empty_img;		
+		else {
+			print_img = empty_img;
+		}
+		setIcon(print_img);
 	}
 }

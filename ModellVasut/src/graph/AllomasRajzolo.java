@@ -31,7 +31,7 @@ public class AllomasRajzolo extends JLabel implements IRajzolo, ActionListener, 
 		/* Kép beállítása a allomas színétől függően */
 		try{
 			switch(allomas.getColor().toUpperCase()) {
-			case "YELLO":
+			case "YELLOW":
 				allomasimg = new ImageIcon("\\img\\allomas_sarga.png");
 				break;
 			case "RED":
@@ -52,7 +52,7 @@ public class AllomasRajzolo extends JLabel implements IRajzolo, ActionListener, 
 		/* Felszálló nyíl beállítása már az elején */
 		try {
 			switch(allomas.getRisers().toUpperCase()) {
-			case "YELLO":
+			case "YELLOW":
 				felszalloimg = new ImageIcon("\\img\\nyil_sarga.png");
 				break;
 			case "RED":
