@@ -51,9 +51,6 @@ public class MozdonyRajzolo implements IRajzolo, ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getActionCommand().equals("MOZDONY_MOVED")){
-			//?
-		}
-		
+		//?
 	}
 }

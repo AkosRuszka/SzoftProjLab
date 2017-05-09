@@ -56,10 +56,7 @@ public class KocsiRajzolo implements IRajzolo, ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getActionCommand().equals("KOCSI_MOVED")){
-			//?
-		}
-		else if(e.getActionCommand().equals("KOCSI_NOTEMPTY")){
+		if(e.getActionCommand().equals("KOCSI_NOTEMPTY")){
 			print_img = notempty_img;
 		}
 		else //IDE KÉNE EGY EVENT, CSAK NINCS A KOCSIBA MÁSHONNAN KELL HA KIÜRÜLT

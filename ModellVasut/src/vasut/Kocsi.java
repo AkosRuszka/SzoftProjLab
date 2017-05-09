@@ -28,11 +28,6 @@ public class Kocsi extends VonatElem{
 		
 		whereAmI = idefogokmozogni;
 		
-		/* Event jelzés */
-		for(ActionListener act : list) {
-			act.actionPerformed(new ActionEvent(this,6,"KOCSI_MOVED"));
-		}
-		
 		idefogokmozogni = null;
 		
 		whereAmI.setActVonatElem(this);
