@@ -73,5 +73,6 @@ public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionLi
 			paint_img = img_alagut;
 		if(e.getActionCommand().equals("KH_TUNNEL_DESTROY"))
 			paint_img = img_kh;		
+		setIcon(paint_img);
 	}
 }

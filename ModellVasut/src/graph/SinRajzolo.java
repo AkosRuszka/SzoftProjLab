@@ -81,5 +81,6 @@ public class SinRajzolo extends JLabel implements IRajzolo, ActionListener, Seri
 			paint_img = null;
 			break;
 		}
+		setIcon(paint_img);
 	}
 }
