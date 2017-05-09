@@ -29,7 +29,7 @@ public class SinRajzolo extends JLabel implements IRajzolo, ActionListener, Seri
 		try {
 			active_img = new ImageIcon("\\img\\sin_zold.png");
 			inactive_img = new ImageIcon("\\img\\sin_piros.png");
-			paint_img = new ImageIcon("\\img\\sin.png");
+			paint_img = new ImageIcon("sin.png");
 			kereszt_image = new ImageIcon("\\img\\keresztsin.png");
 			
 			// 20x20-as átméretezés
@@ -64,6 +64,8 @@ public class SinRajzolo extends JLabel implements IRajzolo, ActionListener, Seri
 		Dimension size = getPreferredSize();
 		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
 	             size.width, size.height);
+		
+		setVisible(true);
 	}
 	
 	@Override

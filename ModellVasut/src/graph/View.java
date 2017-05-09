@@ -1,5 +1,6 @@
 package graph;
 
+import java.awt.Dimension;
 import java.awt.Insets;
 import java.awt.Point;
 import java.awt.Window;
@@ -22,6 +23,18 @@ public class View extends JFrame{
 	ArrayList<IRajzolo> railElements = new ArrayList<IRajzolo>();
 	ArrayList<MozdonyRajzolo> trainElements = new ArrayList<MozdonyRajzolo>();
 	ArrayList<KocsiRajzolo> cartElements = new ArrayList<KocsiRajzolo>();
+	
+	public View() {
+		setLayout(null);
+		setVisible(true);
+		setSize(new Dimension(900,900));
+		/* ujrarajzolást kérünk */
+		
+		invalidate();
+
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
 	public void mapRedraw(){
 		for(MozdonyRajzolo trains : trainElements){
 			boolean mapon = false;
@@ -114,6 +127,7 @@ public class View extends JFrame{
 				}
 			}
 		}
+		repaint();
 	}
 	
 	public void addTrain(Palya p){

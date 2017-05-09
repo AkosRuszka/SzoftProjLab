@@ -9,7 +9,9 @@ import java.io.ObjectOutputStream;
 
 
 import vasut.Jatek;
+import vasut.Kezdopont;
 import vasut.Palya;
+import vasut.Sin;
 
 public class Vezerlo implements ActionListener{
 	private View view = null;
@@ -23,6 +25,8 @@ public class Vezerlo implements ActionListener{
 		jatek = j;
 		jatek.addActionListener(this);
 		menu.addActionListener(this);
+		
+		v.mapfeldolgozas(izebezi());
 	}
 	
 	public void EventOccurred(RailEvent re){
@@ -51,6 +55,41 @@ public class Vezerlo implements ActionListener{
 		}
 		System.out.println(re.getSource());
 		System.out.println(re.getID());
+	}
+	
+	public Sin[][] izebezi() {
+		Sin mymap[][] = new Sin[30][30];
+		for (int i = 0; i < 30; i++) {
+			for (int j = 0; j < 30; j++) {
+				mymap[i][j] = null;
+			}
+		}
+		
+		mymap[10][10] = new Kezdopont(1,1,1,null);
+		mymap[11][10] = new Sin(mymap[10][10]);
+		mymap[12][10] = new Sin(mymap[11][10]);
+		mymap[13][10] = new Sin(mymap[12][10]);
+		mymap[14][10] = new Sin(mymap[13][10]);
+		mymap[15][10] = new Sin(mymap[14][10]);
+		mymap[16][10] = new Sin(mymap[15][10]);
+		mymap[17][10] = new Sin(mymap[16][10]);
+		mymap[17][11] = new Sin(mymap[17][10]);
+		mymap[17][12] = new Sin(mymap[17][11]);
+		mymap[17][13] = new Sin(mymap[17][12]);
+		mymap[17][14] = new Sin(mymap[17][13]);
+		mymap[16][14] = new Sin(mymap[17][14]);
+		mymap[15][14] = new Sin(mymap[16][14]);
+		mymap[14][14] = new Sin(mymap[15][14]);
+		mymap[13][14] = new Sin(mymap[14][14]);
+		mymap[12][14] = new Sin(mymap[13][14]);
+		mymap[11][14] = new Sin(mymap[12][14]);
+		mymap[10][14] = new Sin(mymap[11][14]);
+		mymap[10][13] = new Sin(mymap[10][14]);
+		mymap[10][12] = new Sin(mymap[10][13]);
+		mymap[10][11] = new Sin(mymap[10][12]);
+		mymap[10][10].setBPoint(mymap[10][11]);
+	
+		return mymap;
 	}
 
 	@Override

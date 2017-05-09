@@ -12,11 +12,12 @@ import graph.*;
 
 public class Keret {
 public static void main(String[] args) throws Exception {	
-		//Jatek j = new Jatek();
+		Jatek j = new Jatek();
 		//View v = new View();
 		//Menu m = new Menu(j);
-		Vezerlo vez = null;
+		Vezerlo vez = new Vezerlo(new View(), new Menu(j), j);
 		
+		/*
 		try {
 	        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("vezerlo.dat"));
 	        vez = (Vezerlo)ois.readObject();
@@ -24,8 +25,6 @@ public static void main(String[] args) throws Exception {
 	    } catch(Exception ex) {
 	        ex.printStackTrace();
 	    }
-		
-		
 		
 		//event----------------------------------
 		RailEvent re = new RailEvent(vez.getJatek(), 2, vez);
@@ -38,6 +37,6 @@ public static void main(String[] args) throws Exception {
             oos.close();
         } catch(Exception ex) {
             ex.printStackTrace();
-        }
+        }*/
 	}
 }
