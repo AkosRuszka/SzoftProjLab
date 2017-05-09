@@ -37,6 +37,7 @@ public class MozdonyRajzolo extends JLabel implements IRajzolo {
 		Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
 		print_img = new ImageIcon(newimg);
 		
+		
 		Dimension size = getPreferredSize();
 		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
 	             size.width, size.height);
