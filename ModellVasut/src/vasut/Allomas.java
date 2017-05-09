@@ -83,6 +83,8 @@ public class Allomas extends Sin{
 
 	/** risers lista első elemének lekérdezése */
 	public String getRisers() {
+		if(risers.isEmpty())
+			return "null";
 		return risers.get(0);
 	}
 }
