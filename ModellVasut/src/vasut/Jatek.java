@@ -102,9 +102,9 @@ public class Jatek {
 			if(jfc.showOpenDialog(new Button()) == JFileChooser.APPROVE_OPTION){
 				
 			}
-			if(!jfc.getSelectedFile().getName().contains("dat"))
+			/*if(!jfc.getSelectedFile().getName().contains("dat"))
 				throw new IOException("Nem megfelelő fájltípus!");
-			
+			*/
 			actMap = 0;
 			for (int i = 1; i < 20; i++) {
 				String name = "map"+(char)('0'+i);
@@ -117,9 +117,9 @@ public class Jatek {
 					break;
 				}
 			}
-			if(actMap==0)
+			/*if(actMap==0)
 				throw new IOException("Nem megfelelő fájlnév!");
-			//event----------------------------------
+			*///event----------------------------------
 			RailEvent re = new RailEvent(actGame, 0, list.get(0));
 			re.fire();
 			//endevent-------------------------------

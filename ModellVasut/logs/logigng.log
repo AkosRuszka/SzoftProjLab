@@ -2266,3 +2266,9 @@
 2017-05-08 00:34:13 INFO  VonatElem:31 - Mozdony: run meghívva
 2017-05-08 00:34:13 INFO  Sin:74 - actMove() meghívva.
 2017-05-08 00:34:13 INFO  VonatElem:61 - EXception: Kisiklott a vonat
+2017-05-10 00:07:38 INFO  Palya:52 - Jatek.newGame()
+2017-05-10 00:07:39 INFO  Palya:67 - Hiba elkapva: vasut.Palya; local class incompatible: stream classdesc serialVersionUID = 6234955027066806073, local class serialVersionUID = 4427395626327498763
+2017-05-10 00:07:43 INFO  Palya:74 - Jatek.nextMap()
+2017-05-10 00:07:43 INFO  Palya:89 - Hiba elkapva: vasut.Palya; local class incompatible: stream classdesc serialVersionUID = 6234955027066806073, local class serialVersionUID = 4427395626327498763
+2017-05-10 00:07:45 INFO  Palya:96 - Jatek.mapLoad()
+2017-05-10 00:07:54 INFO  Palya:130 - Hiba elkapva: null source
