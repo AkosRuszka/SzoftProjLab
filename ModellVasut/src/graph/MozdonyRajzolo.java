@@ -13,19 +13,19 @@ import javax.swing.JLabel;
 
 import vasut.Mozdony;
 
-public class MozdonyRajzolo extends JLabel implements IRajzolo, ActionListener{
+public class MozdonyRajzolo extends JLabel implements IRajzolo {
 	private Mozdony mozdony;
 	private ImageIcon print_img;
 	private Point coord;
 	private Insets insets;
 	
 	public MozdonyRajzolo(Point coord, Mozdony m, Insets frameinsets) {
-		this.print_img = new ImageIcon("\\img\\mozdony.png");
 		this.coord = coord;
 		this.mozdony = m;
 		this.insets = frameinsets;
 		
 		try{
+			this.print_img = new ImageIcon("\\img\\mozdony.png");
 			setIcon(print_img);
 		}
 		catch (Exception e) {
@@ -50,15 +50,5 @@ public class MozdonyRajzolo extends JLabel implements IRajzolo, ActionListener{
 	@Override
 	public void setPoint(Point point) {
 		coord = point;
-	}
-
-	@Override
-	protected void paintComponent(Graphics g) {
-		super.paintComponent(g);	
-	}
-	
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		//?
 	}
 }
