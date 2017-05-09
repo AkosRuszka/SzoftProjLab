@@ -63,7 +63,8 @@ public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionLi
 
 	@Override
 	public void setPoint(Point point) {
-		coord = point;
+		/* Nem rakjuk arrébb a sin-t */
+		//coord = point;
 	}
 
 

@@ -1,12 +1,17 @@
 package graph;
 
-import java.util.EventListener;
-import java.util.EventObject;
-import graph.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+
+
 import vasut.Jatek;
 import vasut.Palya;
 
-public class Vezerlo implements EventListener{
+public class Vezerlo implements ActionListener{
 	private View view = null;
 	private Menu menu = null;
 	private Jatek jatek = null;
@@ -17,6 +22,7 @@ public class Vezerlo implements EventListener{
 		menu = m;
 		jatek = j;
 		jatek.addActionListener(this);
+		menu.addActionListener(this);
 	}
 	
 	public void EventOccurred(RailEvent re){
@@ -45,5 +51,31 @@ public class Vezerlo implements EventListener{
 		}
 		System.out.println(re.getSource());
 		System.out.println(re.getID());
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(e.getActionCommand().equals("MENU_CREATED")){
+			try {
+	            ObjectInputStream ois = new ObjectInputStream(new FileInputStream("vezerlo.dat"));
+	            jatek = (Jatek)ois.readObject();
+	            view = (View)ois.readObject();
+	            ois.close();
+	        } catch(Exception ex) {
+	            ex.printStackTrace();
+	        }
+		}
+		
+		
+		if(e.getActionCommand().equals("MENU_CLOSED")){
+			try {
+                ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("vezerlo.dat"));
+                oos.writeObject(jatek);
+                oos.writeObject(view);
+                oos.close();
+            } catch(Exception ex) {
+                ex.printStackTrace();
+            }
+		}
 	}
 }

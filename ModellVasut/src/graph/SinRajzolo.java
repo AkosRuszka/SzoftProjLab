@@ -59,7 +59,8 @@ public class SinRajzolo extends JLabel implements IRajzolo, ActionListener, Seri
 
 	@Override
 	public void setPoint(Point point) {
-		coord = point;
+		/* Nem rakjuk arrébb a sin-t */
+		//coord = point;
 	}
 	
 	@Override

@@ -4,6 +4,11 @@ import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+import java.util.ArrayList;
+
+
 import javax.swing.Box;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
@@ -22,10 +27,34 @@ public class Menu extends JFrame{
 	private JPanel panel;
 	private String sugo_string;
 	
+	protected ArrayList<ActionListener> list = new ArrayList<ActionListener>();
+	
 	public Menu(Jatek j){
 		sugo_string = "Egyszer itt volt egy tök jó kis szöveg... csak elfelejtettem lementeni -.-";
 		initComponents();
 		jatek = j;
+		
+		/* Event jelzés */
+		for(ActionListener act : list) {
+			act.actionPerformed(new ActionEvent(this,8,"MENU_CREATED"));
+		}
+
+        // Bezáráskor jelezzük, hogy az adatokat szerializálni kell
+        addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+            	/* Event jelzés */
+    			for(ActionListener act : list) {
+    				act.actionPerformed(new ActionEvent(this,8,"MENU_CLOSED"));
+    			}
+            }
+        });
+	}
+	
+	
+	/** Listenerek felvétele */
+	public void addActionListener(ActionListener listener) {
+		list.add(listener);
 	}
 	
 	private void initComponents(){
