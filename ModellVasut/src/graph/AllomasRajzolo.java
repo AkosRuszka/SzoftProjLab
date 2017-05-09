@@ -3,6 +3,7 @@ package graph;
 import vasut.Allomas;
 
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -43,8 +44,18 @@ public class AllomasRajzolo extends JLabel implements IRajzolo, ActionListener, 
 			case "GREEN":
 				allomasimg = new ImageIcon("\\img\\allomas_zold.png");
 				break;
+			default:
+				allomasimg = null;
+				break;
 			}
+			
+			/* 20x20-as átméretezés */
+			Image resizedImage = allomasimg.getImage();
+			Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			allomasimg = new ImageIcon(newimg);
+			
 			setIcon(allomasimg);
+			
 		} catch (Exception e) {
 			e.getMessage();
 		}
@@ -68,7 +79,13 @@ public class AllomasRajzolo extends JLabel implements IRajzolo, ActionListener, 
 				felszalloimg = null;
 				break;
 			}
+			
+			/* 20x20-as átméretezés */
+			Image resizedImage = felszalloimg.getImage();
+			Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			felszalloimg = new ImageIcon(newimg);			
 			nyillabel.setIcon(felszalloimg);
+			
 		} catch (Exception e){
 			e.getMessage();
 		}
@@ -106,26 +123,31 @@ public class AllomasRajzolo extends JLabel implements IRajzolo, ActionListener, 
 			switch(allomas.getRisers().toUpperCase()) {
 			case "YELLOW":
 				felszalloimg = new ImageIcon("\\img\\nyil_sarga.png");
-				nyillabel.setIcon(felszalloimg);
 				break;
 			case "RED":
 				felszalloimg = new ImageIcon("\\img\\nyil_piros.png");
-				nyillabel.setIcon(felszalloimg);
 				break;
 			case "GREEN":
 				felszalloimg = new ImageIcon("\\img\\nyil_zold.png");
-				nyillabel.setIcon(felszalloimg);
 				break;
 			case "BLUE":
 				felszalloimg = new ImageIcon("\\img\\nyil_kek.png");
-				nyillabel.setIcon(felszalloimg);
 				break;
 			default:
 				/* Ha nincs már felszálló akkor eltüntetjük a nyilat */
 				nyillabel.setVisible(false);
 				break;
 				
-			}	
+			}
+			
+			/* 20x20-as átméretezés, csak akkor ha az előtte levő switch nem a default-ba lépett.*/
+			if(nyillabel.isVisible()){
+				Image resizedImage = felszalloimg.getImage();
+				Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+				felszalloimg = new ImageIcon(newimg);
+				nyillabel.setIcon(felszalloimg);
+			}
+			
 		}
 	}
 
