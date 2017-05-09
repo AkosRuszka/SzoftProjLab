@@ -6,6 +6,7 @@ import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
@@ -13,7 +14,7 @@ import javax.swing.JLabel;
 import vasut.Allomas;
 import vasut.Sin;
 
-public class SinRajzolo extends JLabel implements IRajzolo, ActionListener{
+public class SinRajzolo extends JLabel implements IRajzolo, ActionListener, Serializable{
 	private ImageIcon active_img;
 	private ImageIcon inactive_img;
 	private ImageIcon kereszt_image;
@@ -60,15 +61,10 @@ public class SinRajzolo extends JLabel implements IRajzolo, ActionListener{
 	public void setPoint(Point point) {
 		coord = point;
 	}
-
-	@Override
-	protected void paintComponent(Graphics g) {
-		super.paintComponent(g);	
-	}
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		switch(e.getActionCommand()) {
+		switch(e.getActionCommand().toUpperCase()) {
 		case "INACTIVE":
 			/* AP/BP_INACTIVE */
 			paint_img = inactive_img;
@@ -80,6 +76,9 @@ public class SinRajzolo extends JLabel implements IRajzolo, ActionListener{
 		case "CROSSING":
 			/* setCrossing-nál... */
 			paint_img = kereszt_image;
+			break;
+		default:
+			paint_img = null;
 			break;
 		}
 	}
