@@ -1,48 +1,51 @@
 package graph;
 
-import java.awt.Image;
+import java.awt.Dimension;
+import java.awt.Graphics;
+import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
 import vasut.Allomas;
 import vasut.Sin;
 
-public class SinRajzolo implements IRajzolo, ActionListener{
-	private Sin sin;
-	private Image active_img;
-	private Image inactive_img;
-	private Image kereszt_image;
-	private Image paint_img;
+public class SinRajzolo extends JLabel implements IRajzolo, ActionListener{
+	private ImageIcon active_img;
+	private ImageIcon inactive_img;
+	private ImageIcon kereszt_image;
+	private ImageIcon paint_img;
+	private Insets insets;
 	private Point coord;
-	public boolean visible;
 	
-	public SinRajzolo(Image actimg, Image inactimg , Image keresztimg, Point coord, Allomas sin) {
-		this.active_img = actimg;
-		this.inactive_img = inactimg;
+	private Sin sin;
+	
+	public SinRajzolo(Point coord, Allomas sin, Insets frameinsets) {
+		try {
+			active_img = new ImageIcon("\\img\\sin_zold.png");
+			inactive_img = new ImageIcon("\\img\\sin_piros.png");
+			paint_img = new ImageIcon("\\img\\sin.png");
+			kereszt_image = new ImageIcon("\\img\\keresztsin.png");
+			setIcon(paint_img);
+		} catch (Exception e) {
+			e.getMessage();
+		}
+		
+		this.insets = frameinsets;
 		this.coord = coord;
 		this.sin = sin;
-		this.paint_img = actimg;
-		this.kereszt_image = keresztimg;
 		
-		/* Feliratkozunk az sin eseményére */
+		/* Feliratkozunk a sin eseményére */
 		this.sin.addActionListener(this);
-	}
-
-	public Point getCoord() {
-		return coord;
-	}
-
-	public void setCoord(Point coord) {
-		this.coord = coord;
-	}
-
-	@Override
-	public void rajzol() {
-		/* TODO: logika */
 		
+		Dimension size = getPreferredSize();
+		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
+	             size.width, size.height);
 	}
-
+	
 	@Override
 	public Object getObject() {
 		return sin;
@@ -58,6 +61,11 @@ public class SinRajzolo implements IRajzolo, ActionListener{
 		coord = point;
 	}
 
+	@Override
+	protected void paintComponent(Graphics g) {
+		super.paintComponent(g);	
+	}
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		switch(e.getActionCommand()) {
@@ -75,5 +83,4 @@ public class SinRajzolo implements IRajzolo, ActionListener{
 			break;
 		}
 	}
-
 }
