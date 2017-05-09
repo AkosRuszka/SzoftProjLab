@@ -1,5 +1,6 @@
 package graph;
 
+import java.awt.Dimension;
 import java.awt.Image;
 import java.awt.Insets;
 import java.awt.Point;
@@ -17,13 +18,26 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 	private ImageIcon empty_img;
 	private ImageIcon notempty_img;
 	private Point coord;
+	private Insets insets;
 	
 	public KocsiRajzolo(ImageIcon print_img, Point coord, Kocsi kocsi, Insets frameinsets) {
 		this.kocsi = kocsi;
+		this.insets = frameinsets;
 		this.print_img = print_img;
 		this.notempty_img = print_img;
 		this.empty_img = new ImageIcon("\\img\\kocsi_szurke.png");;
 		this.coord = coord;
+		
+		try{
+			setIcon(print_img);
+		}
+		catch (Exception e) {
+			e.getMessage();
+		}
+		
+		Dimension size = getPreferredSize();
+		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
+	             size.width, size.height);
 	}
 
 	public void setFullImage(boolean b){
@@ -32,6 +46,12 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 		}
 		else{
 			print_img = empty_img;
+		}
+		try{
+			setIcon(print_img);
+		}
+		catch (Exception e) {
+			e.getMessage();
 		}
 	}
 	
