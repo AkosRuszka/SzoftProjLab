@@ -2,6 +2,7 @@ package graph;
 
 import java.awt.Dimension;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -30,6 +31,24 @@ public class SinRajzolo extends JLabel implements IRajzolo, ActionListener, Seri
 			inactive_img = new ImageIcon("\\img\\sin_piros.png");
 			paint_img = new ImageIcon("\\img\\sin.png");
 			kereszt_image = new ImageIcon("\\img\\keresztsin.png");
+			
+			// 20x20-as átméretezés
+			Image resizedImage = active_img.getImage();
+			Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			active_img = new ImageIcon(newimg);
+			
+			resizedImage = inactive_img.getImage();
+			newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			inactive_img = new ImageIcon(newimg);
+			
+			resizedImage = paint_img.getImage();
+			newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			paint_img = new ImageIcon(newimg);
+			
+			resizedImage = kereszt_image.getImage();
+			newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			kereszt_image = new ImageIcon(newimg);
+			
 			setIcon(paint_img);
 		} catch (Exception e) {
 			e.getMessage();
