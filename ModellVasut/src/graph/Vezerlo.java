@@ -79,4 +79,8 @@ public class Vezerlo implements ActionListener{
             }
 		}*/
 	}
+
+	public Jatek getJatek(){
+		return jatek;
+	}
 }

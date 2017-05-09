@@ -15,7 +15,7 @@ public static void main(String[] args) throws Exception {
 		//Jatek j = new Jatek();
 		//View v = new View();
 		//Menu m = new Menu(j);
-		Vezerlo vez;
+		Vezerlo vez = null;
 		
 		try {
 	        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("vezerlo.dat"));
@@ -28,7 +28,7 @@ public static void main(String[] args) throws Exception {
 		
 		
 		//event----------------------------------
-		RailEvent re = new RailEvent(j, 2, vez);
+		RailEvent re = new RailEvent(vez.getJatek(), 2, vez);
 		re.fire();
 		//endevent-------------------------------
 		
