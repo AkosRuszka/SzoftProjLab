@@ -91,4 +91,8 @@ public class Alagut implements Serializable{
 		//Beállítja a B pontjára a paraméterben kapott különleges helyet
 		exitB = b;
 	}
+	
+	public String getType(){
+		return "Alagut";
+	}
 }

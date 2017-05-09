@@ -620,5 +620,7 @@ public class Palya implements Serializable, Runnable{
 	public ArrayList<Mozdony> getEngines() {//ez is a Viewnek kell a kirajzoláshoz
 		return engines;
 	}
-
+	public String getType(){
+		return "Palya";
+	}
 }

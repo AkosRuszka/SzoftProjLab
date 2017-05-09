@@ -150,4 +150,8 @@ public class Jatek {
 	    }	
 		
 	}
+	
+	public String getType(){
+		return "Jatek";
+	}
 }

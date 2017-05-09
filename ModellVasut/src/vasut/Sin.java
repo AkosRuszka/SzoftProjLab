@@ -191,5 +191,9 @@ public class Sin implements Serializable{
 		/** Ha idáig eljutottunk akkor mindkét irányba van kocsi és ütközés történik! */
 		throw new Exception("Ütközés történt");
 	}
+	
+	public String getType(){
+		return "Sin";
+	}
 
 }

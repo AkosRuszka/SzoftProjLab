@@ -87,4 +87,8 @@ public class Allomas extends Sin{
 			return "null";
 		return risers.get(0);
 	}
+	
+	public String getType(){
+		return "Allomas";
+	}
 }

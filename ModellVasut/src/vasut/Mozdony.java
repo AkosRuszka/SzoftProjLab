@@ -63,4 +63,8 @@ public class Mozdony extends VonatElem {
 			throw new Exception("Kisiklott a vonat");
 		} 			
 	}
+	
+	public String getType(){
+		return "Mozdony";
+	}
 }

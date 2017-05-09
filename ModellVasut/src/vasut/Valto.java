@@ -63,4 +63,8 @@ public class Valto extends Sin{
 		System.out.println("Valto.addConnectPoints()");
 		connectPoints.add(a);
 	}
+	
+	public String getType(){
+		return "Valto";
+	}
 }

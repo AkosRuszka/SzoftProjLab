@@ -116,4 +116,7 @@ public class Kezdopont extends Sin{
 			return null;
 		}
 	}
+	public String getType(){
+		return "Kezdopont";
+	}
 }

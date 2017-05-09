@@ -176,4 +176,8 @@ public class VonatElem implements Serializable{
 			log.info("nem vagyok üres ezért nem adom tovább a jelzést");
 		}
 	}
+	public
+	String getType(){
+		return "VonatElem";
+	}
 }

@@ -61,4 +61,7 @@ public class KulonlegesHely extends Sin implements Serializable{
 			log.info("KulonlegesHely: az Alagut bejárata lebontódott");
 		}
 	}
+	public String getType(){
+		return "KulonlegesHely";
+	}
 }

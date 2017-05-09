@@ -55,6 +55,10 @@ public class Kocsi extends VonatElem{
 		}
 	}
 	
+	public String getType(){
+		return "Kocsi";
+	}
+	
 //	@Override
 //	public void setEmpty(boolean b){
 //		log.info("Kocsi: setEmpty meghívva");

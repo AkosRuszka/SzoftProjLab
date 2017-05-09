@@ -660,6 +660,10 @@ public class Proto {
 		}
 	}
 	
+	public String getType(){
+		return "Proto";
+	}
+	
 	//futtatás
 	/*public static void main(String[] args) throws Exception {
 		
