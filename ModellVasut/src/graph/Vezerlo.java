@@ -6,7 +6,7 @@ import graph.*;
 import vasut.Jatek;
 import vasut.Palya;
 
-class Vezerlo implements EventListener{
+public class Vezerlo implements EventListener{
 	private View view = null;
 	private Menu menu = null;
 	private Jatek jatek = null;
@@ -31,6 +31,7 @@ class Vezerlo implements EventListener{
 		}
 		else if(event == 2){
 			//kilépés a játékból
+			//igazából csak megjeleníti a Menüt
 		}
 		else if(event == 3){
 			view.addTrain((Palya)re.getSource());

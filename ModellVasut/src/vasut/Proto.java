@@ -661,12 +661,12 @@ public class Proto {
 	}
 	
 	//futtatás
-	public static void main(String[] args) throws Exception {
+	/*public static void main(String[] args) throws Exception {
 		
 		Jatek j = new Jatek();
 		j.makeGame();
 		j.saveMap();
-	}
+	}*/
 }
 
 class Bekeres {

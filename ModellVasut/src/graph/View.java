@@ -37,7 +37,7 @@ public class View {
 		Mozdony e1 = p.getEngines().get(p.getEngines().size()-1);
 		trainElements.add(new MozdonyRajzolo(null, null, e1));
 		for(Kocsi e = (Kocsi) e1.getBackElem(); e!=null; e = (Kocsi) e.getBackElem()){
-			trainElements.add(new KocsiRajzolo(null, null, e));
+			//trainElements.add(new KocsiRajzolo(, null, e));
 		}
 	}
 }
