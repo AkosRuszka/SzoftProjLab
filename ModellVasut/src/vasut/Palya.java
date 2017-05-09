@@ -18,6 +18,7 @@ public class Palya implements Serializable, Runnable{
 	private boolean speed;
 	private boolean done;
 	private ArrayList<Sin> map;
+	private Sin[][] myMap;
 	private Kezdopont startPoint;
 	private ArrayList<Mozdony> engines;
 	private Alagut tunnel;
@@ -607,13 +608,13 @@ public class Palya implements Serializable, Runnable{
 		mymap[10][11] = new Sin(mymap[10][12]);
 		mymap[10][10].setBPoint(mymap[10][11]);
 	
-		
+		myMap = mymap;
 		
 	}
 	
 	
-	public ArrayList<Sin> getMap() {//ez a Viewnek kell a kirajzoláshoz
-		return map;
+	public Sin[][] getMap() {//ez a Viewnek kell a kirajzoláshoz
+		return myMap;
 	}
 
 	public ArrayList<Mozdony> getEngines() {//ez is a Viewnek kell a kirajzoláshoz

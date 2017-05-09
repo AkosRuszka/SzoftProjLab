@@ -56,12 +56,16 @@ public class View extends JFrame{
 	}
 	
 	public void newMapDraw(Palya actMap){
-		for(Sin s : actMap.getMap()){
-			//meh na ide kérek segítséget hogy rakom ki az elemeket
+		int i = 0;
+		int j = 0;
+		for(Sin s[][] = actMap.getMap(); i < 30; i++){
+			for(; j < 20; j++){
+				// TODO: Labelek kirajzolása
+			}		
 		}
-		for(Mozdony s : actMap.getEngines()){
+		//for(Mozdony s : actMap.getEngines()){
 			//itt minden vonatnak kéne csinálni egy rajoltat :D 
-		}
+		//}
 	}
 	
 	public void addTrain(Palya p){
