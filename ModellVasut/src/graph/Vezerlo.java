@@ -55,7 +55,8 @@ public class Vezerlo implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		if(e.getActionCommand().equals("MENU_CREATED")){
+		//Hajaj... :/
+		/*if(e.getActionCommand().equals("MENU_CREATED")){
 			try {
 	            ObjectInputStream ois = new ObjectInputStream(new FileInputStream("vezerlo.dat"));
 	            jatek = (Jatek)ois.readObject();
@@ -76,6 +77,6 @@ public class Vezerlo implements ActionListener{
             } catch(Exception ex) {
                 ex.printStackTrace();
             }
-		}
+		}*/
 	}
 }
