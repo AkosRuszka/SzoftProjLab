@@ -3,6 +3,7 @@ package graph;
 import vasut.Valto;
 
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
@@ -24,6 +25,12 @@ public class ValtoRajzolo extends JButton implements IRajzolo{
 		
 		try{
 			this.img = new ImageIcon("\\img\\valto.png");
+			
+			// 20x20-as átméretezés
+			Image resizedImage = img.getImage();
+			Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			img = new ImageIcon(newimg);
+			
 			setIcon(img);
 		} catch(Exception e) {
 			e.getMessage();
