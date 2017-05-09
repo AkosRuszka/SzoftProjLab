@@ -24,14 +24,18 @@ public class Vezerlo implements EventListener{
 		if(event == 0){
 			palya = (Palya)re.getSource();
 			palya.addActionListener(this);
+			menu.setVisible(false);
+			view.setVisible(true);
 			view.newMapDraw((Palya)re.getSource());
 		}
 		else if(event == 1){
+			menu.setVisible(false);
+			view.setVisible(true);
 			view.mapRedraw();
 		}
 		else if(event == 2){
-			//kilépés a játékból
-			//igazából csak megjeleníti a Menüt
+			menu.setVisible(true);
+			view.setVisible(false);
 		}
 		else if(event == 3){
 			view.addTrain((Palya)re.getSource());

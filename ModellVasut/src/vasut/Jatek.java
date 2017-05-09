@@ -19,7 +19,7 @@ import graph.RailEvent;
 
 public class Jatek {
 	private static final Logger log = LogManager.getLogger(Palya.class);
-	protected List<EventListener> list;
+	protected ArrayList<EventListener> list = new ArrayList<EventListener>();
 	private Palya actGame;	//a Játék tartalmazhat egy pályát
 	private int actMap;		//aktuális pálya
 	private String sugo;	//a Sugó szövege

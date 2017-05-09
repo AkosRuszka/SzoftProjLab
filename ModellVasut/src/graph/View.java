@@ -2,6 +2,9 @@ package graph;
 
 import java.awt.Point;
 import java.util.ArrayList;
+
+import javax.swing.JFrame;
+
 import graph.*;
 import vasut.Kocsi;
 import vasut.Mozdony;
@@ -9,7 +12,7 @@ import vasut.Palya;
 import vasut.Sin;
 import vasut.VonatElem;
 
-public class View {
+public class View extends JFrame{
 	ArrayList<IRajzolo> railElements = new ArrayList<IRajzolo>();
 	ArrayList<IRajzolo> trainElements = new ArrayList<IRajzolo>();
 	public void mapRedraw(){

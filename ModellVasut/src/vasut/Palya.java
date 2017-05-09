@@ -14,7 +14,7 @@ import graph.RailEvent;
 
 public class Palya implements Serializable, Runnable{
 	private static final Logger log = LogManager.getLogger(Palya.class);
-	protected List<EventListener> list;
+	protected ArrayList<EventListener> list = new ArrayList<EventListener>();
 	private boolean speed;
 	private boolean done;
 	private ArrayList<Sin> map;
