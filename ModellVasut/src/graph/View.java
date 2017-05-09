@@ -1,16 +1,21 @@
 package graph;
 
+import java.awt.Insets;
 import java.awt.Point;
 import java.awt.Window;
 import java.util.ArrayList;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 import graph.*;
+import vasut.Allomas;
 import vasut.Kocsi;
+import vasut.KulonlegesHely;
 import vasut.Mozdony;
 import vasut.Palya;
 import vasut.Sin;
+import vasut.Valto;
 import vasut.VonatElem;
 
 public class View extends JFrame{
@@ -66,6 +71,34 @@ public class View extends JFrame{
 		//for(Mozdony s : actMap.getEngines()){
 			//itt minden vonatnak kéne csinálni egy rajoltat :D 
 		//}
+	}
+	
+	public void mapfeldolgozas(Sin mymapp[][]) {
+		
+		Insets insets = this.getInsets();
+		
+		for(int x=0; x<30; x++) {
+			for(int y=0; y<30; y++) {
+				switch((mymapp[x][y]).getType()) {
+				case "Sin":
+					railElements.add(new SinRajzolo(new Point((x+1)*20, (y+1)*20),mymapp[x][y],insets));
+					break;
+				case "Allomas":
+					/* Hozzáadjuk a framehez már itt a nyilat, amit az állomásoknál szeretnénk megjeleníteni
+					 * mivel az állomásnak meg kell kapnia azt a nyil referenciát ami már rajta van a frame-n */
+					JLabel nyil = new JLabel();
+					add(nyil);
+					railElements.add(new AllomasRajzolo(new Point((x+1)*20, (y+1)*20),(Allomas)mymapp[x][y],insets, nyil));
+					break;
+				case "KulonlegesHely":
+					railElements.add(new KulonlegesHelyRajzolo(new Point((x+1)*20, (y+1)*20),(KulonlegesHely)mymapp[x][y],insets));
+					break;
+				case "Valto":
+					railElements.add(new ValtoRajzolo(new Point((x+1)*20,(x+1)*20),(Valto)mymapp[x][y],insets));
+					break;
+				}
+			}
+		}
 	}
 	
 	public void addTrain(Palya p){

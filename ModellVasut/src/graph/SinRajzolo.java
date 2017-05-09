@@ -25,7 +25,7 @@ public class SinRajzolo extends JLabel implements IRajzolo, ActionListener, Seri
 	
 	private Sin sin;
 	
-	public SinRajzolo(Point coord, Allomas sin, Insets frameinsets) {
+	public SinRajzolo(Point coord, Sin sin, Insets frameinsets) {
 		try {
 			active_img = new ImageIcon("\\img\\sin_zold.png");
 			inactive_img = new ImageIcon("\\img\\sin_piros.png");
