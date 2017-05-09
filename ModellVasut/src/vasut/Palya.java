@@ -219,6 +219,7 @@ public class Palya implements Serializable, Runnable{
 		mymap[6][5].setBPoint(mymap[5][5]);
 		mymap[4][5] = new KulonlegesHely(mymap[5][5], a);
 		mymap[5][5].setBPoint(mymap[4][5]);
+		mymap[4][5].setBPoint(null);
 		////
 		mymap[23][5] = new Sin(null);
 		((Valto)mymap[22][5]).addConnectPoints(mymap[23][5]);
@@ -232,6 +233,7 @@ public class Palya implements Serializable, Runnable{
 		mymap[26][5].setBPoint(mymap[27][5]);
 		mymap[27][6] = new Sin(mymap[27][5]);
 		mymap[27][5].setBPoint(mymap[27][6]);
+		mymap[27][6].setBPoint(null);
 		////
 		mymap[27][4] = new Sin(null);
 		((Valto)mymap[27][5]).addConnectPoints(mymap[27][4]);
@@ -239,6 +241,7 @@ public class Palya implements Serializable, Runnable{
 		mymap[27][4].setBPoint(mymap[27][3]);
 		mymap[27][2] = new KulonlegesHely(mymap[27][3], a);
 		mymap[27][3].setBPoint(mymap[27][2]);
+		mymap[27][2].setBPoint(null);
 		////
 		mymap[9][6] = new Sin(null);
 		((Valto)mymap[9][5]).addConnectPoints(mymap[9][6]);
@@ -300,6 +303,7 @@ public class Palya implements Serializable, Runnable{
 		mymap[1][7].setBPoint(mymap[1][6]);
 		mymap[1][5] = new KulonlegesHely(mymap[1][6], a);
 		mymap[1][6].setBPoint(mymap[1][5]);
+		mymap[1][5].setBPoint(null);
 		////
 		mymap[9][17] = new Sin(null);
 		((Valto)mymap[9][16]).addConnectPoints(mymap[9][17]);
@@ -418,6 +422,7 @@ public class Palya implements Serializable, Runnable{
 		mymap[15][28].setBPoint(mymap[16][28]);
 		mymap[17][28] = new KulonlegesHely(mymap[16][28], a);
 		mymap[16][28].setBPoint(mymap[17][28]);
+		mymap[17][28].setBPoint(null);
 		////
 		mymap[25][21] = new Sin(null);
 		((Valto)mymap[24][21]).addConnectPoints(mymap[25][21]);
@@ -437,6 +442,137 @@ public class Palya implements Serializable, Runnable{
 		mymap[27][17].setBPoint(mymap[27][16]);
 		mymap[27][15] = new Allomas(mymap[27][16], "Green", null);
 		mymap[27][16].setBPoint(mymap[27][15]);
+		mymap[27][14] = new Sin(mymap[27][15]);
+		mymap[27][15].setBPoint(mymap[27][14]);
+		mymap[27][13] = new Sin(mymap[27][14]);
+		mymap[27][14].setBPoint(mymap[27][13]);
+		mymap[27][12] = new Sin(mymap[27][13]);
+		mymap[27][13].setBPoint(mymap[27][12]);
+		mymap[27][11] = new Sin(mymap[27][12]);	//sarok
+		mymap[27][12].setBPoint(mymap[27][11]);
+		mymap[26][11] = new Sin(mymap[27][11]);
+		mymap[27][11].setBPoint(mymap[26][11]);
+		mymap[25][11] = new Sin(mymap[26][11]);
+		mymap[26][11].setBPoint(mymap[25][11]);
+		mymap[24][11] = new Sin(mymap[25][11]);
+		mymap[25][11].setBPoint(mymap[24][11]);
+		mymap[23][11] = new Sin(mymap[24][11]);
+		mymap[24][11].setBPoint(mymap[23][11]);
+		mymap[22][11] = new Sin(mymap[23][11]);
+		mymap[23][11].setBPoint(mymap[22][11]);
+		mymap[21][11] = new Sin(mymap[22][11]);
+		mymap[22][11].setBPoint(mymap[21][11]);
+		mymap[20][11] = new Sin(mymap[21][11]);
+		mymap[21][11].setBPoint(mymap[20][11]);
+		mymap[20][11].setBPoint(null);
+		////
+		mymap[10][24] = new Sin(null);
+		((Valto)mymap[11][24]).addConnectPoints(mymap[10][24]);
+		mymap[9][24] = new Sin(mymap[10][24]);
+		mymap[10][24].setBPoint(mymap[9][24]);
+		mymap[8][24] = new Sin(mymap[9][24]);
+		mymap[9][24].setBPoint(mymap[8][24]);
+		mymap[7][24] = new Allomas(mymap[8][24], "Red", null);
+		mymap[8][24].setBPoint(mymap[7][24]);
+		mymap[6][24] = new Sin(mymap[7][24]);
+		mymap[7][24].setBPoint(mymap[6][24]);
+		mymap[5][24] = new Sin(mymap[6][24]);
+		mymap[6][24].setBPoint(mymap[5][24]);
+		mymap[4][24] = new Sin(mymap[5][24]);	//sarok
+		mymap[5][24].setBPoint(mymap[4][24]);
+		mymap[4][23] = new Sin(mymap[4][24]);
+		mymap[4][24].setBPoint(mymap[4][23]);
+		mymap[4][22] = new Sin(mymap[4][23]);
+		mymap[4][23].setBPoint(mymap[4][22]);
+		mymap[4][21] = new Sin(mymap[4][22]);
+		mymap[4][22].setBPoint(mymap[4][21]);
+		mymap[4][20] = new Sin(mymap[4][21]);
+		mymap[4][21].setBPoint(mymap[4][20]);
+		mymap[4][19] = new Sin(mymap[4][20]);
+		mymap[4][20].setBPoint(mymap[4][19]);
+		mymap[4][18] = new Sin(mymap[4][19]);
+		mymap[4][19].setBPoint(mymap[4][18]);
+		mymap[4][17] = new Sin(mymap[4][18]);
+		mymap[4][18].setBPoint(mymap[4][17]);
+		mymap[4][16].setCrossing(new Sin(mymap[4][17]));
+		mymap[4][17].setBPoint(mymap[4][16].getCrossing());		//cross!!!
+		mymap[4][15] = new Sin(mymap[4][16].getCrossing());
+		mymap[4][16].getCrossing().setBPoint(mymap[4][15]);
+		mymap[4][14] = new Sin(mymap[4][15]);
+		mymap[4][15].setBPoint(mymap[4][14]);
+		mymap[4][13] = new Sin(mymap[4][14]);
+		mymap[4][14].setBPoint(mymap[4][13]);
+		mymap[4][12] = new Sin(mymap[4][13]);	//sarok
+		mymap[4][13].setBPoint(mymap[4][12]);	
+		mymap[5][12] = new Sin(mymap[4][12]);	
+		mymap[4][12].setBPoint(mymap[5][12]);
+		mymap[6][12] = new Sin(mymap[5][12]);	
+		mymap[5][12].setBPoint(mymap[6][12]);
+		mymap[7][12] = new Sin(mymap[6][12]);	
+		mymap[6][12].setBPoint(mymap[7][12]);
+		mymap[8][12] = new Sin(mymap[7][12]);	
+		mymap[7][12].setBPoint(mymap[8][12]);
+		mymap[9][12].setCrossing(new Sin(mymap[8][12]));
+		mymap[8][12].setBPoint(mymap[9][12].getCrossing());		//cross!!!
+		mymap[10][12] = new Sin(mymap[9][12].getCrossing());
+		mymap[9][12].getCrossing().setBPoint(mymap[10][12]);
+		mymap[11][12] = new Sin(mymap[10][12]);	
+		mymap[10][12].setBPoint(mymap[11][12]);
+		mymap[12][12] = new Sin(mymap[11][12]);	
+		mymap[11][12].setBPoint(mymap[12][12]);
+		mymap[13][12] = new Valto(mymap[12][12]);	
+		mymap[12][12].setBPoint(mymap[13][12]);	
+		((Valto)mymap[13][12]).addConnectPoints(mymap[13][13]);
+		mymap[14][12] = new Sin(mymap[13][12]);	
+		mymap[13][12].setBPoint(mymap[14][12]);
+		mymap[15][12] = new Sin(mymap[14][12]);	
+		mymap[14][12].setBPoint(mymap[15][12]);
+		mymap[16][12] = new Sin(mymap[15][12]);	
+		mymap[15][12].setBPoint(mymap[16][12]);
+		mymap[17][12] = new Sin(mymap[16][12]);	
+		mymap[16][12].setBPoint(mymap[17][12]);
+		mymap[18][12] = new Sin(mymap[17][12]);	
+		mymap[17][12].setBPoint(mymap[18][12]);
+		mymap[19][12] = new Sin(mymap[18][12]);	//sarok	
+		mymap[18][12].setBPoint(mymap[19][12]);
+		mymap[19][11] = new Valto(mymap[19][12]);	
+		mymap[19][12].setBPoint(mymap[19][11]);	
+		((Valto)mymap[19][11]).addConnectPoints(mymap[20][11]);
+		mymap[19][10] = new Sin(mymap[19][11]);	
+		mymap[19][11].setBPoint(mymap[19][10]);
+		mymap[19][9] = new Sin(mymap[19][10]);	
+		mymap[19][10].setBPoint(mymap[19][9]);
+		mymap[19][8] = new KulonlegesHely(mymap[19][9], a);	
+		mymap[19][9].setBPoint(mymap[19][8]);
+		mymap[19][8].setBPoint(null);
+		////
+		mymap[12][10] = new KulonlegesHely(null, a);
+		mymap[12][9] = new Sin(mymap[12][10]);	
+		mymap[12][10].setBPoint(mymap[12][9]);
+		mymap[12][8] = new Sin(mymap[12][9]);	
+		mymap[12][9].setBPoint(mymap[12][8]);
+		mymap[12][7] = new Allomas(mymap[12][8], "Red", null);	
+		mymap[12][8].setBPoint(mymap[12][7]);
+		mymap[12][6] = new Sin(mymap[12][7]);	
+		mymap[12][7].setBPoint(mymap[12][6]);
+		mymap[12][5] = new KulonlegesHely(mymap[12][6], a);	
+		mymap[12][6].setBPoint(mymap[12][5]);
+		mymap[12][5].setBPoint(null);
+		////
+		mymap[13][4] = new KulonlegesHely(null, a);
+		mymap[14][4] = new Sin(mymap[13][4]);	
+		mymap[13][4].setBPoint(mymap[14][4]);
+		mymap[15][4] = new Sin(mymap[14][4]);	
+		mymap[14][4].setBPoint(mymap[15][4]);
+		mymap[16][4] = new Allomas(mymap[15][4], "Greed", null);	
+		mymap[15][4].setBPoint(mymap[16][4]);
+		mymap[17][4] = new Sin(mymap[16][4]);	
+		mymap[16][4].setBPoint(mymap[17][4]);
+		mymap[18][4] = new Sin(mymap[17][4]);	
+		mymap[17][4].setBPoint(mymap[18][4]);
+		mymap[19][4] = new KulonlegesHely(mymap[18][4], a);	
+		mymap[18][4].setBPoint(mymap[19][4]);
+		mymap[19][4].setBPoint(null);
 	}
 	
 	public ArrayList<Sin> getMap() {//ez a Viewnek kell a kirajzoláshoz
