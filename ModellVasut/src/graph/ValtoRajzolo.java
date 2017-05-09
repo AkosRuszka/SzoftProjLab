@@ -34,21 +34,6 @@ public class ValtoRajzolo extends JButton implements IRajzolo{
 		
 	}
 
-	
-	public Point getCoord() {
-		return coord;
-	}
-
-	public void setCoord(Point coord) {
-		this.coord = coord;
-	}
-
-	@Override
-	public void rajzol() {
-		/* Kérdés mi kell ide... */
-		
-	}
-
 	@Override
 	public Object getObject() {
 		return this;

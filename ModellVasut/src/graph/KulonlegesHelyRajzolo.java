@@ -33,23 +33,6 @@ public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionLi
 		this.coord = coord;		
 	}
 
-	
-	public Point getCoord() {
-		return coord;
-	}
-
-	public void setCoord(Point coord) {
-		this.coord = coord;
-	}
-
-	
-	
-	@Override
-	public void rajzol() {
-		// TODO Hajaj... :D
-		
-	}
-
 	@Override
 	public Object getObject() {
 		return kh;

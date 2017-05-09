@@ -13,7 +13,6 @@ public class KocsiRajzolo implements IRajzolo, ActionListener{
 	private Image empty_img;
 	private Image notempty_img;
 	private Point coord;
-	public boolean visible;
 	
 	public KocsiRajzolo(Image print_img, Image empty_img, Image notempty_img, Point coord, Kocsi kocsi) {
 		this.kocsi = kocsi;
@@ -21,21 +20,6 @@ public class KocsiRajzolo implements IRajzolo, ActionListener{
 		this.notempty_img = notempty_img;
 		this.empty_img = empty_img;
 		this.coord = coord;
-		visible = true;
-	}
-
-	public Point getCoord() {
-		return coord;
-	}
-
-	public void setCoord(Point coord) {
-		this.coord = coord;
-	}
-
-	@Override
-	public void rajzol() {
-		/* TODO: logika */
-		
 	}
 
 	@Override
