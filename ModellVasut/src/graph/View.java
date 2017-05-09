@@ -1,6 +1,7 @@
 package graph;
 
 import java.awt.Point;
+import java.awt.Window;
 import java.util.ArrayList;
 
 import javax.swing.JFrame;
@@ -14,17 +15,41 @@ import vasut.VonatElem;
 
 public class View extends JFrame{
 	ArrayList<IRajzolo> railElements = new ArrayList<IRajzolo>();
-	ArrayList<IRajzolo> trainElements = new ArrayList<IRajzolo>();
+	ArrayList<MozdonyRajzolo> trainElements = new ArrayList<MozdonyRajzolo>();
+	ArrayList<KocsiRajzolo> cartElements = new ArrayList<KocsiRajzolo>();
 	public void mapRedraw(){
-		for(IRajzolo trains : trainElements){
+		for(MozdonyRajzolo trains : trainElements){
+			boolean mapon = false;
 			for(IRajzolo rails : railElements){
 				if(((Sin) rails.getObject()).getActVonatElem() == ((VonatElem)trains.getObject())){
 					Point a = new Point();
-					a.setLocation(trains.getCoord().getX()+2, trains.getCoord().getY()+2);
-					rails.setCoord(a);
+					a.setLocation(trains.getPoint().getX(), trains.getPoint().getY());
+					rails.setPoint(a);
+					mapon = true;
+					trains.setVisible(true);
 				}
 			}
+			if(!mapon){
+				trains.setVisible(false);
+			}
 		}
+		for(KocsiRajzolo carts : cartElements){
+			boolean mapon = false;
+			for(IRajzolo rails : railElements){
+				if(((Sin) rails.getObject()).getActVonatElem() == ((VonatElem)carts.getObject())){
+					Point a = new Point();
+					a.setLocation(carts.getPoint().getX(), carts.getPoint().getY());
+					rails.setPoint(a);
+					mapon = true;
+					carts.setVisible(true);
+					carts.setFullImage(((Kocsi)carts.getObject()).getEmpty());
+				}
+			}
+			if(!mapon){
+				carts.setVisible(false);
+			}
+		}
+		this.invalidate();
 	}
 	
 	public void newMapDraw(Palya actMap){
@@ -38,9 +63,9 @@ public class View extends JFrame{
 	
 	public void addTrain(Palya p){
 		Mozdony e1 = p.getEngines().get(p.getEngines().size()-1);
-		trainElements.add(new MozdonyRajzolo(null, null, e1));
+		//trainElements.add(new MozdonyRajzolo(null, null, e1));
 		for(Kocsi e = (Kocsi) e1.getBackElem(); e!=null; e = (Kocsi) e.getBackElem()){
-			//trainElements.add(new KocsiRajzolo(, null, e));
+			//cartElements.add(new KocsiRajzolo(, null, e));
 		}
 	}
 }

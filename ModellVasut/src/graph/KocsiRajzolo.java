@@ -1,27 +1,40 @@
 package graph;
 
 import java.awt.Image;
+import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.ImageIcon;
+import javax.swing.JLabel;
+
 import vasut.Kocsi;
 
-public class KocsiRajzolo implements IRajzolo, ActionListener{
+public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 	private Kocsi kocsi;
-	private Image print_img;
-	private Image empty_img;
-	private Image notempty_img;
+	private ImageIcon print_img;
+	private ImageIcon empty_img;
+	private ImageIcon notempty_img;
 	private Point coord;
 	
-	public KocsiRajzolo(Image print_img, Image empty_img, Image notempty_img, Point coord, Kocsi kocsi) {
+	public KocsiRajzolo(ImageIcon print_img, Point coord, Kocsi kocsi, Insets frameinsets) {
 		this.kocsi = kocsi;
-		this.print_img = notempty_img;
-		this.notempty_img = notempty_img;
-		this.empty_img = empty_img;
+		this.print_img = print_img;
+		this.notempty_img = print_img;
+		this.empty_img = new ImageIcon("\\img\\kocsi_szurke.png");;
 		this.coord = coord;
 	}
 
+	public void setFullImage(boolean b){
+		if(b){//tele
+			print_img = notempty_img;
+		}
+		else{
+			print_img = empty_img;
+		}
+	}
+	
 	@Override
 	public Object getObject() {
 		return kocsi;
