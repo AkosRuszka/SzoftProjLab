@@ -20,12 +20,12 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 	private Point coord;
 	private Insets insets;
 	
-	public KocsiRajzolo(ImageIcon print_img, Point coord, Kocsi kocsi, Insets frameinsets) {
+	public KocsiRajzolo(ImageIcon empty, ImageIcon notempty, Point coord, Kocsi kocsi, Insets frameinsets) {
 		this.kocsi = kocsi;
 		this.insets = frameinsets;
-		this.print_img = print_img;
-		this.notempty_img = print_img;
-		this.empty_img = new ImageIcon("\\img\\kocsi_szurke.png");;
+		this.print_img = notempty;
+		this.notempty_img = notempty;
+		this.empty_img = empty;
 		this.coord = coord;
 		
 		try{
