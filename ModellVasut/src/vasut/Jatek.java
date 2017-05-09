@@ -1,6 +1,7 @@
 package vasut;
 
 import java.awt.Button;
+import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -18,7 +19,7 @@ import graph.RailEvent;
 
 public class Jatek {
 	private static final Logger log = LogManager.getLogger(Palya.class);
-	
+	protected List<EventListener> list;
 	private Palya actGame;	//a Játék tartalmazhat egy pályát
 	private int actMap;		//aktuális pálya
 	private String sugo;	//a Sugó szövege
@@ -27,6 +28,11 @@ public class Jatek {
 		actGame = null;
 		actMap = 0;
 		sugo = "Ez csak egy minta, ennél valószínűleg több és hasznosabb info lesz leírva de ez nem az én feladatom lol. :D \n ps: ha ez marad bent akkor bocsánat!";
+	}
+	
+	/** Listenerek felvétele */
+	public void addActionListener(EventListener listener) {
+		list.add(listener);
 	}
 	
 	public int getAM(){
@@ -52,7 +58,7 @@ public class Jatek {
             load.close();
 			actMap = 1;
 			//event----------------------------------
-			RailEvent re = new RailEvent(actGame, 0);
+			RailEvent re = new RailEvent(actGame, 0, list.get(0));
 			re.fire();
 			//endevent-------------------------------			
 			actGame.run();
@@ -74,7 +80,7 @@ public class Jatek {
             load.close();
 			actMap++;
 			//event----------------------------------
-			RailEvent re = new RailEvent(actGame, 0);
+			RailEvent re = new RailEvent(actGame, 0, list.get(0));
 			re.fire();
 			//endevent-------------------------------
 			actGame.run();
@@ -114,7 +120,7 @@ public class Jatek {
 			if(actMap==0)
 				throw new IOException("Nem megfelelő fájlnév!");
 			//event----------------------------------
-			RailEvent re = new RailEvent(actGame, 0);
+			RailEvent re = new RailEvent(actGame, 0, list.get(0));
 			re.fire();
 			//endevent-------------------------------
 			actGame.run();

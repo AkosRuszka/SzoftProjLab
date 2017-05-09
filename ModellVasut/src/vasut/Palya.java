@@ -1,9 +1,12 @@
 package vasut;
 
+import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.EventListener;
+import java.util.List;
 import java.util.Random;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -11,7 +14,7 @@ import graph.RailEvent;
 
 public class Palya implements Serializable, Runnable{
 	private static final Logger log = LogManager.getLogger(Palya.class);
-	
+	protected List<EventListener> list;
 	private boolean speed;
 	private boolean done;
 	private ArrayList<Sin> map;
@@ -30,12 +33,17 @@ public class Palya implements Serializable, Runnable{
 		map.add(startPoint);
 	}
 	
+	/** Listenerek felvétele */
+	public void addActionListener(EventListener listener) {
+		list.add(listener);
+	}
+	
 	/** Buttonhoz eseményéhez kötött megszakítás. */
 	public void quitToMain() throws Exception {
 		synchronized (this){
 			killed=true;
 			//event----------------------------------
-			RailEvent re = new RailEvent(this, 2);
+			RailEvent re = new RailEvent(this, 2, list.get(0));
 			re.fire();
 			//endevent-------------------------------
 			Thread.sleep(200);
@@ -52,7 +60,11 @@ public class Palya implements Serializable, Runnable{
 				Mozdony uj = startPoint.work();
 				try {
 					if(uj != null) {
-						engines.add(uj); 
+						engines.add(uj);
+						//event----------------------------------
+						RailEvent re = new RailEvent(this, 3, list.get(0));
+						re.fire();
+						//endevent-------------------------------
 					}
 					done = true;// nullázzuk a done-t
 					for (Mozdony mozdony : engines) {					
@@ -64,7 +76,7 @@ public class Palya implements Serializable, Runnable{
 					break;
 				}
 				//event----------------------------------
-				RailEvent re = new RailEvent(this, 1);
+				RailEvent re = new RailEvent(this, 1, list.get(0));
 				re.fire();
 				//endevent-------------------------------
 				try { 
@@ -125,11 +137,9 @@ public class Palya implements Serializable, Runnable{
 		mymap[0][17] = new KulonlegesHely(null, a);
 		for (int i = 0; i < 9; i++) {
 			mymap[0][16-i] = new Sin(mymap[0][17-i]);
-			mymap[0][17-i].setBPoint(mymap[0][16-i]);
 		}
 		for (int i = 0; i < 2; i++) {
 			mymap[1+i][8] = new Sin(mymap[0+i][8]);
-			mymap[0+i][8].setBPoint(mymap[1+i][8]);
 		}
 		mymap[3][8] = new Valto(mymap[2][8]);
 		((Valto)mymap[3][8]).addConnectPoints(mymap[2][8]);
@@ -137,17 +147,14 @@ public class Palya implements Serializable, Runnable{
 		((Valto)mymap[3][8]).addConnectPoints(mymap[3][7]);
 		for (int i = 0; i < 6; i++) {
 			mymap[3][6-i] = new Sin(mymap[3][7-i]);
-			mymap[3][7-i].setBPoint(mymap[3][6-i]);
 		}
 		String[] s1 ={"Blue","Green","Green"};
 		mymap[3][0] = new Allomas(mymap[3][1],"Red",s1);
 		for (int i = 0; i < 11; i++) {
 			mymap[4+i][0] = new Sin(mymap[3+i][0]);
-			mymap[3+i][0].setBPoint(mymap[4+i][0]);
 		}
 		for (int i = 0; i < 4; i++) {
 			mymap[14][1+i] = new Sin(mymap[14][0+i]);
-			mymap[14][0+i].setBPoint(mymap[14][1+i]);
 		}
 		mymap[14][5] = new Valto(mymap[14][4]);
 		((Valto)mymap[14][5]).addConnectPoints(mymap[14][4]);
