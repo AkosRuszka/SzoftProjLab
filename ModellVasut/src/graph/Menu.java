@@ -13,7 +13,7 @@ import javax.swing.JPanel;
 import vasut.Jatek;
 
 public class Menu extends JFrame{
-	private Jatek jatek = new Jatek(); 
+	private Jatek jatek; 
 	
 	private JButton bnewGame;
 	private JButton bmapLoad;
@@ -22,9 +22,10 @@ public class Menu extends JFrame{
 	private JPanel panel;
 	private String sugo_string;
 	
-	public Menu(){
+	public Menu(Jatek j){
 		sugo_string = "Egyszer itt volt egy tök jó kis szöveg... csak elfelejtettem lementeni -.-";
 		initComponents();
+		jatek = j;
 	}
 	
 	private void initComponents(){

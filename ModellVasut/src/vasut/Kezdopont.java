@@ -77,10 +77,6 @@ public class Kezdopont extends Sin{
 			System.out.print(e.getMessage());
 		}
 		log.info("Létrejött a vonat 5(+1) darab kocsival");
-		//event----------------------------------
-		RailEvent re = new RailEvent(this, 3);
-		re.fire();
-		//endevent-------------------------------
 		System.out.println("Létrejött a vonat 5(+1) darab kocsival");
 	}
 	
