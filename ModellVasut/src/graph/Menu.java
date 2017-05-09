@@ -17,7 +17,7 @@ import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import vasut.Jatek;
 
-public class Menu extends JFrame implements ActionListener{
+public class Menu extends JFrame{
 	private Jatek jatek; 
 	
 	private JButton bnewGame;
@@ -111,11 +111,5 @@ public class Menu extends JFrame implements ActionListener{
 		this.setResizable(false);
 		
 		this.add(panel, BorderLayout.CENTER);		
-	}
-
-	@Override
-	public void actionPerformed(ActionEvent e) {
-		// TODO Auto-generated method stub
-		
 	}
 }
