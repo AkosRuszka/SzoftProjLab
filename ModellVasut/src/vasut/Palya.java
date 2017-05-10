@@ -58,7 +58,7 @@ public class Palya implements Serializable, Runnable{
 		while(true){ 
 			if(speed){
 				//System.out.println("Game thread is doing stuff....."); 
-				Mozdony uj = startPoint.work();
+				Mozdony uj = null; //startPoint.work();
 				try {
 					if(uj != null) {
 						engines.add(uj);
