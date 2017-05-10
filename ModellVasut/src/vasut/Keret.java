@@ -15,13 +15,13 @@ public static void main(String[] args) throws Exception {
 		
 		Vezerlo vez = null;
 		
-		try {
+		/*try {
 	        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("vezerlo.dat"));
 	        vez = (Vezerlo)ois.readObject();
 	        ois.close();
 	    } catch(Exception ex) {
 	        ex.printStackTrace();
-	    }
+	    }*/
 		
 		
 		if(vez==null){
@@ -33,16 +33,16 @@ public static void main(String[] args) throws Exception {
 		}
 		
 		//event----------------------------------
-		RailEvent re = new RailEvent(vez.getJatek(), 2, vez);
-		re.fire();
+		//RailEvent re = new RailEvent(vez.getJatek(), 2, vez);
+		//re.fire();
 		//endevent-------------------------------
 		
-		try {
+		/*try {
             ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("vezerlo.dat"));
             oos.writeObject(vez);
             oos.close();
         } catch(Exception ex) {
             ex.printStackTrace();
-        }
+        }*/
 	}
 }

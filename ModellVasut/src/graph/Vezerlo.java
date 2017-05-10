@@ -6,10 +6,11 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-
+import java.util.ArrayList;
 
 import vasut.Jatek;
 import vasut.Kezdopont;
+import vasut.Mozdony;
 import vasut.Palya;
 import vasut.Sin;
 
@@ -27,6 +28,16 @@ public class Vezerlo implements ActionListener{
 		menu.addActionListener(this);
 		
 		v.mapfeldolgozas(izebezi());
+		palya.addActionListener(this);
+		view.mapRedraw();
+		try {
+			palya.setStartStop();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		palya.run();
+		
+		
 	}
 	
 	public void EventOccurred(RailEvent re){
@@ -48,7 +59,7 @@ public class Vezerlo implements ActionListener{
 			view.setVisible(false);
 		}
 		else if(event == 3){
-			view.addTrain((Palya)re.getSource());
+			//view.addTrain(((Palya)re.getSource()));
 		}
 		else{
 			//valami más
@@ -64,30 +75,58 @@ public class Vezerlo implements ActionListener{
 				mymap[i][j] = null;
 			}
 		}
-		
-		mymap[10][10] = new Kezdopont(1,1,1,null);
+		jatek.makeGame();
+		palya = jatek.getGame();
+		mymap[10][10] = new Sin(null);
+		palya.addToMap(mymap[10][10]);
 		mymap[11][10] = new Sin(mymap[10][10]);
+		palya.addToMap(mymap[11][10]);
 		mymap[12][10] = new Sin(mymap[11][10]);
+		palya.addToMap(mymap[12][10]);
 		mymap[13][10] = new Sin(mymap[12][10]);
+		palya.addToMap(mymap[13][10]);
 		mymap[14][10] = new Sin(mymap[13][10]);
+		palya.addToMap(mymap[14][10]);
 		mymap[15][10] = new Sin(mymap[14][10]);
+		palya.addToMap(mymap[15][10]);
 		mymap[16][10] = new Sin(mymap[15][10]);
+		palya.addToMap(mymap[16][10]);
 		mymap[17][10] = new Sin(mymap[16][10]);
+		palya.addToMap(mymap[17][10]);
 		mymap[17][11] = new Sin(mymap[17][10]);
+		palya.addToMap(mymap[17][11]);
 		mymap[17][12] = new Sin(mymap[17][11]);
+		palya.addToMap(mymap[17][12]);
 		mymap[17][13] = new Sin(mymap[17][12]);
+		palya.addToMap(mymap[17][13]);
 		mymap[17][14] = new Sin(mymap[17][13]);
+		palya.addToMap(mymap[17][14]);
 		mymap[16][14] = new Sin(mymap[17][14]);
+		palya.addToMap(mymap[16][14]);
 		mymap[15][14] = new Sin(mymap[16][14]);
+		palya.addToMap(mymap[15][14]);
 		mymap[14][14] = new Sin(mymap[15][14]);
+		palya.addToMap(mymap[14][14]);
 		mymap[13][14] = new Sin(mymap[14][14]);
+		palya.addToMap(mymap[13][14]);
 		mymap[12][14] = new Sin(mymap[13][14]);
+		palya.addToMap(mymap[12][14]);
 		mymap[11][14] = new Sin(mymap[12][14]);
+		palya.addToMap(mymap[11][14]);
 		mymap[10][14] = new Sin(mymap[11][14]);
+		palya.addToMap(mymap[10][14]);
 		mymap[10][13] = new Sin(mymap[10][14]);
+		palya.addToMap(mymap[10][13]);
 		mymap[10][12] = new Sin(mymap[10][13]);
+		palya.addToMap(mymap[10][12]);
 		mymap[10][11] = new Sin(mymap[10][12]);
+		palya.addToMap(mymap[10][11]);
 		mymap[10][10].setBPoint(mymap[10][11]);
+		
+		Mozdony m = new Mozdony(mymap[10][10]);
+		
+		palya.addToEng(m);
+		view.addTrain(m);
 	
 		return mymap;
 	}

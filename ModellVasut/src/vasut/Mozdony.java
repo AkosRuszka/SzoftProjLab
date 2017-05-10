@@ -48,11 +48,15 @@ public class Mozdony extends VonatElem {
 			idefogokmozogni = null;
 			
 			whereAmI.setActVonatElem(this);
+			if(backElem!=null){
+				backElem.pull();
 			
-			backElem.pull();
-			
-			if (lastCart.getEmpty() && lastCart.getEmptyable()){//üres és előtte üresekvannak
-				return true;
+				if (lastCart.getEmpty() && lastCart.getEmptyable()){//üres és előtte üresekvannak
+					return true;
+				}
+				else{
+					return false;
+				}
 			}
 			else{
 				return false;

@@ -40,17 +40,14 @@ public class View extends JFrame{
 			boolean mapon = false;
 			for(IRajzolo rails : railElements){
 				if(((Sin) rails.getObject()).getActVonatElem() == ((VonatElem)trains.getObject())){
-					Point a = new Point();
-					/* Lemásoljuk a "tartalmazó" sin koordinátáját. */
-					a.setLocation(rails.getPoint().getX(), rails.getPoint().getY());
 					/* Átállítjuk a mozdony/kocsi koordinátáját. */
-					trains.setPoint(a);
+					trains.setPoint(rails.getPoint());
 					mapon = true;
 					trains.setVisible(true);
 				}
 			}
 			if(!mapon){
-				trains.setVisible(false);
+				trains.setVisible(true);
 			}
 		}
 		for(KocsiRajzolo carts : cartElements){
@@ -67,10 +64,10 @@ public class View extends JFrame{
 				}
 			}
 			if(!mapon){
-				carts.setVisible(false);
+				carts.setVisible(true);
 			}
 		}
-		this.invalidate();
+		repaint();
 	}
 	
 	public void newMapDraw(Palya actMap){
@@ -102,7 +99,7 @@ public class View extends JFrame{
 					case "Sin":
 						ujsin = new SinRajzolo(new Point((x+1)*20, (y+1)*20),mymapp[x][y],insets);
 						railElements.add(ujsin);
-						add(ujsin);
+						add(ujsin);						
 						break;
 					case "Allomas":
 						/* Hozzáadjuk a framehez már itt a nyilat, amit az állomásoknál szeretnénk megjeleníteni
@@ -127,13 +124,15 @@ public class View extends JFrame{
 				}
 			}
 		}
+		
 		repaint();
 	}
 	
-	public void addTrain(Palya p){
-		Mozdony e1 = p.getEngines().get(p.getEngines().size()-1);
-		//trainElements.add(new MozdonyRajzolo(null, null, e1));
-		for(Kocsi e = (Kocsi) e1.getBackElem(); e!=null; e = (Kocsi) e.getBackElem()){
+	public void addTrain(Mozdony p){
+		MozdonyRajzolo m = new MozdonyRajzolo(new Point((11)*20, (11)*20), p, this.getInsets());
+		trainElements.add(m);
+		add(m);
+		for(Kocsi e = (Kocsi) p.getBackElem(); e!=null; e = (Kocsi) e.getBackElem()){
 			//cartElements.add(new KocsiRajzolo(, null, e));
 		}
 	}

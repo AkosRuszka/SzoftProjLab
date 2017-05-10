@@ -81,7 +81,8 @@ public class Palya implements Serializable, Runnable{
 				re.fire();
 				//endevent-------------------------------
 				try { 
-					Thread.sleep(200); 
+					Thread.sleep(2000);
+					speed=false;
 					} 
 				catch (InterruptedException e) {
 					log.info("Nem várt futási hiba elkapva: "+e.getMessage());
@@ -94,7 +95,7 @@ public class Palya implements Serializable, Runnable{
 			}
 			else{
 				synchronized (this){
-					while(speed){
+					while(!speed){
 						//System.out.println("Game thread is paused");
 						try {
 							wait();
@@ -615,6 +616,14 @@ public class Palya implements Serializable, Runnable{
 	
 	public Sin[][] getMap() {//ez a Viewnek kell a kirajzoláshoz
 		return myMap;
+	}
+	
+	public void addToMap(Sin a) {//ez a Viewnek kell a kirajzoláshoz
+		map.add(a);
+	}
+	
+	public void addToEng(Mozdony a) {//ez a Viewnek kell a kirajzoláshoz
+		engines.add(a);
 	}
 
 	public ArrayList<Mozdony> getEngines() {//ez is a Viewnek kell a kirajzoláshoz

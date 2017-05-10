@@ -24,19 +24,18 @@ public class MozdonyRajzolo extends JLabel implements IRajzolo {
 		this.mozdony = m;
 		this.insets = frameinsets;
 		
-		try{
-			this.print_img = new ImageIcon("\\img\\mozdony.png");
+		try{			
+			print_img = new ImageIcon("mozdony.png");			
+			
+			// 20x20-as átméretezés
+			Image resizedImage = print_img.getImage();
+			Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			print_img = new ImageIcon(newimg);
 			setIcon(print_img);
 		}
 		catch (Exception e) {
 			e.getMessage();
 		}
-		
-		/* 20x20-as átméretezés */
-		Image resizedImage = print_img.getImage();
-		Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
-		print_img = new ImageIcon(newimg);
-		
 		
 		Dimension size = getPreferredSize();
 		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
