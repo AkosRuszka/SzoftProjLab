@@ -152,18 +152,25 @@ public class Sin implements Serializable{
 			
 		/** Ha semelyik irányba nincs kocsi akkor a dir alapján döntünk , de itt még lehet az aPoint vagy bPoint null...*/
 		if(ap == null && bp == null) {
-			if(dir) {
-				/** Ha dir alapján bPoint felé megyünk tovább, akkor nézzük a bPoint felett található sín-en levő actVonatElem-et  */
+			if(aPoint.aPoint.actVonatElem==actVonatElem.getBFrontElem()){
+				return aPoint;
+			}
+			else{
+				return bPoint;
+			}
+		}
+			/*if(dir) {
+				// Ha dir alapján bPoint felé megyünk tovább, akkor nézzük a bPoint felett található sín-en levő actVonatElem-et  /
 				if(bp_crossing == null) {
 					return bPoint;
 				} 
-				/* Ha bp_crossing != null akkor van felette VonatElem, ezért ütközés történik. */
+				// Ha bp_crossing != null akkor van felette VonatElem, ezért ütközés történik. /
 				else {
 					Log.info("Exception(Ütközés történt) dobás");
 					throw new Exception("Ütközés történt");
 				}
 			} else {
-				/** Ha dir alapján aPoint felé megyünk tovább, akkor nézzük az aPoint felett található sín-en levő actVonatElem-et  */
+				// Ha dir alapján aPoint felé megyünk tovább, akkor nézzük az aPoint felett található sín-en levő actVonatElem-et  /
 				if(ap_crossing == null) {
 					return aPoint;	
 				}
@@ -171,12 +178,12 @@ public class Sin implements Serializable{
 					Log.info("Exception(Ütközés történt) dobás");
 					throw new Exception("Ütközés történt");
 				}
-			}
+			}*/
 		/** Megvizsgáljuk merre menjen a vonat normális esetben (tehát nem az actVonatElem a vonat utolsó kocsija...)
 		 * 	Ha az xPoint-on nincs kocsi akkor arra küldenénk tovább az actVonatElem-et de mellé még megvizsgáljuk hogy
 		 *  az xPoint felett levő (ha van) sínen van e Vonat, csak akkor térünk vissza az xPoint-al ha mindkét feltétel teljesül
 		 * */
-		} else if(ap == null && ap_crossing == null) { 	
+		if(ap == null && ap_crossing == null) { 	
 			dir = false;
 			return aPoint;
 		} else if(bp == null && bp_crossing == null) {

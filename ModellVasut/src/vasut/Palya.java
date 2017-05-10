@@ -613,6 +613,9 @@ public class Palya implements Serializable, Runnable{
 		
 	}
 	
+	public Alagut getalagut(){
+		return tunnel;
+	}
 	
 	public Sin[][] getMap() {//ez a Viewnek kell a kirajzoláshoz
 		return myMap;

@@ -9,11 +9,15 @@ import java.io.ObjectOutputStream;
 import java.io.Serializable;
 import java.util.ArrayList;
 
+import vasut.Allomas;
 import vasut.Jatek;
 import vasut.Kezdopont;
+import vasut.Kocsi;
+import vasut.KulonlegesHely;
 import vasut.Mozdony;
 import vasut.Palya;
 import vasut.Sin;
+import vasut.Valto;
 
 public class Vezerlo implements ActionListener, Serializable{
 	private View view = null;
@@ -99,13 +103,15 @@ public class Vezerlo implements ActionListener, Serializable{
 		palya.addToMap(mymap[15][10]);
 		mymap[16][10] = new Sin(mymap[15][10]);
 		palya.addToMap(mymap[16][10]);
-		mymap[17][10] = new Sin(mymap[16][10]);
+		mymap[17][10] = new Valto(mymap[16][10]);
+		//((Valto)mymap[17][10]).addConnectPoints(mymap[16][10]);
 		palya.addToMap(mymap[17][10]);
 		mymap[17][11] = new Sin(mymap[17][10]);
+		//((Valto)mymap[17][10]).addConnectPoints(mymap[17][11]);
 		palya.addToMap(mymap[17][11]);
 		mymap[17][12] = new Sin(mymap[17][11]);
 		palya.addToMap(mymap[17][12]);
-		mymap[17][13] = new Sin(mymap[17][12]);
+		mymap[17][13] = new Allomas(mymap[17][12],"RED",null);
 		palya.addToMap(mymap[17][13]);
 		mymap[17][14] = new Sin(mymap[17][13]);
 		palya.addToMap(mymap[17][14]);
@@ -115,7 +121,7 @@ public class Vezerlo implements ActionListener, Serializable{
 		palya.addToMap(mymap[15][14]);
 		mymap[14][14] = new Sin(mymap[15][14]);
 		palya.addToMap(mymap[14][14]);
-		mymap[13][14] = new Sin(mymap[14][14]);
+		mymap[13][14] = new Allomas(mymap[14][14],"GREEN",null);//new String[] {"BLUE"});
 		palya.addToMap(mymap[13][14]);
 		mymap[12][14] = new Sin(mymap[13][14]);
 		palya.addToMap(mymap[12][14]);
@@ -132,10 +138,22 @@ public class Vezerlo implements ActionListener, Serializable{
 		mymap[10][11].setBPoint(mymap[10][10]);
 		mymap[10][10].setAPoint(mymap[10][11]);
 		
-		Mozdony m = new Mozdony(mymap[10][10]);
 		
+		/*mymap[17][9] = new Sin(mymap[17][10]);
+		palya.addToMap(mymap[17][9]);
+		((Valto)mymap[17][10]).addConnectPoints(mymap[17][9]);
+		mymap[17][8] = new KulonlegesHely(mymap[17][9],palya.getalagut());
+		palya.addToMap(mymap[17][8]);*/
+		
+		Mozdony m = new Mozdony(mymap[10][10]);
+		Kocsi k1 = new Kocsi(mymap[11][10],m,"RED");
+		Kocsi k2 = new Kocsi(mymap[12][10],k1,"GREEN");
+		m.setBackElem(k1);
+		k1.setBackElem(k2);
 		palya.addToEng(m);
-		view.addTrain(m);
+		view.addTrain(m,10,10);
+		view.addCart(k1,11,10);
+		view.addCart(k2,12,10);
 	
 		return mymap;
 	}

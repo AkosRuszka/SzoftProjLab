@@ -14,7 +14,7 @@ public class KulonlegesHely extends Sin implements Serializable{
 	//Logoláshoz a logger osztály egy példánya
 	private static final Logger log = LogManager.getLogger(Alagut.class);
 	
-	KulonlegesHely(Sin aPoint_, Alagut a){		
+	public KulonlegesHely(Sin aPoint_, Alagut a){		
 		super(aPoint_);
 		aObserver = a;
 		

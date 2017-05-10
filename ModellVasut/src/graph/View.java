@@ -123,12 +123,14 @@ public class View extends JFrame{
 		repaint();
 	}
 	
-	public void addTrain(Mozdony p){
-		MozdonyRajzolo m = new MozdonyRajzolo(new Point((11)*20, (11)*20), p, this.getInsets());
+	public void addTrain(Mozdony p, int x, int y){
+		MozdonyRajzolo m = new MozdonyRajzolo(new Point((x+1)*20, (y+1)*20), p, this.getInsets());
 		trainElements.add(m);
-		add(m);
-		for(Kocsi e = (Kocsi) p.getBackElem(); e!=null; e = (Kocsi) e.getBackElem()){
-			//cartElements.add(new KocsiRajzolo(, null, e));
-		}
+		add(m);		
+	}
+	public void addCart(Kocsi p, int x, int y){
+		KocsiRajzolo m = new KocsiRajzolo(new Point((x+1)*20, (y+1)*20), p, this.getInsets());
+		cartElements.add(m);
+		add(m);		
 	}
 }

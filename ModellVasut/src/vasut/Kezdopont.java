@@ -47,7 +47,7 @@ public class Kezdopont extends Sin{
 			train.add(new Mozdony(spawnTunnel.get(0)));
 			spawnTunnel.get(0).setActVonatElem(train.get(0));
 			
-			train.add(new Kocsi(spawnTunnel.get(1), train.get(0), "grey"));
+			train.add(new Kocsi(spawnTunnel.get(1), train.get(0), "GREY"));
 			train.get(0).setBackElem((Kocsi)train.get(1));
 			spawnTunnel.get(1).setActVonatElem(train.get(1));
 			
@@ -56,16 +56,16 @@ public class Kezdopont extends Sin{
 				int color = rand.nextInt(4);
 				switch (color) {
 				case 0:
-					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),"red"));
+					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),"RED"));
 					break;
 				case 1:
-					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),"yellow"));
+					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),"YELLOW"));
 					break;
 				case 2:
-					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),"green"));
+					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),"GREEN"));
 					break;
 				case 3:
-					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),"blue"));
+					train.add(new Kocsi(spawnTunnel.get(i),train.get(i-1),"BLUE"));
 					break;
 				}
 				train.get(i-1).setBackElem((Kocsi)train.get(i));

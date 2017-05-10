@@ -28,20 +28,20 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 		try {
 			switch(kocsi.getColor().toUpperCase()) {
 			case "YELLOW":
-				notempty_img = new ImageIcon("\\img\\kocsi_sarga.png");
-				empty_img = new ImageIcon("\\img\\kocsi_sarga_ures.png");
+				notempty_img = new ImageIcon(".\\img\\kocsi_sarga.png");
+				empty_img = new ImageIcon(".\\img\\kocsi_sarga_ures.png");
 				break;
 			case "RED":
-				notempty_img = new ImageIcon("\\img\\kocsi_piros.png");
-				empty_img = new ImageIcon("\\img\\kocsi_piros_ures.png");
+				notempty_img = new ImageIcon(".\\img\\kocsi_piros.png");
+				empty_img = new ImageIcon(".\\img\\kocsi_piros_ures.png");
 				break;
 			case "BLUE":
-				notempty_img = new ImageIcon("\\img\\kocsi_kek.png");
-				empty_img = new ImageIcon("\\img\\kocsi_kek_ures.png");
+				notempty_img = new ImageIcon(".\\img\\kocsi_kek.png");
+				empty_img = new ImageIcon(".\\img\\kocsi_kek_ures.png");
 				break;
 			case "GREEN":
-				notempty_img = new ImageIcon("\\img\\kocsi_zold.png");
-				empty_img = new ImageIcon("\\img\\kocsi_zold_ures.png");
+				notempty_img = new ImageIcon(".\\img\\kocsi_zold.png");
+				empty_img = new ImageIcon(".\\img\\kocsi_zold_ures.png");
 				break;
 			default:
 				notempty_img = null;
@@ -51,20 +51,24 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 			
 			Image resizedImage;
 			Image newimg;
-			
-			/* Notempty_img 20x20-as átméretezése */
-			if(notempty_img != null) {
-				resizedImage = notempty_img.getImage();
-				newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
-				notempty_img = new ImageIcon(newimg);
+			try{
+				/* Notempty_img 20x20-as átméretezése */
+				if(notempty_img != null) {
+					resizedImage = notempty_img.getImage();
+					newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+					notempty_img = new ImageIcon(newimg);
+				}
+				
+				/* Empty_img 20x20-as átméretezése */
+				if(empty_img != null) {
+					resizedImage = empty_img.getImage();
+					newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+					empty_img = new ImageIcon(newimg);
+				}
 			}
-			
-			/* Empty_img 20x20-as átméretezése */
-			if(empty_img != null) {
-				resizedImage = empty_img.getImage();
-				newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
-				empty_img = new ImageIcon(newimg);
-			}
+			catch (Exception e) {
+				e.getMessage();
+			}			
 			
 			print_img = notempty_img;
 			setIcon(print_img);
@@ -95,6 +99,9 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 	@Override
 	public void setPoint(Point point) {
 		coord = point;
+		Dimension size = getPreferredSize();
+		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
+	             size.width, size.height);
 		
 	}
 	/* touppercase */

@@ -84,6 +84,14 @@ public class SinRajzolo extends JLabel implements IRajzolo, ActionListener, Seri
 		//coord = point;
 	}
 	
+	public void rePainter(){
+		Dimension size = getPreferredSize();
+		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
+	             size.width, size.height);
+		
+		setVisible(true);
+	}
+	
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		switch(e.getActionCommand().toUpperCase()) {
