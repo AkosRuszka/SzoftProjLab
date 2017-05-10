@@ -33,16 +33,16 @@ public class AllomasRajzolo extends JLabel implements IRajzolo, ActionListener, 
 		try{
 			switch(allomas.getColor().toUpperCase()) {
 			case "YELLOW":
-				allomasimg = new ImageIcon("\\img\\allomas_sarga.png");
+				allomasimg = new ImageIcon(".\\img.\\allomas_sarga.png");
 				break;
 			case "RED":
-				allomasimg = new ImageIcon("\\img\\allomas_piros.png");
+				allomasimg = new ImageIcon(".\\img.\\allomas_piros.png");
 				break;
 			case "BLUE":
-				allomasimg = new ImageIcon("\\img\\allomas_kek.png");
+				allomasimg = new ImageIcon(".\\img.\\allomas_kek.png");
 				break;
 			case "GREEN":
-				allomasimg = new ImageIcon("\\img\\allomas_zold.png");
+				allomasimg = new ImageIcon(".\\img.\\allomas_zold.png");
 				break;
 			default:
 				allomasimg = null;
@@ -64,16 +64,16 @@ public class AllomasRajzolo extends JLabel implements IRajzolo, ActionListener, 
 		try {
 			switch(allomas.getRisers().toUpperCase()) {
 			case "YELLOW":
-				felszalloimg = new ImageIcon("\\img\\nyil_sarga.png");
+				felszalloimg = new ImageIcon(".\\img.\\nyil_sarga.png");
 				break;
 			case "RED":
-				felszalloimg = new ImageIcon("\\img\\nyil_piros.png");
+				felszalloimg = new ImageIcon(".\\img.\\nyil_piros.png");
 				break;
 			case "BLUE":
-				felszalloimg = new ImageIcon("\\img\\nyil_kek.png");
+				felszalloimg = new ImageIcon(".\\img.\\nyil_kek.png");
 				break;
 			case "GREEN":
-				felszalloimg = new ImageIcon("\\img\\nyil_zold.png");
+				felszalloimg = new ImageIcon(".\\img.\\nyil_zold.png");
 				break;
 			default:
 				felszalloimg = null;

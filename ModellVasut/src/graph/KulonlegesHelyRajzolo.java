@@ -6,11 +6,13 @@ import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
+
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import vasut.KulonlegesHely;
 
-public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionListener{
+public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionListener, Serializable{
 	private KulonlegesHely kh;
 	private Point coord;
 	private Insets insets;
@@ -22,8 +24,8 @@ public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionLi
 	
 	public KulonlegesHelyRajzolo(Point coord, KulonlegesHely kh, Insets frameinsets) {
 		try{		
-			this.img_kh = new ImageIcon("\\img\\kulonlegeshely.png");
-			this.img_alagut = new ImageIcon("\\img\\alagut.png");
+			this.img_kh = new ImageIcon(".\\img.\\kulonlegeshely.png");
+			this.img_alagut = new ImageIcon(".\\img.\\alagut.png");
 			this.paint_img = img_kh;	
 		} catch (Exception e) {
 			e.getMessage();

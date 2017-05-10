@@ -6,14 +6,14 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-
+import java.io.Serializable;
 
 import vasut.Jatek;
 import vasut.Kezdopont;
 import vasut.Palya;
 import vasut.Sin;
 
-public class Vezerlo implements ActionListener{
+public class Vezerlo implements ActionListener, Serializable{
 	private View view = null;
 	private Menu menu = null;
 	private Jatek jatek = null;

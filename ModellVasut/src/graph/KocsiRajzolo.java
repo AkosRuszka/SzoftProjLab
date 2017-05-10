@@ -6,13 +6,14 @@ import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import vasut.Kocsi;
 
-public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
+public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener, Serializable{
 	private Kocsi kocsi;
 	private ImageIcon print_img;
 	private ImageIcon empty_img;
@@ -28,20 +29,20 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener{
 		try {
 			switch(kocsi.getColor().toUpperCase()) {
 			case "YELLOW":
-				notempty_img = new ImageIcon("\\img\\kocsi_sarga.png");
-				empty_img = new ImageIcon("\\img\\kocsi_sarga_ures.png");
+				notempty_img = new ImageIcon(".\\img.\\kocsi_sarga.png");
+				empty_img = new ImageIcon(".\\img.\\kocsi_sarga_ures.png");
 				break;
 			case "RED":
-				notempty_img = new ImageIcon("\\img\\kocsi_piros.png");
-				empty_img = new ImageIcon("\\img\\kocsi_piros_ures.png");
+				notempty_img = new ImageIcon(".\\img.\\kocsi_piros.png");
+				empty_img = new ImageIcon(".\\img.\\kocsi_piros_ures.png");
 				break;
 			case "BLUE":
-				notempty_img = new ImageIcon("\\img\\kocsi_kek.png");
-				empty_img = new ImageIcon("\\img\\kocsi_kek_ures.png");
+				notempty_img = new ImageIcon(".\\img.\\kocsi_kek.png");
+				empty_img = new ImageIcon(".\\img.\\kocsi_kek_ures.png");
 				break;
 			case "GREEN":
-				notempty_img = new ImageIcon("\\img\\kocsi_zold.png");
-				empty_img = new ImageIcon("\\img\\kocsi_zold_ures.png");
+				notempty_img = new ImageIcon(".\\img.\\kocsi_zold.png");
+				empty_img = new ImageIcon(".\\img.\\kocsi_zold_ures.png");
 				break;
 			default:
 				notempty_img = null;

@@ -9,6 +9,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.*;
 import javax.swing.JFileChooser;
 import vasut.*;
@@ -17,7 +18,7 @@ import org.apache.log4j.Logger;
 
 import graph.RailEvent;
 
-public class Jatek {
+public class Jatek implements Serializable{
 	private static final Logger log = LogManager.getLogger(Palya.class);
 	protected ArrayList<EventListener> list = new ArrayList<EventListener>();
 	private Palya actGame;	//a Játék tartalmazhat egy pályát

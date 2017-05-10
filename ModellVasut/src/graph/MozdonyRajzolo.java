@@ -7,13 +7,14 @@ import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
 
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 
 import vasut.Mozdony;
 
-public class MozdonyRajzolo extends JLabel implements IRajzolo {
+public class MozdonyRajzolo extends JLabel implements IRajzolo, Serializable {
 	private Mozdony mozdony;
 	private ImageIcon print_img;
 	private Point coord;
@@ -25,7 +26,7 @@ public class MozdonyRajzolo extends JLabel implements IRajzolo {
 		this.insets = frameinsets;
 		
 		try{
-			this.print_img = new ImageIcon("\\img\\mozdony.png");
+			this.print_img = new ImageIcon(".\\img.\\mozdony.png");
 			setIcon(print_img);
 		}
 		catch (Exception e) {

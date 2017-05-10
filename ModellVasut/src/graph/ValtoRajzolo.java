@@ -8,11 +8,12 @@ import java.awt.Insets;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.Serializable;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 
-public class ValtoRajzolo extends JButton implements IRajzolo{
+public class ValtoRajzolo extends JButton implements IRajzolo, Serializable{
 	private Valto valto;
 	private ImageIcon img;
 	private Point coord;
@@ -28,7 +29,7 @@ public class ValtoRajzolo extends JButton implements IRajzolo{
 		setPreferredSize(new Dimension(20,20));
 		
 		try{
-			this.img = new ImageIcon("\\img\\valto.png");
+			this.img = new ImageIcon(".\\img.\\valto.png");
 			
 			// 20x20-as átméretezés
 			Image resizedImage = img.getImage();
