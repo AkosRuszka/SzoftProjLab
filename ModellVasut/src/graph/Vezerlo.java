@@ -66,7 +66,7 @@ public class Vezerlo implements ActionListener{
 			}
 		}
 		
-		mymap[10][10] = new Sin(null);
+		mymap[10][10] = new Kezdopont(10,10,10,null);
 		mymap[11][10] = new Sin(mymap[10][10]);
 		mymap[12][10] = new Sin(mymap[11][10]);
 		mymap[13][10] = new Sin(mymap[12][10]);

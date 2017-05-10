@@ -71,12 +71,6 @@ public class Palya implements Serializable, Runnable{
 	/** A játék futása a megfelelő vizsgálatokkal. */
 	public void run(){
 		while(true){ 
-//			try {
-//				//TimeUnit.SECONDS.sleep(2);
-//			} catch (InterruptedException e1) {
-//				// TODO Auto-generated catch block
-//				e1.printStackTrace();
-//			}
 			for (Mozdony mozdony : engines) {					
 				try {
 					done &= mozdony.run();
@@ -86,25 +80,25 @@ public class Palya implements Serializable, Runnable{
 				}
 			}
 			if(speed){
-				//System.out.println("Game thread is doing stuff....."); 
-//				Mozdony uj = startPoint.work();
-//				try {
-//					if(uj != null) {
-//						engines.add(uj);
-//						//event----------------------------------
-//						RailEvent re = new RailEvent(this, 3, list.get(0));
-//						re.fire();
-//						//endevent-------------------------------
-//					}
-//					done = true;// nullázzuk a done-t
-//					for (Mozdony mozdony : engines) {					
-//						done &= mozdony.run();
-//					}
-//				} catch (Exception e) {						
-//					e.printStackTrace();
-//					log.info("Hiba elkapva: "+e.getMessage());
-//					break;
-//				}
+				System.out.println("Game thread is doing stuff....."); 
+				Mozdony uj = startPoint.work();
+				try {
+					if(uj != null) {
+						engines.add(uj);
+						//event----------------------------------
+						RailEvent re = new RailEvent(this, 3, list.get(0));
+						re.fire();
+						//endevent-------------------------------
+					}
+					done = true;// nullázzuk a done-t
+					for (Mozdony mozdony : engines) {					
+						done &= mozdony.run();
+					}
+				} catch (Exception e) {						
+					e.printStackTrace();
+					log.info("Hiba elkapva: "+e.getMessage());
+					break;
+				}
 				//event----------------------------------
 				RailEvent re = new RailEvent(this, 1, list.get(0));
 				re.fire();
