@@ -6,6 +6,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.ArrayList;
 
 import vasut.Jatek;
@@ -14,7 +15,7 @@ import vasut.Mozdony;
 import vasut.Palya;
 import vasut.Sin;
 
-public class Vezerlo implements ActionListener{
+public class Vezerlo implements ActionListener, Serializable{
 	private View view = null;
 	private Menu menu = null;
 	private Jatek jatek = null;
@@ -27,45 +28,52 @@ public class Vezerlo implements ActionListener{
 		jatek.addActionListener(this);
 		menu.addActionListener(this);
 		
-		v.mapfeldolgozas(izebezi());
-		palya.addActionListener(this);
-		view.mapRedraw();
-		try {
-			palya.setStartStop();
-		} catch (Exception e) {
-			e.printStackTrace();
+		//Thread t = new Thread(run());
+		run();
+	}
+	
+	public void run(){
+		synchronized (this){
+			view.mapfeldolgozas(izebezi());
+			palya.addActionListener(this);
+			view.mapRedraw();
+			try {
+				palya.setStartStop();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			palya.run();
 		}
-		palya.run();
-		
-		
 	}
 	
 	public void EventOccurred(RailEvent re){
-		int event = re.getID();
-		if(event == 0){
-			palya = (Palya)re.getSource();
-			palya.addActionListener(this);
-			menu.setVisible(false);
-			view.setVisible(true);
-			view.newMapDraw((Palya)re.getSource());
+		synchronized (this){
+			int event = re.getID();
+			if(event == 0){
+				palya = (Palya)re.getSource();
+				palya.addActionListener(this);
+				menu.setVisible(false);
+				view.setVisible(true);
+				view.newMapDraw((Palya)re.getSource());
+			}
+			else if(event == 1){
+				menu.setVisible(false);
+				view.setVisible(true);
+				view.mapRedraw();
+			}
+			else if(event == 2){
+				menu.setVisible(true);
+				view.setVisible(false);
+			}
+			else if(event == 3){
+				//view.addTrain(((Palya)re.getSource()));
+			}
+			else{
+				//valami más
+			}
+			System.out.println(re.getSource());
+			System.out.println(re.getID());
 		}
-		else if(event == 1){
-			menu.setVisible(false);
-			view.setVisible(true);
-			view.mapRedraw();
-		}
-		else if(event == 2){
-			menu.setVisible(true);
-			view.setVisible(false);
-		}
-		else if(event == 3){
-			//view.addTrain(((Palya)re.getSource()));
-		}
-		else{
-			//valami más
-		}
-		System.out.println(re.getSource());
-		System.out.println(re.getID());
 	}
 	
 	public Sin[][] izebezi() {
@@ -121,7 +129,8 @@ public class Vezerlo implements ActionListener{
 		palya.addToMap(mymap[10][12]);
 		mymap[10][11] = new Sin(mymap[10][12]);
 		palya.addToMap(mymap[10][11]);
-		mymap[10][10].setBPoint(mymap[10][11]);
+		mymap[10][11].setBPoint(mymap[10][10]);
+		mymap[10][10].setAPoint(mymap[10][11]);
 		
 		Mozdony m = new Mozdony(mymap[10][10]);
 		

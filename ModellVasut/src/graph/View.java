@@ -54,11 +54,7 @@ public class View extends JFrame{
 			boolean mapon = false;
 			for(IRajzolo rails : railElements){
 				if(((Sin) rails.getObject()).getActVonatElem() == ((VonatElem)carts.getObject())){
-					Point a = new Point();
-					/* Lemásoljuk a "tartalmazó" sin koordinátáját. */
-					a.setLocation(rails.getPoint().getX(), rails.getPoint().getY());
-					/* Átállítjuk a mozdony/kocsi koordinátáját. */
-					carts.setPoint(a);
+					carts.setPoint(rails.getPoint());
 					mapon = true;
 					carts.setVisible(true);
 				}
@@ -124,7 +120,6 @@ public class View extends JFrame{
 				}
 			}
 		}
-		
 		repaint();
 	}
 	

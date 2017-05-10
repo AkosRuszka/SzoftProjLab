@@ -30,8 +30,8 @@ public class Palya implements Serializable, Runnable{
 		speed = false;
 		done = false;
 		tunnel = new Alagut();
-		startPoint = new Kezdopont(1, 5, 1, null);
-		map.add(startPoint);
+		//startPoint = new Kezdopont(1, 5, 1, null);
+		//map.add(startPoint);
 	}
 	
 	/** Listenerek felvétele */
@@ -81,8 +81,8 @@ public class Palya implements Serializable, Runnable{
 				re.fire();
 				//endevent-------------------------------
 				try { 
-					Thread.sleep(2000);
-					speed=false;
+					Thread.sleep(200);
+					//killed=true;
 					} 
 				catch (InterruptedException e) {
 					log.info("Nem várt futási hiba elkapva: "+e.getMessage());
@@ -95,7 +95,7 @@ public class Palya implements Serializable, Runnable{
 			}
 			else{
 				synchronized (this){
-					while(!speed){
+					while(speed){
 						//System.out.println("Game thread is paused");
 						try {
 							wait();

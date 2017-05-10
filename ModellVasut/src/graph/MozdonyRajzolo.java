@@ -25,7 +25,7 @@ public class MozdonyRajzolo extends JLabel implements IRajzolo {
 		this.insets = frameinsets;
 		
 		try{			
-			print_img = new ImageIcon("mozdony.png");			
+			print_img = new ImageIcon(".\\img\\mozdony.png");			
 			
 			// 20x20-as átméretezés
 			Image resizedImage = print_img.getImage();
@@ -55,5 +55,8 @@ public class MozdonyRajzolo extends JLabel implements IRajzolo {
 	@Override
 	public void setPoint(Point point) {
 		coord = point;
+		Dimension size = getPreferredSize();
+		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
+	             size.width, size.height);
 	}
 }
