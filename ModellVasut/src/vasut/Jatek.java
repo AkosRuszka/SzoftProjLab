@@ -48,6 +48,7 @@ public class Jatek implements Serializable{
 		actGame.vonatfeldolgozas(mozdony);
 		actGame.addActionListener(list.get(0));
 		actGame.run();
+		
 	}
 	
 	public void makeGame(){

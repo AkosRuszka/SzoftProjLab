@@ -1,5 +1,6 @@
 package vasut;
 
+import java.awt.Frame;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,6 +10,8 @@ import java.util.EventListener;
 import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
+
+import javax.swing.JOptionPane;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -91,12 +94,11 @@ public class Palya implements Serializable, Runnable{
 						//endevent-------------------------------
 					}
 					done = true;// nullázzuk a done-t
-					for (Mozdony mozdony : engines) {					
-						done &= mozdony.run();
+					for (Mozdony mozdony : engines) {
+							done &= mozdony.run();
 					}
-				} catch (Exception e) {						
-					e.printStackTrace();
-					log.info("Hiba elkapva: "+e.getMessage());
+				} catch (Exception e) {	
+					JOptionPane.showMessageDialog(new Frame(), e.getMessage(), "Game Over", JOptionPane.ERROR_MESSAGE);					
 					break;
 				}
 				//event----------------------------------

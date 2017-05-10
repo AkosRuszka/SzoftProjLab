@@ -26,8 +26,8 @@ public class Vezerlo implements ActionListener, Serializable{
 		jatek = j;
 		jatek.addActionListener(this);
 		menu.addActionListener(this);
-		
-		mozdonykreate(getmap());			
+		mozdonykreate(getmap());	
+				
 	}
 	
 	public void EventOccurred(RailEvent re){
@@ -102,6 +102,7 @@ public class Vezerlo implements ActionListener, Serializable{
 		Mozdony mozdony = new Mozdony(sin[12][10]);
 		this.view.vonathozzaadas(mozdony);
 		this.jatek.vonataatadas(mozdony);
+		
 	}
 
 	@Override
