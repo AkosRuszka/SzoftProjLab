@@ -29,7 +29,7 @@ public class View extends JFrame{
 	ArrayList<IRajzolo> railElements = new ArrayList<IRajzolo>();
 	ArrayList<MozdonyRajzolo> trainElements = new ArrayList<MozdonyRajzolo>();
 	ArrayList<KocsiRajzolo> cartElements = new ArrayList<KocsiRajzolo>();
-	private Vezerlo listener;
+	protected ArrayList<ActionListener> list = new ArrayList<ActionListener>();
 	
 	public View() {
 		setLayout(null);
@@ -42,8 +42,8 @@ public class View extends JFrame{
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
-	public void setVezerlo(Vezerlo v){
-		listener = v;
+	public void addActionListener(Vezerlo v){
+		list.add(v);
 	}
 	
 	public void mapRedraw(){
@@ -101,29 +101,25 @@ public class View extends JFrame{
 		
 		JButton sts = new JButton("start/stop");
 		try{			
-			ImageIcon print_img = new ImageIcon(".\\img\\startstop.png");			
-			
-			// 20x20-as átméretezés
-			Image resizedImage = print_img.getImage();
-			Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
-			print_img = new ImageIcon(newimg);
+			ImageIcon print_img = new ImageIcon(".\\img\\startstop.png");
 			sts.setIcon(print_img);
 		}
 		catch (Exception e) {
 			e.getMessage();
 		}
-		Dimension size = getPreferredSize();
+		Dimension size = getPreferredSize(); 
 		sts.setBounds(insets.left, insets.top,
-	             20, 20);
+	             40, 40);
 		sts.setAlignmentX(Component.CENTER_ALIGNMENT);
 		sts.addActionListener(new ActionListener() { 
 			  public void actionPerformed(ActionEvent e) { 
 				//event----------------------------------
-				RailEvent re = new RailEvent(this, 5, listener);
+				RailEvent re = new RailEvent(this, 5, list.get(0));
 				re.fire();
 				//endevent-------------------------------	
 			  }
-		});		
+		});	
+		add(sts);
 		
 		for(int x=0; x<30; x++) {
 			for(int y=0; y<30; y++) {

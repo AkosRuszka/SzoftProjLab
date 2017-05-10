@@ -31,8 +31,8 @@ public class Vezerlo implements ActionListener, Serializable{
 		jatek = j;
 		jatek.addActionListener(this);
 		menu.addActionListener(this);
+		view.addActionListener(this);
 		
-		//Thread t = new Thread(run());
 		run();
 	}
 	
@@ -71,6 +71,13 @@ public class Vezerlo implements ActionListener, Serializable{
 			}
 			else if(event == 3){
 				//view.addTrain(((Palya)re.getSource()));
+			}
+			else if(event == 5){
+				try {
+					palya.setStartStop();
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
 			}
 			else{
 				//valami más
