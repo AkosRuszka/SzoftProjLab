@@ -89,9 +89,10 @@ public class Vezerlo implements ActionListener, Serializable{
 		}
 		jatek.makeGame();
 		palya = jatek.getGame();
-		mymap[10][10] = new Sin(null);
+		mymap[10][10] = new Valto(null);		
 		palya.addToMap(mymap[10][10]);
 		mymap[11][10] = new Sin(mymap[10][10]);
+		((Valto)mymap[10][10]).addConnectPoints(mymap[11][10]);
 		palya.addToMap(mymap[11][10]);
 		mymap[12][10] = new Sin(mymap[11][10]);
 		palya.addToMap(mymap[12][10]);
@@ -137,7 +138,13 @@ public class Vezerlo implements ActionListener, Serializable{
 		palya.addToMap(mymap[10][11]);
 		mymap[10][11].setBPoint(mymap[10][10]);
 		mymap[10][10].setAPoint(mymap[10][11]);
+		((Valto)mymap[10][10]).addConnectPoints(mymap[10][11]);
 		
+		mymap[9][10] = new Sin(mymap[10][10]);
+		palya.addToMap(mymap[9][10]);
+		((Valto)mymap[10][10]).addConnectPoints(mymap[9][10]);
+		mymap[8][10] = new KulonlegesHely(mymap[9][10],palya.getalagut());
+		palya.addToMap(mymap[8][10]);
 		
 		mymap[17][9] = new Sin(mymap[17][10]);
 		palya.addToMap(mymap[17][9]);
@@ -145,9 +152,9 @@ public class Vezerlo implements ActionListener, Serializable{
 		mymap[17][8] = new KulonlegesHely(mymap[17][9],palya.getalagut());
 		palya.addToMap(mymap[17][8]);
 		
-		Mozdony m = new Mozdony(mymap[10][10]);
-		Kocsi k1 = new Kocsi(mymap[11][10],m,"RED");
-		Kocsi k2 = new Kocsi(mymap[12][10],k1,"GREEN");
+		Mozdony m = new Mozdony(mymap[11][10]);
+		Kocsi k1 = new Kocsi(mymap[12][10],m,"RED");
+		Kocsi k2 = new Kocsi(mymap[13][10],k1,"GREEN");
 		m.setBackElem(k1);
 		k1.setBackElem(k2);
 		palya.addToEng(m);

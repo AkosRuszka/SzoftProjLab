@@ -65,7 +65,7 @@ public class Menu extends JFrame{
 		bnewGame.setAlignmentX(Component.CENTER_ALIGNMENT);
 		bnewGame.addActionListener(new ActionListener() { 
 			  public void actionPerformed(ActionEvent e) { 
-				  jatek.newGame();
+				  
 			  }
 		});
 		bmapLoad = new JButton("Pálya betöltése");

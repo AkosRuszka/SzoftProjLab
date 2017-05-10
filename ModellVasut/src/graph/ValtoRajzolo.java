@@ -50,6 +50,8 @@ public class ValtoRajzolo extends JButton implements IRajzolo{
 				  valto.nextState();
 			  }
 		});		
+		
+		valto.nextState();
 	}
 
 	@Override

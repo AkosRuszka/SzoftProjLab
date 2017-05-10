@@ -1,11 +1,17 @@
 package graph;
 
+import java.awt.Component;
 import java.awt.Dimension;
+import java.awt.Image;
 import java.awt.Insets;
 import java.awt.Point;
 import java.awt.Window;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
@@ -23,6 +29,7 @@ public class View extends JFrame{
 	ArrayList<IRajzolo> railElements = new ArrayList<IRajzolo>();
 	ArrayList<MozdonyRajzolo> trainElements = new ArrayList<MozdonyRajzolo>();
 	ArrayList<KocsiRajzolo> cartElements = new ArrayList<KocsiRajzolo>();
+	private Vezerlo listener;
 	
 	public View() {
 		setLayout(null);
@@ -33,6 +40,10 @@ public class View extends JFrame{
 		invalidate();
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+	
+	public void setVezerlo(Vezerlo v){
+		listener = v;
 	}
 	
 	public void mapRedraw(){
@@ -87,6 +98,32 @@ public class View extends JFrame{
 		AllomasRajzolo ujallomas;
 		KulonlegesHelyRajzolo ujkulhely;
 		ValtoRajzolo ujvalto;
+		
+		JButton sts = new JButton("start/stop");
+		try{			
+			ImageIcon print_img = new ImageIcon(".\\img\\startstop.png");			
+			
+			// 20x20-as átméretezés
+			Image resizedImage = print_img.getImage();
+			Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			print_img = new ImageIcon(newimg);
+			sts.setIcon(print_img);
+		}
+		catch (Exception e) {
+			e.getMessage();
+		}
+		Dimension size = getPreferredSize();
+		sts.setBounds(insets.left, insets.top,
+	             20, 20);
+		sts.setAlignmentX(Component.CENTER_ALIGNMENT);
+		sts.addActionListener(new ActionListener() { 
+			  public void actionPerformed(ActionEvent e) { 
+				//event----------------------------------
+				RailEvent re = new RailEvent(this, 5, listener);
+				re.fire();
+				//endevent-------------------------------	
+			  }
+		});		
 		
 		for(int x=0; x<30; x++) {
 			for(int y=0; y<30; y++) {
