@@ -22,8 +22,8 @@ public class KulonlegesHelyRajzolo extends JButton implements IRajzolo, ActionLi
 	
 	public KulonlegesHelyRajzolo(Point coord, KulonlegesHely kh, Insets frameinsets) {
 		try{		
-			this.img_kh = new ImageIcon("\\img\\kulonlegeshely.png");
-			this.img_alagut = new ImageIcon("\\img\\alagut.png");
+			this.img_kh = new ImageIcon("kulonlegeshely.png");
+			this.img_alagut = new ImageIcon("alagut.png");
 			this.paint_img = img_kh;	
 		} catch (Exception e) {
 			e.getMessage();

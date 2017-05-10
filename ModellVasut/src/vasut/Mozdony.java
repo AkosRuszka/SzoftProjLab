@@ -49,14 +49,15 @@ public class Mozdony extends VonatElem {
 			
 			whereAmI.setActVonatElem(this);
 			
-			backElem.pull();
-			
-			if (lastCart.getEmpty() && lastCart.getEmptyable()){//üres és előtte üresekvannak
-				return true;
-			}
-			else{
-				return false;
-			}
+//			backElem.pull();
+//			
+//			if (lastCart.getEmpty() && lastCart.getEmptyable()){//üres és előtte üresekvannak
+//				return true;
+//			}
+//			else{
+//				return false;
+//			}
+			return false;
 		}
 		else{
 			log.info("EXception: Kisiklott a vonat");

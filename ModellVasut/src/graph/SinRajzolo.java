@@ -27,10 +27,10 @@ public class SinRajzolo extends JLabel implements IRajzolo, ActionListener, Seri
 	
 	public SinRajzolo(Point coord, Sin sin, Insets frameinsets) {
 		try {
-			active_img = new ImageIcon("\\img\\sin_zold.png");
-			inactive_img = new ImageIcon("\\img\\sin_piros.png");
+			active_img = new ImageIcon("sin_zold.png");
+			inactive_img = new ImageIcon("sin_piros.png");
 			paint_img = new ImageIcon("sin.png");
-			kereszt_image = new ImageIcon("\\img\\keresztsin.png");
+			kereszt_image = new ImageIcon("keresztsin.png");
 			
 			// 20x20-as átméretezés
 			Image resizedImage = active_img.getImage();

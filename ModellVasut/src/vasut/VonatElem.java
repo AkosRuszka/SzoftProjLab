@@ -24,6 +24,7 @@ public class VonatElem implements Serializable{
 	
 	public VonatElem(Sin whereAmI_, VonatElem frontElem_, String color_){
 		whereAmI = whereAmI_;
+		whereAmI.setActVonatElem(this);
 		frontElem = frontElem_;
 		color = color_;
 		if(color == "grey"){//szeneskocsi :D

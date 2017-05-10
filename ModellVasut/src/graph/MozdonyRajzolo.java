@@ -24,18 +24,21 @@ public class MozdonyRajzolo extends JLabel implements IRajzolo {
 		this.mozdony = m;
 		this.insets = frameinsets;
 		
+		
+		/* 20x20-as átméretezés */
+		
 		try{
-			this.print_img = new ImageIcon("\\img\\mozdony.png");
+			this.print_img = new ImageIcon(".\\img\\mozdony.png");
+			Image resizedImage = print_img.getImage();
+			Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
+			print_img = new ImageIcon(newimg);
 			setIcon(print_img);
 		}
 		catch (Exception e) {
 			e.getMessage();
 		}
 		
-		/* 20x20-as átméretezés */
-		Image resizedImage = print_img.getImage();
-		Image newimg = resizedImage.getScaledInstance(20, 20, java.awt.Image.SCALE_SMOOTH);
-		print_img = new ImageIcon(newimg);
+		
 		
 		
 		Dimension size = getPreferredSize();
@@ -56,5 +59,8 @@ public class MozdonyRajzolo extends JLabel implements IRajzolo {
 	@Override
 	public void setPoint(Point point) {
 		coord = point;
+		Dimension size = getPreferredSize();
+		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
+	             size.width, size.height);
 	}
 }

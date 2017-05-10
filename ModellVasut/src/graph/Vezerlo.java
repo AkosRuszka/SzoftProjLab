@@ -10,6 +10,7 @@ import java.io.ObjectOutputStream;
 
 import vasut.Jatek;
 import vasut.Kezdopont;
+import vasut.Mozdony;
 import vasut.Palya;
 import vasut.Sin;
 
@@ -26,7 +27,7 @@ public class Vezerlo implements ActionListener{
 		jatek.addActionListener(this);
 		menu.addActionListener(this);
 		
-		v.mapfeldolgozas(izebezi());
+		mozdonykreate(getmap());			
 	}
 	
 	public void EventOccurred(RailEvent re){
@@ -57,7 +58,7 @@ public class Vezerlo implements ActionListener{
 		System.out.println(re.getID());
 	}
 	
-	public Sin[][] izebezi() {
+	public Sin[][] getmap() {
 		Sin mymap[][] = new Sin[30][30];
 		for (int i = 0; i < 30; i++) {
 			for (int j = 0; j < 30; j++) {
@@ -65,7 +66,7 @@ public class Vezerlo implements ActionListener{
 			}
 		}
 		
-		mymap[10][10] = new Kezdopont(1,1,1,null);
+		mymap[10][10] = new Sin(null);
 		mymap[11][10] = new Sin(mymap[10][10]);
 		mymap[12][10] = new Sin(mymap[11][10]);
 		mymap[13][10] = new Sin(mymap[12][10]);
@@ -87,9 +88,20 @@ public class Vezerlo implements ActionListener{
 		mymap[10][13] = new Sin(mymap[10][14]);
 		mymap[10][12] = new Sin(mymap[10][13]);
 		mymap[10][11] = new Sin(mymap[10][12]);
-		mymap[10][10].setBPoint(mymap[10][11]);
+		mymap[10][10].setAPoint(mymap[10][11]);
+		mymap[10][11].setBPoint(mymap[10][10]);
 	
+		this.view.mapfeldolgozas(mymap);
+		this.jatek.mapatadas(mymap);
+		
 		return mymap;
+	}
+	
+	public void mozdonykreate(Sin sin[][])
+	{
+		Mozdony mozdony = new Mozdony(sin[12][10]);
+		this.view.vonathozzaadas(mozdony);
+		this.jatek.vonataatadas(mozdony);
 	}
 
 	@Override

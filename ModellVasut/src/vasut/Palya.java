@@ -8,6 +8,8 @@ import java.util.ArrayList;
 import java.util.EventListener;
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import graph.RailEvent;
@@ -27,7 +29,7 @@ public class Palya implements Serializable, Runnable{
 	public Palya(){
 		map=new ArrayList<Sin>();
 		engines = new ArrayList<Mozdony>();
-		speed = false;
+		speed = true;
 		done = false;
 		tunnel = new Alagut();
 		startPoint = new Kezdopont(1, 5, 1, null);
@@ -37,6 +39,19 @@ public class Palya implements Serializable, Runnable{
 	/** Listenerek felvétele */
 	public void addActionListener(EventListener listener) {
 		list.add(listener);
+	}
+	
+	public void mapfeldolgozas(Sin map[][]) {
+		for(int x=0; x<30; x++) {
+			for(int y = 0; y<30; y++) {
+				if(map[x][y] != null) {
+					this.map.add(map[x][y]);
+				}
+			}
+		}
+	}
+	public void vonatfeldolgozas(Mozdony mozdony) {
+		engines.add(mozdony);
 	}
 	
 	/** Buttonhoz eseményéhez kötött megszakítás. */
@@ -56,26 +71,40 @@ public class Palya implements Serializable, Runnable{
 	/** A játék futása a megfelelő vizsgálatokkal. */
 	public void run(){
 		while(true){ 
+//			try {
+//				//TimeUnit.SECONDS.sleep(2);
+//			} catch (InterruptedException e1) {
+//				// TODO Auto-generated catch block
+//				e1.printStackTrace();
+//			}
+			for (Mozdony mozdony : engines) {					
+				try {
+					done &= mozdony.run();
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 			if(speed){
 				//System.out.println("Game thread is doing stuff....."); 
-				Mozdony uj = startPoint.work();
-				try {
-					if(uj != null) {
-						engines.add(uj);
-						//event----------------------------------
-						RailEvent re = new RailEvent(this, 3, list.get(0));
-						re.fire();
-						//endevent-------------------------------
-					}
-					done = true;// nullázzuk a done-t
-					for (Mozdony mozdony : engines) {					
-						done &= mozdony.run();
-					}
-				} catch (Exception e) {						
-					e.printStackTrace();
-					log.info("Hiba elkapva: "+e.getMessage());
-					break;
-				}
+//				Mozdony uj = startPoint.work();
+//				try {
+//					if(uj != null) {
+//						engines.add(uj);
+//						//event----------------------------------
+//						RailEvent re = new RailEvent(this, 3, list.get(0));
+//						re.fire();
+//						//endevent-------------------------------
+//					}
+//					done = true;// nullázzuk a done-t
+//					for (Mozdony mozdony : engines) {					
+//						done &= mozdony.run();
+//					}
+//				} catch (Exception e) {						
+//					e.printStackTrace();
+//					log.info("Hiba elkapva: "+e.getMessage());
+//					break;
+//				}
 				//event----------------------------------
 				RailEvent re = new RailEvent(this, 1, list.get(0));
 				re.fire();
@@ -622,5 +651,11 @@ public class Palya implements Serializable, Runnable{
 	}
 	public String getType(){
 		return "Palya";
+	}
+
+	public void Nesze(Sin[][] s) {
+		// TODO Auto-generated method stub
+		startPoint = (Kezdopont)s[10][10];
+		
 	}
 }
