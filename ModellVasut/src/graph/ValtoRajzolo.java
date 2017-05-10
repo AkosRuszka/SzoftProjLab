@@ -29,6 +29,7 @@ public class ValtoRajzolo extends JButton implements IRajzolo, Serializable{
 		setPreferredSize(new Dimension(20,20));
 		
 		try{
+
 			this.img = new ImageIcon(".\\img.\\valto.png");
 			
 			// 20x20-as átméretezés

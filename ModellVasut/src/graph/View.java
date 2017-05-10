@@ -4,13 +4,17 @@ import java.awt.Dimension;
 import java.awt.Insets;
 import java.awt.Point;
 import java.awt.Window;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
+import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
 import graph.*;
 import vasut.Allomas;
+import vasut.Jatek;
 import vasut.Kocsi;
 import vasut.KulonlegesHely;
 import vasut.Mozdony;
@@ -24,14 +28,31 @@ public class View extends JFrame{
 	ArrayList<MozdonyRajzolo> trainElements = new ArrayList<MozdonyRajzolo>();
 	ArrayList<KocsiRajzolo> cartElements = new ArrayList<KocsiRajzolo>();
 	
-	public View() {
+	public View(Jatek jatek) {
 		setLayout(null);
 		setVisible(true);
 		setSize(new Dimension(900,900));
+		setPreferredSize(new Dimension(800,800));
 		/* ujrarajzolást kérünk */
 		
 		invalidate();
-
+		JButton bb = new JButton();
+		
+		Dimension size = getPreferredSize();
+		setBounds(10 + getInsets().left, 10 + getInsets().top, 	size.width, size.height);	
+		
+		bb.setBounds(10,10,10,10);
+		bb.addActionListener(new ActionListener() { 
+			  public void actionPerformed(ActionEvent e) { 
+				  try {
+					jatek.getGame().setStartStop();
+				} catch (Exception e1) {
+					e1.printStackTrace();
+				}
+			  }
+		});
+		
+		add(bb);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 	
@@ -47,8 +68,11 @@ public class View extends JFrame{
 					trains.setPoint(a);
 					mapon = true;
 					trains.setVisible(true);
+					break;
 				}
 			}
+			trains.invalidate();
+			trains.repaint();
 			if(!mapon){
 				trains.setVisible(false);
 			}
@@ -119,7 +143,7 @@ public class View extends JFrame{
 						add(ujkulhely);
 						break;
 					case "Valto":
-						ujvalto = new ValtoRajzolo(new Point((x+1)*20,(x+1)*20),(Valto)mymapp[x][y],insets);
+						ujvalto = new ValtoRajzolo(new Point((x+1)*20,(y+1)*20),(Valto)mymapp[x][y],insets);
 						railElements.add(ujvalto);
 						add(ujvalto);
 						break;
@@ -127,6 +151,14 @@ public class View extends JFrame{
 				}
 			}
 		}
+		repaint();
+	}
+	
+	public void vonathozzaadas(Mozdony mozdony) {
+		MozdonyRajzolo moz = new MozdonyRajzolo(new Point(13*20, 11*20), mozdony ,getInsets());
+		trainElements.add(moz);
+		add(moz);
+		invalidate();
 		repaint();
 	}
 	

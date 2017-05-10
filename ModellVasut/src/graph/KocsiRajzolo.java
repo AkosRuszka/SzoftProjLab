@@ -84,6 +84,11 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener, Se
 	}
 	
 	@Override
+	public void setLocation(Point d) {
+		super.setLocation(d);
+	}
+	
+	@Override
 	public Object getObject() {
 		return kocsi;
 	}
@@ -96,8 +101,11 @@ public class KocsiRajzolo extends JLabel implements IRajzolo, ActionListener, Se
 	@Override
 	public void setPoint(Point point) {
 		coord = point;
-		
+		Dimension size = getPreferredSize();
+		setBounds((int)coord.getX() + insets.left, (int)coord.getY() + insets.top,
+	             size.width, size.height);
 	}
+	
 	/* touppercase */
 	@Override
 	public void actionPerformed(ActionEvent e) {

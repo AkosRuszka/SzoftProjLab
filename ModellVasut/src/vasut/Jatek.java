@@ -26,7 +26,7 @@ public class Jatek implements Serializable{
 	private String sugo;	//a Sugó szövege
 	
 	public Jatek(){
-		actGame = null;
+		actGame = new Palya();
 		actMap = 0;
 		sugo = "Ez csak egy minta, ennél valószínűleg több és hasznosabb info lesz leírva de ez nem az én feladatom lol. :D \n ps: ha ez marad bent akkor bocsánat!";
 	}
@@ -44,8 +44,18 @@ public class Jatek implements Serializable{
 		return actGame;
 	}
 	
+	public void vonataatadas(Mozdony mozdony){
+		actGame.vonatfeldolgozas(mozdony);
+		actGame.addActionListener(list.get(0));
+		actGame.run();
+	}
+	
 	public void makeGame(){
 		actGame = new Palya();
+	}
+	
+	public void mapatadas(Sin map[][]) {
+		actGame.mapfeldolgozas(map);
 	}
 	
 	public void newGame(){
