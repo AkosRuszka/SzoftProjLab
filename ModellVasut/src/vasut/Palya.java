@@ -49,7 +49,7 @@ public class Palya implements Serializable, Runnable{
 			//endevent-------------------------------
 			Thread.sleep(200);
 			log.info("Exception dobva: quitToMain");
-			throw new RuntimeException("quitToMain");
+			//throw new RuntimeException("quitToMain");
 		}
 	}
 	
