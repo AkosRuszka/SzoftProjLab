@@ -22,12 +22,12 @@ public class AllomasRajzolo extends JLabel implements IRajzolo, ActionListener, 
 	
 	private Allomas allomas;
 	
-	public AllomasRajzolo(Point coord, Allomas allomas, Insets frameinsets, JLabel nyillabel) {
+	public AllomasRajzolo(Point co, Allomas al, Insets fr, JLabel ny) {
 		
-		coord = coord;
-		allomas = allomas;
-		insets = insets;
-		nyillabel = nyillabel;
+		coord = co;
+		allomas = al;
+		insets = fr;
+		nyillabel = ny;
 		
 		/* Kép beállítása a allomas színétől függően */
 		try{
@@ -103,7 +103,7 @@ public class AllomasRajzolo extends JLabel implements IRajzolo, ActionListener, 
 
 	@Override
 	public Object getObject() {
-		return this;
+		return allomas;
 	}
 
 	@Override

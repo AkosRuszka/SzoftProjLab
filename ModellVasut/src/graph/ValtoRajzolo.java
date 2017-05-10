@@ -54,7 +54,7 @@ public class ValtoRajzolo extends JButton implements IRajzolo{
 
 	@Override
 	public Object getObject() {
-		return this;
+		return valto;
 	}
 
 	@Override

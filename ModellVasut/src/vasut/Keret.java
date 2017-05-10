@@ -30,6 +30,7 @@ public static void main(String[] args) throws Exception {
 			Menu m = new Menu(j);
 			
 			vez = new Vezerlo(v, m, j);
+			//v.addListener(vez);
 		}
 		
 		//event----------------------------------

@@ -104,10 +104,10 @@ public class Vezerlo implements ActionListener, Serializable{
 		mymap[16][10] = new Sin(mymap[15][10]);
 		palya.addToMap(mymap[16][10]);
 		mymap[17][10] = new Valto(mymap[16][10]);
-		//((Valto)mymap[17][10]).addConnectPoints(mymap[16][10]);
+		((Valto)mymap[17][10]).addConnectPoints(mymap[16][10]);
 		palya.addToMap(mymap[17][10]);
 		mymap[17][11] = new Sin(mymap[17][10]);
-		//((Valto)mymap[17][10]).addConnectPoints(mymap[17][11]);
+		((Valto)mymap[17][10]).addConnectPoints(mymap[17][11]);
 		palya.addToMap(mymap[17][11]);
 		mymap[17][12] = new Sin(mymap[17][11]);
 		palya.addToMap(mymap[17][12]);
@@ -121,7 +121,7 @@ public class Vezerlo implements ActionListener, Serializable{
 		palya.addToMap(mymap[15][14]);
 		mymap[14][14] = new Sin(mymap[15][14]);
 		palya.addToMap(mymap[14][14]);
-		mymap[13][14] = new Allomas(mymap[14][14],"GREEN",null);//new String[] {"BLUE"});
+		mymap[13][14] = new Allomas(mymap[14][14],"GREEN",new String[] {"BLUE"});
 		palya.addToMap(mymap[13][14]);
 		mymap[12][14] = new Sin(mymap[13][14]);
 		palya.addToMap(mymap[12][14]);
@@ -139,11 +139,11 @@ public class Vezerlo implements ActionListener, Serializable{
 		mymap[10][10].setAPoint(mymap[10][11]);
 		
 		
-		/*mymap[17][9] = new Sin(mymap[17][10]);
+		mymap[17][9] = new Sin(mymap[17][10]);
 		palya.addToMap(mymap[17][9]);
 		((Valto)mymap[17][10]).addConnectPoints(mymap[17][9]);
 		mymap[17][8] = new KulonlegesHely(mymap[17][9],palya.getalagut());
-		palya.addToMap(mymap[17][8]);*/
+		palya.addToMap(mymap[17][8]);
 		
 		Mozdony m = new Mozdony(mymap[10][10]);
 		Kocsi k1 = new Kocsi(mymap[11][10],m,"RED");

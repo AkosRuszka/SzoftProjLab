@@ -39,7 +39,7 @@ public class View extends JFrame{
 		for(MozdonyRajzolo trains : trainElements){
 			boolean mapon = false;
 			for(IRajzolo rails : railElements){
-				if(((Sin) rails.getObject()).getActVonatElem() == ((VonatElem)trains.getObject())){
+				if(((Sin)(rails.getObject())).getActVonatElem() == ((VonatElem)trains.getObject())){
 					/* Átállítjuk a mozdony/kocsi koordinátáját. */
 					trains.setPoint(rails.getPoint());
 					mapon = true;
@@ -112,7 +112,7 @@ public class View extends JFrame{
 						add(ujkulhely);
 						break;
 					case "Valto":
-						ujvalto = new ValtoRajzolo(new Point((x+1)*20,(x+1)*20),(Valto)mymapp[x][y],insets);
+						ujvalto = new ValtoRajzolo(new Point((x+1)*20,(y+1)*20),(Valto)mymapp[x][y],insets);
 						railElements.add(ujvalto);
 						add(ujvalto);
 						break;
